@@ -72,3 +72,11 @@ CREATE TABLE transinvolved_in (
 	FOREIGN KEY (bid_no) REFERENCES bids_for(bid_no) ON DELETE cascade,
 	PRIMARY KEY (bid_no)
 );
+
+CREATE TABLE c_pricelist (
+	c_name		VARCHAR, 
+	c_num		INTEGER, 
+	pet_type	VARCHAR,
+	price		INTEGER, 
+	FOREIGN KEY (c_name, c_num) REFERENCES care_taker(c_name, c_num) ON DELETE cascade
+);
