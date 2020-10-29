@@ -15,7 +15,9 @@ CREATE TABLE has_availability (
 
 CREATE TABLE pays (
 	pet_type VARCHAR PRIMARY KEY,
-	price INTEGER NOT NULL
+	price INTEGER NOT NULL,
+	caretaker VARCHAR NOT NULL REFERENCES care_taker (name),
+	admin CARCHAR NOT NULL REFERENCES pcs_admin (name)
 );
 
 CREATE TABLE owns (
