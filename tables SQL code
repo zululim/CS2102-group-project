@@ -52,7 +52,7 @@ CREATE TABLE caretakers (
 CREATE TABLE has_availability (
 	caretaker VARCHAR(100) NOT NULL REFERENCES caretakers(name) 
 		  ON DELETE cascade,
-	s_datetime TIMESTAMP NOT NULL,
+	date TIMESTAMP NOT NULL,
 	e_datetime TIMESTAMP NOT NULL,
 	PRIMARY KEY (caretaker, s_datetime, e_datetime)
 );
