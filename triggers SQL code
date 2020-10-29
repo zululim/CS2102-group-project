@@ -1,1 +1,23 @@
+CREATE OR REPLACE FUNCTION min_price()
+RETURNS TRIGGER AS
+$$ BEGIN
+    SELECT pet_type FROM min_price_list MPL 
+    WHERE NEW.pet_type = MPL.pet_type;
+   IF NEW.price >= MPL.price
+    RETURN NEW;
+   ELSE
+    RETURN MPL.price;
+   END IF;
+   END; $$
+LANGUAGE plpgsql;
 
+CREATE TRIGGER check_price
+BEFORE INSERT OR UPDATE ON c_pricelist
+FOR EACH ROW EXECUTE PROCEDURE min_price();
+
+CREATE OR REPLACE FUNCTION check_availability()
+RETURNS TRIGGER AS 
+$$ BEGIN
+    SELECT date_time FROM has_availability HA
+    WHERE NEW.name = HA.name;
+   IF 
