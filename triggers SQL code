@@ -18,6 +18,6 @@ FOR EACH ROW EXECUTE PROCEDURE min_price();
 CREATE OR REPLACE FUNCTION check_availability()
 RETURNS TRIGGER AS 
 $$ BEGIN
-    SELECT date_time FROM has_availability HA
+    SELECT date FROM has_availability HA
     WHERE NEW.name = HA.name;
-   IF 
+   IF EXISTS (SELECT 1 FROM has_availability WHERE date = 
