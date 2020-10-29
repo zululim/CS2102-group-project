@@ -20,7 +20,7 @@ CREATE TABLE pays (
 
 CREATE TABLE owns (
 	owner VARCHAR(100) NOT NULL REFERENCES pet_owner(name) 
-		    ON DELETE cascade,
+	      ON DELETE cascade,
 	pet_name VARCHAR(100),
 	pet_type VARCHAR(100),
 	special_requirements VARCHAR(500),
