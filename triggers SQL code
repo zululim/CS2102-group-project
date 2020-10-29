@@ -15,9 +15,16 @@ CREATE TRIGGER check_price
 BEFORE INSERT OR UPDATE ON c_pricelist
 FOR EACH ROW EXECUTE PROCEDURE min_price();
 
-CREATE OR REPLACE FUNCTION check_availability()
+CREATE OR REPLACE FUNCTION check_availability(target_name, target_date)
 RETURNS TRIGGER AS 
 $$ BEGIN
-    SELECT date FROM has_availability HA
-    WHERE NEW.name = HA.name;
-   IF EXISTS (SELECT 1 FROM has_availability WHERE date = 
+    SELECT date FROM has_availability
+    WHERE name == target_name
+    IF EXISTS (SELECT 1 FROM has_availability WHERE date = target_date and name = target_name)
+    IF date != NULL THEN
+         RETURN date;
+    ELSE
+        RETURN NULL;
+    END IF; END; $$
+LANGUAGE plpqsql
+
