@@ -15,7 +15,7 @@ CREATE TABLE pays (
 
 CREATE TABLE owns (
 	owner VARCHAR(100) NOT NULL REFERENCES pet_owner(name) 
-	      ON DELETE cascade,
+	      ON DELETE CASCADE,
 	pet_name VARCHAR(100),
 	pet_type VARCHAR(100),
 	special_requirements VARCHAR(500),
@@ -24,8 +24,8 @@ CREATE TABLE owns (
 
 CREATE TABLE bids_for (
 	caretaker VARCHAR(100) NOT NULL REFERENCES has_availability(caretaker),
-	start_date DATE NOT NULL REFERENCES has_availability(s_datetime),
-	end_date DATE NOT NULL REFERENCES has_availability(e_datetime),
+	start_date TIMESTAMP NOT NULL REFERENCES has_availability(s_datetime),
+	end_date TIMESTAMP NOT NULL REFERENCES has_availability(e_datetime),
 	pet_name VARCHAR(100) NOT NULL REFERENCES owns(pet_name),
 	pet_type VARCHAR(100) NOT NULL REFERENCES owns(pet_type),
 	special_requirements VARCHAR(100) REFERENCES owns(special_requirements)
