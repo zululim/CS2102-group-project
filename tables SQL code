@@ -1,3 +1,54 @@
+CREATE TABLE users (
+	name VARCHAR (100) NOT NULL,
+	phone INTEGER NOT NULL,
+	PRIMARY KEY(name, phone)
+);
+
+CREATE TABLE pcsadmin (
+	name VARCHAR(100) NOT NULL REFERENCES users(name),
+	phone INTEGER NOT NULL REFERENCES users(phone),
+	FOREIGN KEY(name, phone) REFERENCES (name, phone),
+	PRIMARY KEY(name, phone)
+);
+
+/*
+ * 0 stands for pet owner delivers the pet
+ * 1 stands for care taker picks up the pet
+ * 2 stands for tramfer through the PCS building
+ */
+CREATE TABLE nonadmin(
+	name VARCHAR (100) NOT NULL,
+	phone INTEGER NOT NULL,
+	address VARCHAR (100),
+	transfer ENUM('0','1','2'),
+	FOREIGN KEY(name, phone) REFERENCES (name, phone),
+	PRIMARY KEY(name, phone)
+);
+
+CREATE TABLE petowner (
+	name VARCHAR (100) NOT NULL,
+	phone INTEGER NOT NULL,
+	address VARCHAR (100),
+	transfer ENUM('0','1','2'),
+	FOREIGN KEY(name, phone, address, transfer) REFERENCES (name, phone, address, transfer),
+	PRIMARY KEY(name, phone),
+	credit_card_info varchar(30) NOT NULL,
+	require_date TIMESTAMP NOT NULL
+);
+
+
+CREATE TABLE caretakers (
+	name VARCHAR (100) NOT NULL,
+	phone INTEGER NOT NULL,
+	address VARCHAR (100),
+	transfer ENUM('0','1','2'),
+	FOREIGN KEY(name, phone, address, transfer) REFERENCES (name, phone, address, transfer),
+	PRIMARY KEY(name, phone),
+	max INTEGER CHECK (max <= 5),
+	rating FLOAT(2, 1) CHECK (rating <= 5)
+
+
+
 CREATE TABLE has_availability (
 	caretaker VARCHAR(100) NOT NULL REFERENCES caretakers(name) 
 		  ON DELETE cascade,
@@ -29,38 +80,6 @@ CREATE TABLE bids_for (
 	pet_name VARCHAR(100) NOT NULL REFERENCES owns(pet_name),
 	pet_type VARCHAR(100) NOT NULL REFERENCES owns(pet_type),
 	special_requirements VARCHAR(100) REFERENCES owns(special_requirements)
-);
-
-CREATE TABLE users (
-	name VARCHAR (100) NOT NULL,
-	phone INTEGER NOT NULL,
-	address VARCHAR (100),
-	transfer ENUM('0','1','2'),
-	PRIMARY KEY(name, phone)
-);
-
-CREATE TABLE petowner (
-	credit_card_info varchar(30) NOT NULL,
-	require_date DATE NOT NULL
-	name VARCHAR(100) NOT NULL REFERENCES users(name),
-	phone INTEGER NOT NULL REFERENCES users(phone),
-	PRIMARY KEY(name, phone)
-);
-
-
-CREATE TABLE caretakers (
-	availability BOOLEAN
-	rating FLOAT(2, 1)
-	name VARCHAR(100) NOT NULL REFERENCES users(name),
-	phone INTEGER NOT NULL REFERENCES users(phone),
-	PRIMARY KEY(name, phone)
-);
-
-
-CREATE TABLE pcsadmin (
-	name VARCHAR(100) NOT NULL REFERENCES users(name),
-	phone INTEGER NOT NULL REFERENCES users(phone),
-	PRIMARY KEY(name, phone)
 );
 
 CREATE TABLE transinvolved_in (
