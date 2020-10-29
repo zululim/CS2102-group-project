@@ -63,3 +63,12 @@ CREATE TABLE pcsadmin (
 	PRIMARY KEY(name, phone)
 );
 
+CREATE TABLE transinvolved_in (
+	bid_no		INTEGER,
+	status		VARCHAR,
+	trans_mtd	VARCHAR,
+	pay_mtd		VARCHAR,
+	rating		VARCHAR DEFAULT NULL,
+	FOREIGN KEY (bid_no) REFERENCES bids_for(bid_no) ON DELETE cascade,
+	PRIMARY KEY (bid_no)
+);
