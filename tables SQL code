@@ -10,7 +10,7 @@ CREATE TABLE has_availability (
 			      ON DELETE cascade,
 	s_datetime DATE NOT NULL,
   e_datetime DATE NOT NULL,
-  PRIMARY KEY (caretaker, start_date, end_date)
+  PRIMARY KEY (caretaker, s_datetime, e_datetime)
 );
 
 CREATE TABLE pays (
