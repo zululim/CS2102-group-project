@@ -1,0 +1,10 @@
+CREATE TABLE has (
+  start_date DATE REFERENCES availability (s_datetime),
+  end_date DATE REFERENCES availability (e_datetime),
+  PRIMARY KEY (start_date, end_date)
+);
+
+CREATE TABLE pays (
+  pet_type VARCHAR PRIMARY KEY,
+  price INTEGER NOT NULL
+);
