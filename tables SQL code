@@ -1,7 +1,7 @@
 CREATE TABLE has (
-  start_date DATE REFERENCES availability (s_datetime),
-  end_date DATE REFERENCES availability (e_datetime),
-  PRIMARY KEY (start_date, end_date)
+	start_date DATE REFERENCES availability (s_datetime),
+	end_date DATE REFERENCES availability (e_datetime),
+	PRIMARY KEY (start_date, end_date)
 );
 
 /* Clarissa suggests changing the above 'has' table to this: */
@@ -14,8 +14,8 @@ CREATE TABLE has_availability (
 );
 
 CREATE TABLE pays (
-  pet_type VARCHAR PRIMARY KEY,
-  price INTEGER NOT NULL
+	pet_type VARCHAR PRIMARY KEY,
+	price INTEGER NOT NULL
 );
 
 CREATE TABLE owns (
@@ -24,7 +24,7 @@ CREATE TABLE owns (
 	pet_name VARCHAR(100),
 	pet_type VARCHAR(100),
 	special_requirements VARCHAR(500),
-	PRIMARY KEY (pet_name, pet_type)
+	PRIMARY KEY (owner, pet_name, pet_type)
 );
 
 CREATE TABLE bids_for (
