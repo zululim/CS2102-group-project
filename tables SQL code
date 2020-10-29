@@ -4,7 +4,34 @@ CREATE TABLE has (
   PRIMARY KEY (start_date, end_date)
 );
 
+/* Clarissa suggests changing the above 'has' table to this: */
+CREATE TABLE has_availability (
+	caretaker VARCHAR(100) NOT NULL REFERENCES caretakers(name) 
+			      ON DELETE cascade,
+	s_datetime DATE NOT NULL,
+  e_datetime DATE NOT NULL,
+  PRIMARY KEY (caretaker, start_date, end_date)
+);
+
 CREATE TABLE pays (
   pet_type VARCHAR PRIMARY KEY,
   price INTEGER NOT NULL
+);
+
+CREATE TABLE owns (
+	owner VARCHAR(100) NOT NULL REFERENCES pet_owner(name) 
+		    ON DELETE cascade,
+	pet_name VARCHAR(100),
+	pet_type VARCHAR(100),
+	special_requirements VARCHAR(500),
+	PRIMARY KEY (pet_name, pet_type)
+);
+
+CREATE TABLE bids_for (
+	caretaker VARCHAR(100) NOT NULL REFERENCES has_availability(caretaker),
+	start_date DATE NOT NULL REFERENCES has_availability(s_datetime),
+	end_date DATE NOT NULL REFERENCES has_availability(e_datetime),
+	pet_name VARCHAR(100) NOT NULL REFERENCES owns(pet_name),
+	pet_type VARCHAR(100) NOT NULL REFERENCES owns(pet_type),
+	special_requirements VARCHAR(100) REFERENCES owns(special_requirements)
 );
