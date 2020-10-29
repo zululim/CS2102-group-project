@@ -39,6 +39,15 @@ CREATE TABLE users (
 	PRIMARY KEY(name, phone)
 );
 
+CREATE TABLE petowner (
+	credit_card_info varchar(30) NOT NULL,
+	require_date DATE NOT NULL
+	name VARCHAR(100) NOT NULL REFERENCES users(name),
+	phone INTEGER NOT NULL REFERENCES users(phone),
+	PRIMARY KEY(name, phone)
+);
+
+
 CREATE TABLE caretakers (
 	availability BOOLEAN
 	rating FLOAT(2, 1)
@@ -46,3 +55,11 @@ CREATE TABLE caretakers (
 	phone INTEGER NOT NULL REFERENCES users(phone),
 	PRIMARY KEY(name, phone)
 );
+
+
+CREATE TABLE pcsadmin (
+	name VARCHAR(100) NOT NULL REFERENCES users(name),
+	phone INTEGER NOT NULL REFERENCES users(phone),
+	PRIMARY KEY(name, phone)
+);
+
