@@ -1,13 +1,13 @@
 CREATE TABLE users (
-	name VARCHAR (100) NOT NULL,
-	phone INTEGER NOT NULL,
+	name 		VARCHAR (100) NOT NULL,
+	phone 		INTEGER NOT NULL,
 	PRIMARY KEY(name, phone)
 );
 
 CREATE TABLE pcsadmin (
-	name VARCHAR(100) NOT NULL REFERENCES users(name),
-	phone INTEGER NOT NULL REFERENCES users(phone),
-	FOREIGN KEY(name, phone) REFERENCES (name, phone),
+	name 		VARCHAR(100) NOT NULL REFERENCES users(name),
+	phone 		INTEGER NOT NULL REFERENCES users(phone),
+	FOREIGN KEY(name, phone) REFERENCES users(name, phone),
 	PRIMARY KEY(name, phone)
 );
 
@@ -17,69 +17,67 @@ CREATE TABLE pcsadmin (
  * 2 stands for tramfer through the PCS building
  */
 CREATE TABLE nonadmin(
-	name VARCHAR (100) NOT NULL,
-	phone INTEGER NOT NULL,
-	address VARCHAR (100),
-	transfer ENUM('0','1','2'),
+	name 		VARCHAR (100) NOT NULL,
+	phone 		INTEGER NOT NULL,
+	address 	VARCHAR (100),
+	transfer 	ENUM('0','1','2'),
 	FOREIGN KEY(name, phone) REFERENCES (name, phone),
 	PRIMARY KEY(name, phone)
 );
 
 CREATE TABLE petowner (
-	name VARCHAR (100) NOT NULL,
-	phone INTEGER NOT NULL,
-	address VARCHAR (100),
-	transfer ENUM('0','1','2'),
+	name 		VARCHAR (100) NOT NULL,
+	phone 		INTEGER NOT NULL,
+	address 	VARCHAR (100),
+	transfer 	ENUM('0','1','2'),
 	FOREIGN KEY(name, phone, address, transfer) REFERENCES (name, phone, address, transfer),
 	PRIMARY KEY(name, phone),
-	credit_card_info varchar(30) NOT NULL,
-	require_date TIMESTAMP NOT NULL
+	c_card_info 	VARCHAR(30) NOT NULL,
+	require_date 	DATE NOT NULL
 );
 
-
 CREATE TABLE caretakers (
-	name VARCHAR (100) NOT NULL,
-	phone INTEGER NOT NULL,
-	address VARCHAR (100),
-	transfer ENUM('0','1','2'),
+	name 		VARCHAR (100) NOT NULL,
+	phone 		INTEGER NOT NULL,
+	address 	VARCHAR (100),
+	transfer 	ENUM('0','1','2'),
 	FOREIGN KEY(name, phone, address, transfer) REFERENCES (name, phone, address, transfer),
 	PRIMARY KEY(name, phone),
-	max INTEGER CHECK (max <= 5),
-	rating FLOAT(2, 1) CHECK (rating <= 5)
-
-
+	max 		INTEGER CHECK (max <= 5),
+	rating 		FLOAT(2, 1) CHECK (rating <= 5)
+);
 
 CREATE TABLE has_availability (
-	caretaker VARCHAR(100) NOT NULL REFERENCES caretakers(name) 
-		  ON DELETE cascade,
-	date TIMESTAMP NOT NULL,
-	e_datetime TIMESTAMP NOT NULL,
+	caretaker 	VARCHAR(100) NOT NULL REFERENCES caretakers(name) 
+		ON DELETE cascade,
+	date 		DATE NOT NULL,
+	e_datetime 	DATE NOT NULL,
 	PRIMARY KEY (caretaker, s_datetime, e_datetime)
 );
 
 CREATE TABLE pays (
-	pet_type VARCHAR PRIMARY KEY,
-	price INTEGER NOT NULL,
-	caretaker VARCHAR NOT NULL REFERENCES care_taker (name),
-	admin CARCHAR NOT NULL REFERENCES pcs_admin (name)
+	pet_type 	VARCHAR PRIMARY KEY,
+	price 		INTEGER NOT NULL,
+	caretaker 	VARCHAR NOT NULL REFERENCES care_taker (name),
+	admin 		VARCHAR NOT NULL REFERENCES pcs_admin (name)
 );
 
 CREATE TABLE owns (
-	owner VARCHAR(100) NOT NULL REFERENCES pet_owner(name) 
-	      ON DELETE CASCADE,
-	pet_name VARCHAR(100),
-	pet_type VARCHAR(100),
-	special_requirements VARCHAR(500),
+	owner 		VARCHAR(100) NOT NULL REFERENCES pet_owner(name) 
+		ON DELETE CASCADE,
+	pet_name 	VARCHAR(100),
+	pet_type 	VARCHAR(100),
+	special_reqs 	VARCHAR(500),
 	PRIMARY KEY (owner, pet_name, pet_type)
 );
 
 CREATE TABLE bids_for (
-	caretaker VARCHAR(100) NOT NULL REFERENCES has_availability(caretaker),
-	start_date TIMESTAMP NOT NULL REFERENCES has_availability(s_datetime),
-	end_date TIMESTAMP NOT NULL REFERENCES has_availability(e_datetime),
-	pet_name VARCHAR(100) NOT NULL REFERENCES owns(pet_name),
-	pet_type VARCHAR(100) NOT NULL REFERENCES owns(pet_type),
-	special_requirements VARCHAR(100) REFERENCES owns(special_requirements)
+	caretaker 	VARCHAR(100) NOT NULL REFERENCES has_availability(caretaker),
+	start_date 	DATE NOT NULL REFERENCES has_availability(s_datetime),
+	end_date 	DATE NOT NULL REFERENCES has_availability(e_datetime),
+	pet_name 	VARCHAR(100) NOT NULL REFERENCES owns(pet_name),
+	pet_type 	VARCHAR(100) NOT NULL REFERENCES owns(pet_type),
+	special_reqs 	VARCHAR(100) REFERENCES owns(special_reqs)
 );
 
 CREATE TABLE transinvolved_in (
