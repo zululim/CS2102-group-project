@@ -1,13 +1,26 @@
-CREATE TABLE users (
+DROP TABLE IF EXISTS bids_for cascade;
+DROP TABLE IF EXISTS c_pricelist cascade;
+DROP TABLE IF EXISTS caretakers cascade;
+DROP TABLE IF EXISTS has_availability cascade;
+DROP TABLE IF EXISTS nonadmin cascade;
+DROP TABLE IF EXISTS owns cascade;
+DROP TABLE IF EXISTS pays cascade; 	
+DROP TABLE IF EXISTS pcsadmin cascade;
+DROP TABLE IF EXISTS petowner cascade;
+DROP TABLE IF EXISTS transinvolved_in cascade;
+DROP TABLE IF EXISTS users cascade;
+
+
+CREATE TABLE users(
 	name 		VARCHAR (100) NOT NULL,
 	phone 		INTEGER NOT NULL,
 	PRIMARY KEY(name, phone)
 );
 
 CREATE TABLE pcsadmin (
-	name 		VARCHAR(100) NOT NULL REFERENCES users(name),
-	phone 		INTEGER NOT NULL REFERENCES users(phone),
-	FOREIGN KEY(name, phone) REFERENCES users(name, phone),
+	name 		VARCHAR(100) NOT NULL,
+	phone 		INTEGER NOT NULL,
+	FOREIGN KEY(name, phone) REFERENCES users(name, phone) ON DELETE cascade,
 	PRIMARY KEY(name, phone)
 );
 
@@ -16,84 +29,98 @@ CREATE TABLE pcsadmin (
  * 1 stands for care taker picks up the pet
  * 2 stands for tramfer through the PCS building
  */
+-- CREATE TYPE transfer AS ENUM('0','1','2');
 CREATE TABLE nonadmin(
 	name 		VARCHAR (100) NOT NULL,
 	phone 		INTEGER NOT NULL,
 	address 	VARCHAR (100),
-	transfer 	ENUM('0','1','2'),
-	FOREIGN KEY(name, phone) REFERENCES (name, phone),
+	transfer 	transfer,
+	FOREIGN KEY(name, phone) REFERENCES users(name, phone) ON DELETE cascade,
 	PRIMARY KEY(name, phone)
 );
 
 CREATE TABLE petowner (
-	name 		VARCHAR (100) NOT NULL,
-	phone 		INTEGER NOT NULL,
-	address 	VARCHAR (100),
-	transfer 	ENUM('0','1','2'),
-	FOREIGN KEY(name, phone, address, transfer) REFERENCES (name, phone, address, transfer),
-	PRIMARY KEY(name, phone),
+	name 			VARCHAR (100) NOT NULL,
+	phone 			INTEGER NOT NULL,
+	address 		VARCHAR (100),
+	transfer 		transfer,
 	c_card_info 	VARCHAR(30) NOT NULL,
-	require_date 	DATE NOT NULL
+	require_date 	DATE NOT NULL,
+	FOREIGN KEY(name, phone) REFERENCES nonadmin(name, phone) ON DELETE cascade,
+	PRIMARY KEY(name, phone)
 );
 
 CREATE TABLE caretakers (
 	name 		VARCHAR (100) NOT NULL,
 	phone 		INTEGER NOT NULL,
 	address 	VARCHAR (100),
-	transfer 	ENUM('0','1','2'),
-	FOREIGN KEY(name, phone, address, transfer) REFERENCES (name, phone, address, transfer),
-	PRIMARY KEY(name, phone),
+	transfer 	transfer,
 	max 		INTEGER CHECK (max <= 5),
-	rating 		FLOAT(2, 1) CHECK (rating <= 5)
+	rating 		NUMERIC(2, 1) CHECK (rating <= 5),
+	FOREIGN KEY(name, phone) REFERENCES nonadmin(name, phone),
+	PRIMARY KEY(name, phone)
 );
 
 CREATE TABLE has_availability (
-	caretaker 	VARCHAR(100) NOT NULL REFERENCES caretakers(name) 
-		ON DELETE cascade,
-	date 		DATE NOT NULL,
+	caretaker 	VARCHAR(100) NOT NULL,
+	phone		INTEGER NOT NULL, 
+	s_datetime 	DATE NOT NULL,
 	e_datetime 	DATE NOT NULL,
+	FOREIGN KEY (caretaker, phone) REFERENCES caretakers(name, phone) ON DELETE cascade,
 	PRIMARY KEY (caretaker, s_datetime, e_datetime)
 );
 
 CREATE TABLE pays (
-	pet_type 	VARCHAR PRIMARY KEY,
+	pet_type 	VARCHAR,
 	price 		INTEGER NOT NULL,
-	caretaker 	VARCHAR NOT NULL REFERENCES care_taker (name),
-	admin 		VARCHAR NOT NULL REFERENCES pcs_admin (name)
+	caretaker 	VARCHAR NOT NULL,
+	cphone		INTEGER NOT NULL,
+	admin 		VARCHAR NOT NULL,
+	aphone 		INTEGER NOT NULL, 
+	FOREIGN KEY (caretaker, cphone) REFERENCES caretakers (name, phone) ON DELETE cascade, 
+	FOREIGN KEY (admin, aphone) REFERENCES pcsadmin (name, phone) ON DELETE cascade, 
+	PRIMARY KEY (pet_type, caretaker)
 );
 
 CREATE TABLE owns (
-	owner 		VARCHAR(100) NOT NULL REFERENCES pet_owner(name) 
-		ON DELETE CASCADE,
-	pet_name 	VARCHAR(100),
-	pet_type 	VARCHAR(100),
+	owner 			VARCHAR(100) NOT NULL,
+	phone			INTEGER NOT NULL, 
+	pet_name 		VARCHAR(100),
+	pet_type 		VARCHAR(100),
 	special_reqs 	VARCHAR(500),
+	FOREIGN KEY (owner, phone)  REFERENCES petowner(name, phone) ON DELETE CASCADE,
 	PRIMARY KEY (owner, pet_name, pet_type)
 );
 
 CREATE TABLE bids_for (
-	caretaker 	VARCHAR(100) NOT NULL REFERENCES has_availability(caretaker),
-	start_date 	DATE NOT NULL REFERENCES has_availability(s_datetime),
-	end_date 	DATE NOT NULL REFERENCES has_availability(e_datetime),
-	pet_name 	VARCHAR(100) NOT NULL REFERENCES owns(pet_name),
-	pet_type 	VARCHAR(100) NOT NULL REFERENCES owns(pet_type),
-	special_reqs 	VARCHAR(100) REFERENCES owns(special_reqs)
+	bids_no			INTEGER, 
+	caretaker 		VARCHAR(100) NOT NULL,
+	cphone			INTEGER NOT NULL,
+	petowner		VARCHAR(100) NOT NULL, 
+	start_date 		DATE NOT NULL,
+	end_date 		DATE NOT NULL,
+	pet_name 		VARCHAR(100) NOT NULL,
+	pet_type 		VARCHAR(100) NOT NULL,
+	special_reqs 	VARCHAR(100), 
+	FOREIGN KEY (petowner, pet_name, pet_type) REFERENCES owns(owner, pet_name, pet_type),
+	FOREIGN KEY (caretaker, start_date, end_date) REFERENCES has_availability(caretaker, s_datetime, e_datetime),
+	PRIMARY KEY (bids_no)
 );
 
 CREATE TABLE transinvolved_in (
-	bid_no		INTEGER,
+	bids_no		INTEGER,
 	status		VARCHAR,
 	trans_mtd	VARCHAR,
 	pay_mtd		VARCHAR,
 	rating		VARCHAR DEFAULT NULL,
-	FOREIGN KEY (bid_no) REFERENCES bids_for(bid_no) ON DELETE cascade,
-	PRIMARY KEY (bid_no)
+	FOREIGN KEY (bids_no) REFERENCES bids_for(bids_no) ON DELETE cascade,
+	PRIMARY KEY (bids_no)
 );
 
 CREATE TABLE c_pricelist (
-	c_name		VARCHAR, 
-	c_num		INTEGER, 
+	cname		VARCHAR, 
+	cphone		INTEGER, 
 	pet_type	VARCHAR,
 	price		INTEGER, 
-	FOREIGN KEY (c_name, c_num) REFERENCES care_taker(c_name, c_num) ON DELETE cascade
+	FOREIGN KEY (cname, cphone) REFERENCES caretakers(name, phone) ON DELETE cascade
 );
