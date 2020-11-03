@@ -1,1 +1,18 @@
+# add admin user Jack
+INSERT INTO users VALUES ('Jack', '87654321');
+INSERT INTO pcsadmin VALUES ('Jack', '87654321');
 
+# add Pet Owner Rose
+INSERT INTO users VALUES ('Rose', '87878787');
+INSERT INTO nonadmin VALUES ('Rose', '87878787', 'London, UK', '1');
+INSERT INTO petowner VALUES ('Rose', '87878787', 'London, UK', '1', '4321432143214321', '10-10-2020');
+
+# add Pet Owner Tom
+INSERT INTO users VALUES ('Tom', '99991122');
+INSERT INTO nonadmin VALUES ('Tom', '99991122', 'New York, US', '0');
+INSERT INTO petowner VALUES ('Tom', '99991122', 'New York, US', '0', '9876987698769876', '10-11-2020');
+
+# add Care Taler Jerry
+INSERT INTO users VALUES ('Jerry', '88993344');
+INSERT INTO nonadmin VALUES ('Jerry', '88993344', 'Los Angeles', null);
+INSERT INTO caretakers VALUES ('Jerry', '88993344', 'Los Angeles', null, '3', null);
