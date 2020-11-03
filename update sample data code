@@ -34,3 +34,6 @@ INSERT INTO owns VALUES ('Tom', '99991122', 'Catty', 'cat');
 
 -- Tom owns a Parrot Kiwi
 INSERT INTO owns VALUES ('Tom', '99991122',  'Kiwi', 'parrot');
+
+-- Jerry sets his avilablity from Oct 1st to Oct 15th
+INSERT INTO has_availability ('')
