@@ -1,3 +1,16 @@
+DROP TABLE IF EXISTS bids_for cascade;
+DROP TABLE IF EXISTS c_pricelist cascade;
+DROP TABLE IF EXISTS caretakers cascade;
+DROP TABLE IF EXISTS has_availability cascade;
+DROP TABLE IF EXISTS nonadmin cascade;
+DROP TABLE IF EXISTS owns cascade;
+DROP TABLE IF EXISTS pays cascade; 	
+DROP TABLE IF EXISTS pcsadmin cascade;
+DROP TABLE IF EXISTS petowner cascade;
+DROP TABLE IF EXISTS transinvolved_in cascade;
+DROP TABLE IF EXISTS users cascade;
+
+
 CREATE TABLE users(
 	name 		VARCHAR (100) NOT NULL,
 	phone 		INTEGER NOT NULL,
@@ -106,7 +119,7 @@ CREATE TABLE bids_for (
 	trans_mtd 	VARCHAR, 
 	pay_mtd 	VARCHAR, 
 	rating 		INTEGER, 
-	FOREIGN KEY (petowner, pet_name, pet_type) REFERENCES owns(owner, pet_name, pet_type),
-	FOREIGN KEY (caretaker, start_date, end_date) REFERENCES has_availability(caretaker, s_datetime, e_datetime),
+	FOREIGN KEY (petowner, pet_name, pet_type) REFERENCES owns(owner, pet_name, pet_type) ON DELETE CASCADE ON UPDATE cascade,
+	FOREIGN KEY (caretaker, start_date, end_date) REFERENCES has_availability(caretaker, s_datetime, e_datetime) ON DELETE CASCADE ON UPDATE cascade,
 	PRIMARY KEY (caretaker, petowner, start_date, end_date, pet_name)
 );
