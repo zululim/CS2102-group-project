@@ -64,8 +64,7 @@ CREATE TABLE caretakers (
 CREATE TABLE has_availability (
 	caretaker 	VARCHAR(100) NOT NULL,
 	phone		INTEGER NOT NULL, 
-	s_datetime 	DATE NOT NULL,
-	e_datetime 	DATE NOT NULL,
+	date  	 	DATE NOT NULL,
 	FOREIGN KEY (caretaker, phone) REFERENCES caretakers(name, phone) ON DELETE cascade,
 	PRIMARY KEY (caretaker, s_datetime, e_datetime)
 );
