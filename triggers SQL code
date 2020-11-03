@@ -4,6 +4,7 @@ $$ BEGIN
     SELECT pet_type FROM min_price_list MPL 
     WHERE NEW.pet_type = MPL.pet_type;
    IF NEW.price >= MPL.price
+   THEN 
     RETURN NEW;
    ELSE
     RETURN MPL.price;
@@ -20,13 +21,14 @@ RETURNS TRIGGER AS
 $$ BEGIN
     SELECT date FROM has_availability HA
     WHERE NEW.name = HA.name AND 
-    IF EXISTS (SELECT 1 FROM has_availability WHERE date = NEW.date and name = NEW.name);
-    IF date != NULL THEN
-         RETURN date;
+    NEW.date
+    IF date != NULL 
+    THEN
+     RETURN date;
     ELSE
-        RETURN NULL;
+     RETURN NULL;
     END IF; END; $$
-LANGUAGE plpqsql
+LANGUAGE plpgsql;
 
 CREATE TRIGGER is_available
 BEFORE INSERT OR UPDATE ON bids_for
