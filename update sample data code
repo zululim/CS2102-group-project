@@ -10,7 +10,7 @@ INSERT INTO petowner VALUES ('Rose', '87878787', 'London, UK', '1', '43214321432
 -- add Pet Owner Tom
 INSERT INTO users VALUES ('Tom', '99991122');
 INSERT INTO nonadmin VALUES ('Tom', '99991122', 'New York, US', '0');
-INSERT INTO petowner VALUES ('Tom', '99991122', 'New York, US', '0', '9876987698769876', '10-11-2020');
+INSERT INTO petowner VALUES ('Tom', '99991122', 'New York, US', '0', '9876987698769876', '11-10-2020');
 
 -- add Care Taker Jerry
 INSERT INTO users VALUES ('Jerry', '88993344');
@@ -35,5 +35,25 @@ INSERT INTO owns VALUES ('Tom', '99991122', 'Catty', 'cat');
 -- Tom owns a Parrot Kiwi
 INSERT INTO owns VALUES ('Tom', '99991122',  'Kiwi', 'parrot');
 
--- Jerry sets his avilablity from Oct 1st to Oct 15th
-INSERT INTO has_availability ('')
+-- Jerry sets his avilablity from Oct 1st to Oct 15th 2020
+INSERT INTO has_availability VALUES ('Jerry', '88993344', '01-10-2020'),
+                                    ('Jerry', '88993344', '02-10-2020'),
+                                    ('Jerry', '88993344', '03-10-2020'),
+                                    ('Jerry', '88993344', '04-10-2020'),
+                                    ('Jerry', '88993344', '05-10-2020'),
+                                    ('Jerry', '88993344', '06-10-2020'),
+                                    ('Jerry', '88993344', '07-10-2020'),
+                                    ('Jerry', '88993344', '08-10-2020'),
+                                    ('Jerry', '88993344', '09-10-2020'),
+                                    ('Jerry', '88993344', '10-10-2020'),
+                                    ('Jerry', '88993344', '11-10-2020'),
+                                    ('Jerry', '88993344', '12-10-2020'),
+                                    ('Jerry', '88993344', '13-10-2020'),
+                                    ('Jerry', '88993344', '14-10-2020'),
+                                    ('Jerry', '88993344', '15-10-2020');
+                                   
+-- Set price list for caretaker Jerry
+INSERT INTO c_pricelist VALUES ('Jerry', '88993344', 'cat', '30'),
+                               ('Jerry', '88993344', 'dog', '40'),
+                               ('Jerry', '88993344', 'parrot', '15');
+                               
