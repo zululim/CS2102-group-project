@@ -1,7 +1,27 @@
+CREATE OR REPLACE FUNCTION not_pcs()
+RETURNS TRIGGER AS $$
+DECLARE ctx AS NUMERIC;
+$$ BEGIN 
+	SELECT COUNT(*) INTO ctx FROM nonadmin na
+	WHERE NEW.name=na.name;
+	IF ctx > 0 THEN
+		RETURN NULL;
+	ELSE
+		RETURN NEW
+	END IF;
+	END; $$
+LANGUAGE plpgsql;
+
+CREATE TRIGGER check_new()
+BEFORE INSERT OR UPDATE ON non_admin
+FOR EACH ROW EXECUTE PROCEDURE not_pcs();
+
+
+
 CREATE OR REPLACE FUNCTION min_price()
 RETURNS TRIGGER AS
 $$ BEGIN
-    SELECT pet_type FROM min_price_list MPL 
+    SELECT pet_type FROM determines_mpl MPL 
     WHERE NEW.pet_type = MPL.pet_type;
    IF NEW.price >= MPL.price
    THEN 
@@ -12,25 +32,28 @@ $$ BEGIN
    END; $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER check_price
+CREATE TRIGGER check_price()
 BEFORE INSERT OR UPDATE ON c_pricelist
 FOR EACH ROW EXECUTE PROCEDURE min_price();
 
+
+
+
 CREATE OR REPLACE FUNCTION check_availability()
-RETURNS TRIGGER AS 
+RETURNS TRIGGER AS $$
+DECLARE ctx NUMERIC;
 $$ BEGIN
-    SELECT date FROM has_availability HA
-    WHERE NEW.name = HA.name AND 
-    NEW.date
-    IF date != NULL 
-    THEN
-     RETURN date;
+    SELECT COUNT(*) INTO ctx FROM has_availability HA
+    WHERE NEW.name = HA.name AND NEW.date = HA.date;
+    IF ctx > 0 THEN 
+	RETURN NEW;
     ELSE
-     RETURN NULL;
-    END IF; END; $$
+	RETURN NULL;
+    END IF; 
+    END; $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER is_available
+CREATE TRIGGER is_available()
 BEFORE INSERT OR UPDATE ON bids_for
 FOR EACH ROW EXECUTE PROCEDURE has_availability();
 
