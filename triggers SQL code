@@ -1,15 +1,15 @@
-CREATE OR REPLACE FUNCTION not_pcs()			-- ISA nonoverlap for non admin (can be ct or po)
-RETURNS TRIGGER AS $$		
 DECLARE ctx AS NUMERIC;
+CREATE OR REPLACE FUNCTION not_pcs()			-- ISA nonoverlap for non admin (can be ct or po)
+RETURNS TRIGGER AS		
 $$ BEGIN 
-	SELECT COUNT(*) INTO ctx FROM nonadmin na
-	WHERE NEW.name=na.name;
-	IF ctx > 0 THEN
-		RETURN NULL;
-	ELSE
-		RETURN NEW
-	END IF;
-	END; $$
+    SELECT COUNT(*) AS ctx FROM nonadmin na
+    WHERE NEW.name=na.name;
+    IF ctx > 0 THEN
+	RETURN NULL;
+    ELSE
+	RETURN NEW
+    END IF;
+    END; $$
 LANGUAGE plpgsql;
 
 CREATE TRIGGER check_new()
@@ -23,27 +23,25 @@ RETURNS TRIGGER AS					-- is higher than the min price set by pcs
 $$ BEGIN
     SELECT pet_type FROM determines_mpl MPL 
     WHERE NEW.pet_type = MPL.pet_type;
-   IF NEW.price >= MPL.price
-   THEN 
-    RETURN NEW;
-   ELSE
-    RETURN MPL.price;
-   END IF;
-   END; $$
+    IF NEW.price >= MPL.price THEN 
+        RETURN NEW;
+    ELSE
+        RETURN MPL.price;
+    END IF;
+    END; $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER check_price()
+CREATE TRIGGER check_price
 BEFORE INSERT OR UPDATE ON c_pricelist
 FOR EACH ROW EXECUTE PROCEDURE min_price();
 
 
 
-
-CREATE OR REPLACE FUNCTION check_availability()		-- checking if the ct is available at the 
-RETURNS TRIGGER AS $$					-- wanted time. 
 DECLARE ctx NUMERIC;
+CREATE OR REPLACE FUNCTION has_availability()		-- checking if the ct is available at the 
+RETURNS TRIGGER AS					-- wanted time. 
 $$ BEGIN
-    SELECT COUNT(*) INTO ctx FROM has_availability HA
+    SELECT COUNT(*) AS ctx FROM has_availability HA
     WHERE NEW.name = HA.name AND NEW.date = HA.date;
     IF ctx > 0 THEN 
 	RETURN NEW;
@@ -53,7 +51,7 @@ $$ BEGIN
     END; $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER is_available()
+CREATE TRIGGER is_available
 BEFORE INSERT OR UPDATE ON bids_for
 FOR EACH ROW EXECUTE PROCEDURE has_availability();
 
