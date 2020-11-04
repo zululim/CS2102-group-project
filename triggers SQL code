@@ -3,17 +3,17 @@ CREATE OR REPLACE FUNCTION not_pcs()			-- ISA nonoverlap for non admin (can be c
 RETURNS TRIGGER AS		
 $$ BEGIN 
     SELECT COUNT(*) AS ctx FROM nonadmin na
-    WHERE NEW.name=na.name;
+    WHERE NEW.name = na.name;
     IF ctx > 0 THEN
 	RETURN NULL;
     ELSE
-	RETURN NEW
+	RETURN NEW;
     END IF;
     END; $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER check_new()
-BEFORE INSERT OR UPDATE ON non_admin
+CREATE TRIGGER check_new
+BEFORE INSERT OR UPDATE ON nonadmin
 FOR EACH ROW EXECUTE PROCEDURE not_pcs();
 
 
@@ -56,23 +56,22 @@ BEFORE INSERT OR UPDATE ON bids_for
 FOR EACH ROW EXECUTE PROCEDURE has_availability();
 
 
-
-CREATE OR REPLACE FUNCTION check_possibility()		-- checking if the ct can take care of
-RETURNS TRIGGER AS $$					-- the pet type
 DECLARE ctx AS NUMERIC;
+CREATE OR REPLACE FUNCTION check_possibility()		-- checking if the ct can take care of
+RETURNS TRIGGER AS					-- the pet type
 $$ BEGIN 
-	SELECT COUNT(*) INTO ctx FROM c_pricelist CPL 
-	WHERE NEW.name=CPL.cname AND NEW.pet_type=CPL.pet_type;
-	IF ctx > 0 THEN 
-		RETURN NEW; 
-	ELSE 
-		RETURN NULL; 
-	END IF; 
-	END; $$
+    SELECT COUNT(*) AS ctx FROM c_pricelist CPL 
+    WHERE NEW.name=CPL.cname AND NEW.pet_type=CPL.pet_type;
+    IF ctx > 0 THEN 
+	RETURN NEW; 
+    ELSE 
+	RETURN NULL; 
+    END IF; 
+    END; $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER is_possible()
-BEFORE INSERT OR UPDATE ON bid_for
+CREATE TRIGGER is_possible
+BEFORE INSERT OR UPDATE ON bids_for
 FOR EACH ROW EXECUTE PROCEDURE check_possibility();
 
 
@@ -80,18 +79,18 @@ FOR EACH ROW EXECUTE PROCEDURE check_possibility();
 CREATE OR REPLACE FUNCTION check_load()			-- checking that the cur_load of ct is 
 RETURNS TRIGGER AS 					-- less than the max number allowed. 
 $$ BEGIN
-	SELECT cur_load, max FROM caretakers CT
-	WHERE NEW.caretaker=CT.name
-	IF cur_load <= max THEN 
-		RETURN NEW; 
-	ELSE 	
-		RETURN NULL; 
-	END IF; 
-	END; $$
+    SELECT cur_load, max FROM caretakers CT
+    WHERE NEW.caretaker=CT.name;
+    IF cur_load <= max THEN 
+	RETURN NEW; 
+    ELSE 	
+	RETURN NULL; 
+    END IF; 
+    END; $$
 LANGUAGE plpgsql; 
 
-CREATE TRIGGER can_load()
-BEFORE INSERT OR UPDATE ON bid_for
+CREATE TRIGGER can_load
+BEFORE INSERT OR UPDATE ON bids_for
 FOR EACH ROW EXECUTE PROCEDURE check_load();
 
 
