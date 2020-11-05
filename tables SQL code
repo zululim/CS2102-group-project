@@ -124,3 +124,14 @@ CREATE TABLE bids_for (
 	FOREIGN KEY (caretaker, date) REFERENCES has_availability(caretaker, date) ON DELETE CASCADE ON UPDATE cascade,
 	PRIMARY KEY (caretaker, petowner, date, pet_name)
 );
+
+-- start date and end date are used to represent the month
+CREATE TABLE pet_day (
+	caretaker 	VARCHAR(100) NOT NULL,
+	cphone 		INTEGER NOT NULL,
+	pet_day         INTEGER NOT NULL,
+	start_date      DATE NOT NULL,
+	end_date        DATE NOT NULL,
+	FOREIGN KEY(caretaker, cphone) REFERENCES bids_for (caretaker, cphone) ON DELETE CASCADE ON UPDATE CASCADE,
+	PRIMARY KEY(caretaker, cphone, start_date)
+);
