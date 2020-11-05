@@ -1,7 +1,9 @@
+DROP TABLE IF EXISTS pet_day cascade;
+DROP TABLE IF EXISTS leave_applied cascade;
 DROP TABLE IF EXISTS bids_for cascade;
 DROP TABLE IF EXISTS c_pricelist cascade;
 DROP TABLE IF EXISTS caretakers cascade;
-DROP TABLE IF EXISTS determines cascade;
+DROP TABLE IF EXISTS determines_mpl cascade;
 DROP TABLE IF EXISTS has_availability cascade;
 DROP TABLE IF EXISTS nonadmin cascade;
 DROP TABLE IF EXISTS owns cascade;
