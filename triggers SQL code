@@ -20,12 +20,12 @@ FOR EACH ROW EXECUTE PROCEDURE not_pcs();
 CREATE OR REPLACE FUNCTION min_price()			-- checking that the price ct charges 
 RETURNS TRIGGER AS					-- is higher than the min price set by pcs
 $$ BEGIN
-    SELECT MPL.price AS low_price FROM determines_mpl MPL 
-    WHERE NEW.pet_type = MPL.pet_type;
-    IF NEW.price >= low_price THEN 
-        RETURN NEW;
-    ELSE
+    PERFORM * FROM determines_mpl MPL 
+    WHERE NEW.pet_type = MPL.pet_type AND NEW.price >= MPL.price;
+    IF NOT FOUND THEN 
         RETURN NULL;
+    ELSE
+        RETURN NEW;
     END IF;
     END; $$
 LANGUAGE plpgsql;
