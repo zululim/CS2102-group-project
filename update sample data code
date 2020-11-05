@@ -17,6 +17,11 @@ INSERT INTO users VALUES ('Jerry', '88993344');
 INSERT INTO nonadmin VALUES ('Jerry', '88993344', 'Los Angeles', null);
 INSERT INTO caretakers VALUES ('Jerry', '88993344', 'Los Angeles', null, '1', '3', null);
 
+-- add part time Care Taker Alice Tan
+INSERT INTO users VALUES ('Alice Tan', '33448899');
+INSERT INTO nonadmin VALUES ('Alice Tan', '33448899', 'Orchard Road, Singapore', null);
+INSERT INTO caretakers VALUES ('Alice Tan', '33448899', 'Orchard Road, Singapore', null, '0', null, null);
+
 -- Rose owns a dog Doggy
 INSERT INTO owns VALUES ('Rose', '87878787', 'Doggy', 'dog');
 
@@ -56,4 +61,27 @@ INSERT INTO has_availability VALUES ('Jerry', '88993344', '01-10-2020'),
 INSERT INTO c_pricelist VALUES ('Jerry', '88993344', 'cat', '30'),
                                ('Jerry', '88993344', 'dog', '40'),
                                ('Jerry', '88993344', 'parrot', '15');
-                               
+
+-- Set price list for caretaker Alice Tan
+INSERT INTO c_pricelist VALUES ('Alice Tan', '33448899', 'cat', '25');
+
+-- Admin determines mpl
+INSERT INTO determines_mpl VALUES ('Jack','87654321', 'cat', '10'),
+                                  ('Jack','87654321', 'dog', '10'),
+                                  ('Jack','87654321', 'parrot', '5'),
+                                  ('Jack','87654321', 'rabbit', '10'),
+                                  ('Jack','87654321', 'turtle', '5'),
+                                  ('Jack','87654321', 'fish', '10'),
+                                  ('Jack','87654321', 'hamster', '3');
+                                  
+-- Full time Caretaker Jerry applies for leave on 25-12-2020
+INSERT INTO leave_applied VALUES ('Jerry', '88993344', '25-12-2020');
+
+-- Rose bids for caretaker Jerry, for her cat Catty
+INSERT INTO bids_for VALUES ('Jerry', '88993344', 'Rose', '14-10-2020', 'Catty', 'cat', null, '0', '1', '4321432143214321', '0', '2020', '10');
+
+-- Jerry doing the work
+UPDATE bids_for SET status = '1' WHERE caretaker = 'Jerry' AND petowner = 'Rose' AND date = '14-10-2020' AND pet_name = 'Catty';
+
+-- Jerry completed the work and Rose gives him a score 4
+UPDATE bids_for SET status = '2', rating = '4'  WHERE caretaker = 'Jerry' AND petowner = 'Rose' AND date = '14-10-2020' AND pet_name = 'Catty';
