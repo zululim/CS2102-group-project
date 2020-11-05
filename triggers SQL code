@@ -1,4 +1,3 @@
-DECLARE ctx AS NUMERIC;
 CREATE OR REPLACE FUNCTION not_pcs()			-- ISA nonoverlap for non admin (can be ct or po)
 RETURNS TRIGGER AS		
 $$ BEGIN 
@@ -21,12 +20,12 @@ FOR EACH ROW EXECUTE PROCEDURE not_pcs();
 CREATE OR REPLACE FUNCTION min_price()			-- checking that the price ct charges 
 RETURNS TRIGGER AS					-- is higher than the min price set by pcs
 $$ BEGIN
-    SELECT pet_type FROM determines_mpl MPL 
+    SELECT MPL.price AS low_price FROM determines_mpl MPL 
     WHERE NEW.pet_type = MPL.pet_type;
-    IF NEW.price >= MPL.price THEN 
+    IF NEW.price >= low_price THEN 
         RETURN NEW;
     ELSE
-        RETURN MPL.price;
+        RETURN NULL;
     END IF;
     END; $$
 LANGUAGE plpgsql;
