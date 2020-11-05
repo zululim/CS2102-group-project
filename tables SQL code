@@ -68,20 +68,25 @@ CREATE TABLE has_availability (
 	phone 		INTEGER, 
 	date 	DATE NOT NULL,
 	FOREIGN KEY (caretaker, phone) REFERENCES caretakers(name, phone) ON DELETE cascade ON UPDATE cascade,
-	PRIMARY KEY (caretaker,date)
+	PRIMARY KEY (caretaker, phone, date)
 );
 
-CREATE TABLE c_pricelist (
+CREATE TABLE c_pricelist (			-- price of each caretaker might change due to rating.
 	cname 		VARCHAR, 
 	cphone 		INTEGER, 
 	pet_type 	VARCHAR,
 	price 		INTEGER, 
-	FOREIGN KEY (cname, cphone) REFERENCES caretakers(name, phone) ON DELETE cascade ON UPDATE cascade
+	FOREIGN KEY (cname, cphone) REFERENCES caretakers(name, phone) ON DELETE cascade ON UPDATE cascade,
+	PRIMARY KEY (pet_type, cname, cphone)
 );
 
-CREATE TABLE determines (
+CREATE TABLE determines_mpl (
+	pcsadmin 	VARCHAR, 
+	phone 		INTEGER,
 	pet_type	VARCHAR PRIMARY KEY, 
-	price		INTEGER
+	price		INTEGER,
+	FOREIGN KEY (pcsadmin, phone) REFERENCES pcsadmin(name, phone) ON DELETE cascade ON UPDATE cascade, 
+	PRIMARY KEY (pcsadmin, phone, pet_type)
 );
 
 CREATE TABLE pays (
@@ -123,6 +128,14 @@ CREATE TABLE bids_for (
 	FOREIGN KEY (petowner, pet_name, pet_type) REFERENCES owns(owner, pet_name, pet_type) ON DELETE CASCADE ON UPDATE cascade,
 	FOREIGN KEY (caretaker, date) REFERENCES has_availability(caretaker, date) ON DELETE CASCADE ON UPDATE cascade,
 	PRIMARY KEY (caretaker, petowner, date, pet_name)
+);
+
+CREATE TABLE leave_applied (			-- should be empty until the caretaker wants to apply for leave
+	caretaker 	VARCHAR,
+	phone 		INTEGER, 
+	leave_applied 	DATE, 
+	FOREIGN KEY (caretaker, phone) REFERENCES caretakers(name, phone) ON DELETE cascade ON UPDATE cascade, 
+	PRIMARY KEY (caretaker, phone, leave_applied)
 );
 
 -- start date and end date are used to represent the month
