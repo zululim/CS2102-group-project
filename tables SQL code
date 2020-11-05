@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS pet_day cascade;
-DROP TABLE IF EXISTS leave_applied cascade;
 DROP TABLE IF EXISTS bids_for cascade;
 DROP TABLE IF EXISTS c_pricelist cascade;
 DROP TABLE IF EXISTS caretakers cascade;
@@ -10,8 +8,14 @@ DROP TABLE IF EXISTS owns cascade;
 DROP TABLE IF EXISTS pays cascade; 	
 DROP TABLE IF EXISTS pcsadmin cascade;
 DROP TABLE IF EXISTS petowner cascade;
+DROP TABLE IF EXISTS salary cascade;
 DROP TABLE IF EXISTS users cascade;
+DROP TABLE IF EXISTS leave_applied cascade;
 
+
+--CREATE TYPE transfer AS ENUM('0','1','2');	-- 0 for pet owner deliver, 1 for caretaker pick up, 2 for physical transfer
+--CREATE TYPE employed_as AS ENUM ('0', '1');	-- 0 for pt and 1 for ft
+--CREATE TYPE status as ENUM('0', '1', '2'); 	-- 0 (pending) , 2 (in prog) , 3(completed)
 
 CREATE TABLE users(
 	name 		VARCHAR (100) NOT NULL,
@@ -26,15 +30,9 @@ CREATE TABLE pcsadmin (
 	PRIMARY KEY(name, phone)
 );
 
-/*
- * 0 stands for pet owner delivers the pet
- * 1 stands for care taker picks up the pet
- * 2 stands for tramfer through the PCS building
- */
--- CREATE TYPE transfer AS ENUM('0','1','2');
--- CREATE TYPE employed_as AS ENUM ('0', '1');	-- 0 for pt and 1 for ft
-CREATE TABLE nonadmin(
-	name 		VARCHAR (100) NOT NULL,
+
+CREATE TABLE nonadmin(					-- ISA table for this has to be overlap so this is one
+	name 		VARCHAR (100) NOT NULL,		-- constrain that is not shown in the ERD. 
 	phone 		INTEGER NOT NULL,
 	address 	VARCHAR (100),
 	transfer 	transfer,
@@ -59,7 +57,7 @@ CREATE TABLE caretakers (
 	address 	VARCHAR (100),
 	transfer 	transfer,
 	employed	employed_as, 
-	max 		INTEGER CHECK (max >=3 AND employed='1'),
+	max 		INTEGER CHECK ((max <= 5 AND employed='1') OR (max<=2 AND employed='0') OR (max<=5 AND employed='0' AND rating>=4)),
 	rating 		NUMERIC(2, 1) CHECK (rating <= 5),
 	FOREIGN KEY(name, phone) REFERENCES nonadmin(name, phone),
 	PRIMARY KEY(name, phone)
@@ -68,7 +66,8 @@ CREATE TABLE caretakers (
 CREATE TABLE has_availability (
 	caretaker 	VARCHAR(100) NOT NULL,
 	phone 		INTEGER, 
-	date 	DATE NOT NULL,
+	date 		DATE NOT NULL,
+	cur_load 	INTEGER,
 	FOREIGN KEY (caretaker, phone) REFERENCES caretakers(name, phone) ON DELETE cascade ON UPDATE cascade,
 	PRIMARY KEY (caretaker, phone, date)
 );
@@ -79,28 +78,16 @@ CREATE TABLE c_pricelist (			-- price of each caretaker might change due to rati
 	pet_type 	VARCHAR,
 	price 		INTEGER, 
 	FOREIGN KEY (cname, cphone) REFERENCES caretakers(name, phone) ON DELETE cascade ON UPDATE cascade,
-	PRIMARY KEY (pet_type, cname, cphone)
+	PRIMARY KEY (pet_type, price, cname, cphone)
 );
 
 CREATE TABLE determines_mpl (
 	pcsadmin 	VARCHAR, 
 	phone 		INTEGER,
-	pet_type	VARCHAR PRIMARY KEY, 
+	pet_type	VARCHAR, 
 	price		INTEGER,
 	FOREIGN KEY (pcsadmin, phone) REFERENCES pcsadmin(name, phone) ON DELETE cascade ON UPDATE cascade, 
 	PRIMARY KEY (pcsadmin, phone, pet_type)
-);
-
-CREATE TABLE pays (
-	pet_type 	VARCHAR,
-	price 		INTEGER NOT NULL,
-	caretaker 	VARCHAR NOT NULL,
-	cphone 		INTEGER NOT NULL,
-	admin 		VARCHAR NOT NULL,
-	aphone 		INTEGER NOT NULL, 
-	FOREIGN KEY (caretaker, cphone) REFERENCES caretakers (name, phone) ON DELETE cascade ON UPDATE cascade, 
-	FOREIGN KEY (admin, aphone) REFERENCES pcsadmin (name, phone) ON DELETE cascade ON UPDATE cascade, 
-	PRIMARY KEY (pet_type, caretaker)
 );
 
 CREATE TABLE owns (
@@ -113,13 +100,12 @@ CREATE TABLE owns (
 	PRIMARY KEY (owner, pet_name, pet_type)
 );
 
--- CREATE TYPE status as ENUM('0', '1', '2'); 	-- 0 (pending) , 2 (in prog) , 3(completed)
 CREATE TABLE bids_for (
 	bids_no 	INTEGER, 
 	caretaker 	VARCHAR(100) NOT NULL,
 	cphone 		INTEGER NOT NULL,
 	petowner 	VARCHAR(100) NOT NULL, 
-	date 	DATE NOT NULL,
+	date 		DATE NOT NULL,
 	pet_name 	VARCHAR(100) NOT NULL,
 	pet_type 	VARCHAR(100) NOT NULL,
 	special_reqs 	VARCHAR(100), 
@@ -128,9 +114,26 @@ CREATE TABLE bids_for (
 	pay_mtd 	VARCHAR, 
 	rating 		INTEGER, 
 	FOREIGN KEY (petowner, pet_name, pet_type) REFERENCES owns(owner, pet_name, pet_type) ON DELETE CASCADE ON UPDATE cascade,
-	FOREIGN KEY (caretaker, date) REFERENCES has_availability(caretaker, date) ON DELETE CASCADE ON UPDATE cascade,
+	FOREIGN KEY (caretaker, cphone, date) REFERENCES has_availability(caretaker, phone, date) ON DELETE CASCADE ON UPDATE cascade,
 	PRIMARY KEY (caretaker, petowner, date, pet_name)
 );
+
+CREATE TABLE pays (
+	petname 	VARCHAR, 
+	pet_type 	VARCHAR,
+	price 		INTEGER NOT NULL,
+	caretaker 	VARCHAR NOT NULL,
+	cphone 		INTEGER NOT NULL,
+	petowner 	VARCHAR NOT NULL, 
+	pphone 		INTEGER NOT NULL, 
+	pet_days 	INTEGER,
+	date 		DATE, 		
+	FOREIGN KEY (petowner, petname, pet_type) REFERENCES owns (owner, pet_name, pet_type) ON DELETE cascade ON UPDATE cascade, 
+	FOREIGN KEY (pet_type, price, caretaker, cphone) REFERENCES c_pricelist (pet_type, price, cname, cphone) ON DELETE cascade ON UPDATE cascade,  
+	FOREIGN KEY (caretaker, petowner, date, petname) REFERENCES bids_for (caretaker, petowner, date, pet_name), 
+	PRIMARY KEY (pet_type, caretaker)
+);
+
 
 CREATE TABLE leave_applied (			-- should be empty until the caretaker wants to apply for leave
 	caretaker 	VARCHAR,
@@ -140,13 +143,4 @@ CREATE TABLE leave_applied (			-- should be empty until the caretaker wants to a
 	PRIMARY KEY (caretaker, phone, leave_applied)
 );
 
--- start date and end date are used to represent the month
-CREATE TABLE pet_day (
-	caretaker 	VARCHAR(100) NOT NULL,
-	cphone 		INTEGER NOT NULL,
-	pet_day         INTEGER NOT NULL,
-	start_date      DATE NOT NULL,
-	end_date        DATE NOT NULL,
-	FOREIGN KEY(caretaker, cphone) REFERENCES bids_for (caretaker, cphone) ON DELETE CASCADE ON UPDATE CASCADE,
-	PRIMARY KEY(caretaker, cphone, start_date)
-);
+
