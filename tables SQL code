@@ -3,23 +3,21 @@ DROP TABLE IF EXISTS c_pricelist cascade;
 DROP TABLE IF EXISTS caretakers cascade;
 DROP TABLE IF EXISTS determines_mpl cascade;
 DROP TABLE IF EXISTS has_availability cascade;
+DROP TABLE IF EXISTS leave_applied cascade;
 DROP TABLE IF EXISTS nonadmin cascade;
 DROP TABLE IF EXISTS owns cascade;
 DROP TABLE IF EXISTS pays cascade; 	
 DROP TABLE IF EXISTS pcsadmin cascade;
 DROP TABLE IF EXISTS petowner cascade;
+DROP TABLE IF EXISTS ratings cascade;
 DROP TABLE IF EXISTS salary cascade;
 DROP TABLE IF EXISTS users cascade;
-DROP TABLE IF EXISTS leave_applied cascade;
 
 
---CREATE TYPE transfer AS ENUM('0','1','2');	-- 0 for pet owner deliver, 1 for caretaker pick up, 2 for physical transfer
---CREATE TYPE employed_as AS ENUM ('0', '1');	-- 0 for pt and 1 for ft
---CREATE TYPE status as ENUM('0', '1', '2'); 	-- 0 (pending) , 2 (in prog) , 3(completed)
 
-CREATE TYPE transfer AS ENUM('0','1','2');	-- 0 for pet owner deliver, 1 for caretaker pick up, 2 for physical transfer
-CREATE TYPE employed_as AS ENUM ('0', '1');	-- 0 for pt and 1 for ft
-CREATE TYPE status as ENUM('0', '1', '2'); 	-- 0 (pending) , 2 (in prog) , 3(completed)
+-- CREATE TYPE transfer AS ENUM('0','1','2');	-- 0 for pet owner deliver, 1 for caretaker pick up, 2 for physical transfer
+-- CREATE TYPE employed_as AS ENUM ('0', '1');	-- 0 for pt and 1 for ft
+-- CREATE TYPE status as ENUM('0', '1', '2'); 	-- 0 (pending) , 2 (in prog) , 3(completed)
 
 
 CREATE TABLE users(
@@ -60,12 +58,22 @@ CREATE TABLE caretakers (
 	name 		VARCHAR (100),
 	phone 		INTEGER,
 	address 	VARCHAR (100) NOT NULL,
-	transfer 	transfer NOT NULL,
-	employed 	employed_as NOT NULL, 
-	max 		INTEGER NOT NULL CHECK ((max <= 5 AND employed='1') OR (max<=2 AND employed='0') OR (max<=5 AND employed='0' AND rating>=4)),
-	rating 		NUMERIC(2, 1) NOT NULL CHECK (rating <= 5),
+	transfer 	transfer NOT NULL, 
 	FOREIGN KEY(name, phone) REFERENCES nonadmin(name, phone),
 	PRIMARY KEY(name, phone)
+);
+
+
+CREATE TABLE c_ratings (					-- keeps track of the ratings of the caretaker
+	cname 						VARCHAR, 
+	cphone 						INTEGER,	
+	employed 					employed_as NOT NULL,
+	total_pets_taken_care_of 	INTEGER DEFAULT 0,
+	total_sum_ratings 			INTEGER DEFAULT 0,
+	overall_rating 				NUMERIC(2, 1) DEFAULT 0 CHECK (overall_rating <= 5),
+	max_load 					INTEGER DEFAULT 0 CHECK ((max_load <= 5 AND employed='1') OR (max_load<=2 AND employed='0') OR (max_load<=5 AND employed='0' AND overall_rating>=4)),
+	FOREIGN KEY (cname, cphone) REFERENCES caretakers (name, phone),
+	PRIMARY KEY (cname)
 );
 
 CREATE TABLE has_availability (
@@ -77,7 +85,7 @@ CREATE TABLE has_availability (
 	PRIMARY KEY (caretaker, phone, date)
 );
 
-CREATE TABLE c_pricelist (			-- price of each caretaker might change due to rating.
+CREATE TABLE c_pricelist (			-- price of each caretaker might change due to rating, prices here are a full day price.
 	cname 		VARCHAR, 
 	cphone 		INTEGER, 
 	pet_type 	VARCHAR,
@@ -118,8 +126,8 @@ CREATE TABLE bids_for (
 	pay_mtd 	VARCHAR NOT NULL, 
 	rating 		INTEGER NOT NULL, 
 	year 		INTEGER DEFAULT 0,
-	month 		INTEGER DEFAULT 0,	
-	
+	month 		INTEGER DEFAULT 0,
+	cost 		INTEGER DEFAULT 0,
 	FOREIGN KEY (petowner, pet_name, pet_type) REFERENCES owns(owner, pet_name, pet_type) ON DELETE CASCADE ON UPDATE cascade,
 	FOREIGN KEY (caretaker, cphone, date) REFERENCES has_availability(caretaker, phone, date) ON DELETE CASCADE ON UPDATE cascade,
 	PRIMARY KEY (caretaker, petowner, date, pet_name)
@@ -128,14 +136,12 @@ CREATE TABLE bids_for (
 CREATE TABLE pays (
 	caretaker 	VARCHAR,
 	cphone 		INTEGER NOT NULL,
-	date 		DATE NOT NULL, 	-- represents for that month
-	pet_days 	INTEGER DEFAULT 0,
-	total 		INTEGER DEFAULT 0,
+	date 		DATE NOT NULL, 					-- represents for that month
+	pet_days 	INTEGER DEFAULT 0,				-- pet_days is the total number of pets taken care of in a month
 	year 		INTEGER DEFAULT 0,
-	month 		INTEGER DEFAULT 0,	
-	
-	FOREIGN KEY (pet_type, price, caretaker, cphone) REFERENCES c_pricelist (pet_type, price, cname, cphone) ON DELETE cascade ON UPDATE cascade,  
-	PRIMARY KEY (pet_type, caretaker)
+	month 		INTEGER DEFAULT 0, 
+	FOREIGN KEY (caretaker, cphone) REFERENCES caretakers (name, phone) ON DELETE cascade ON UPDATE cascade,  
+	PRIMARY KEY (caretaker, date)
 );
 
 CREATE TABLE leave_applied (			-- should be empty until the caretaker wants to apply for leave
@@ -146,4 +152,113 @@ CREATE TABLE leave_applied (			-- should be empty until the caretaker wants to a
 	PRIMARY KEY (caretaker, phone, leave_applied)
 );
 
+CREATE TABLE salary (					-- so each row will represent one pet the caretaker has taken care of
+	counter 	SERIAL, 
+	caretaker 	VARCHAR NOT NULL,
+	cphone 		INTEGER NOT NULL, 
+	petowner 	VARCHAR NOT NULL, 
+	pet_name 	VARCHAR NOT NULL, 
+	pet_type 	VARCHAR NOT NULL, 
+	price 		INTEGER NOT NULL, 
+	date		DATE NOT NULL,
+	year 		INTEGER DEFAULT 0,
+	month 		INTEGER DEFAULT 0,	
+	total_cost 	INTEGER DEFAULT 0,
+	final_salary 	INTEGER DEFAULT 0,
+	FOREIGN KEY (caretaker, petowner, date, pet_name) REFERENCES bids_for(caretaker, petowner, date, pet_name), 
+	FOREIGN KEY (pet_type, price, caretaker, cphone) REFERENCES c_pricelist(pet_type, price, cname, cphone), 
+	PRIMARY KEY (counter)
+);
 
+
+
+SELECT * FROM users;
+INSERT INTO users VALUES ('paul', 92392319);
+INSERT INTO users VALUES ('john', 42421341);
+INSERT INTO users VALUES ('mary', 31514344);
+INSERT INTO users VALUES ('kane', 51326346);
+INSERT INTO users VALUES ('harry', 13564642);
+INSERT INTO users VALUES ('henry', 73212442);
+--DELETE FROM users WHERE name='paul';
+--DELETE FROM users WHERE name='mary';
+
+SELECT * FROM nonadmin;
+INSERT INTO nonadmin VALUES ('mary', 31514344, 'hougang', '0');
+INSERT INTO nonadmin VALUES ('kane', 51326346, 'serangoon', '1');
+INSERT INTO nonadmin VALUES ('harry', 13564642, 'punggol', '1');
+INSERT INTO nonadmin VALUES ('henry', 73212442, 'sengkang', '2');
+
+SELECT * FROM caretakers;
+INSERT INTO caretakers VALUES ('harry', 13564642, 'punggol', '1');
+INSERT INTO caretakers VALUES ('henry', 73212442, 'sengkang', '2');
+
+SELECT * FROM c_ratings;
+INSERT INTO c_ratings VALUES ('harry', 13564642, '1');
+INSERT INTO c_ratings VALUES ('henry', 73212442, '0');
+
+SELECT * FROM petowner;
+INSERT INTO petowner VALUES ('mary', 31514344, 'hougang', '0', 7342, '2020-12-31');  -- same cc number accepted?
+INSERT INTO petowner VALUES ('kane', 51326346, 'serangoon', '1', 5235, '2020-12-31');
+
+SELECT * FROM owns;
+INSERT INTO owns VALUES ('mary', 31514344, 'buddy', 'dog', 'no'); 
+INSERT INTO owns VALUES ('mary', 31514344, 'maomi', 'cat', 'no');
+INSERT INTO owns VALUES ('kane', 51326346,'tweety', 'bird', 'no');
+
+SELECT * FROM pcsadmin;
+INSERT INTO pcsadmin VALUES ('paul', 92392319);
+INSERT INTO pcsadmin VALUES ('john', 42421341);
+
+SELECT * FROM has_availability;
+INSERT INTO has_availability VALUES ('harry', 13564642, '2020-12-31');
+INSERT INTO has_availability VALUES ('henry', 73212442, '2020-12-31');
+INSERT INTO has_availability VALUES ('henry', 73212442, '2020-10-31');
+
+SELECT * FROM bids_for;
+INSERT INTO bids_for VALUES ('harry', 13564642, 'mary', '2020-12-31', 'buddy', 'dog', 'no', '0', '0', 'cc', 5); 
+INSERT INTO bids_for VALUES ('harry', 13564642, 'mary', '2020-12-31', 'maomi', 'cat', 'no', '0', '0', 'cc', 5); 
+INSERT INTO bids_for VALUES ('henry', 73212442, 'kane', '2020-12-31', 'tweety', 'bird', 'no', '0', '1', 'cash', 2); 
+INSERT INTO bids_for VALUES ('henry', 73212442, 'kane', '2020-10-31', 'tweety', 'bird', 'no', '2', '1', 'cash', 2);
+
+SELECT * FROM c_pricelist;
+INSERT INTO c_pricelist VALUES ('harry', 13564642, 'dog', 30 ); 
+INSERT INTO c_pricelist VALUES ('harry', 13564642, 'cat', 30 ); 
+INSERT INTO c_pricelist VALUES ('henry', 73212442, 'dog', 30 ); 
+INSERT INTO c_pricelist VALUES ('henry', 73212442, 'cat', 30 ); 
+
+SELECT * FROM pays;
+INSERT INTO pays VALUES ('harry', 13564642, '2020-12-01'); 
+INSERT INTO pays VALUES ('harry', 13564642, '2020-10-01');
+INSERT INTO pays VALUES ('henry', 73212442, '2020-08-01'); 
+INSERT INTO pays VALUES ('henry', 73212442, '2020-09-01'); 
+INSERT INTO pays VALUES ('henry', 73212442, '2020-10-01'); 
+
+
+SELECT * FROM determines_mpl;
+INSERT INTO determines_mpl VALUES ('paul', 92392319, 'dog', 30);
+INSERT INTO determines_mpl VALUES ('john', 42421341, 'cat', 20);
+
+SELECT * FROM salary;
+INSERT INTO salary(caretaker, cphone, petowner, pet_name, pet_type, price, date) VALUES ('harry', 13564642,'mary', 'buddy', 'dog', 30, '2020-12-31');
+INSERT INTO salary(caretaker, cphone, petowner, pet_name, pet_type, price, date) VALUES ('harry', 13564642,'mary', 'maomi', 'cat', 30, '2020-12-31');
+
+
+------ UPDATE TABLES AFTER EVERY INSERT INTO bids_for (could probs do with a trigger here but idk howwwwww) ---------------------------------
+UPDATE bids_for SET month = EXTRACT (MONTH FROM "date");
+UPDATE bids_for SET year = EXTRACT (YEAR FROM "date");
+UPDATE bids_for SET cost = (SELECT DISTINCT price FROM c_pricelist WHERE cname=caretaker);	-- assuming one day is 8 hours, can change 
+
+UPDATE c_ratings SET total_sum_ratings = (SELECT SUM(rating) FROM bids_for WHERE caretaker=cname);
+UPDATE c_ratings SET total_pets_taken_care_of = (SELECT COUNT(*) FROM bids_for WHERE caretaker=cname);
+UPDATE c_ratings SET overall_rating = total_sum_ratings/total_pets_taken_care_of;
+UPDATE c_ratings SET max_load=5 WHERE employed='1';
+
+UPDATE pays SET month = EXTRACT (MONTH FROM "date");
+UPDATE pays SET year = EXTRACT (YEAR FROM "date");
+UPDATE pays SET pet_days = (SELECT COUNT(*) FROM bids_for WHERE caretaker=pays.caretaker AND year=pays.year AND month=pays.month);
+
+UPDATE salary SET month = EXTRACT (MONTH FROM "date");
+UPDATE salary SET year = EXTRACT (YEAR FROM "date");
+UPDATE salary SET total_cost = price*0.8;
+UPDATE salary SET final_salary = CASE WHEN (SELECT COUNT(*) FROM salary)<=60 THEN 3000 ELSE 3000 + (SELECT SUM(total_cost) FROM salary WHERE counter >60) END;
+---------------------------------------------------------------------------------------------------------------------------------------------
