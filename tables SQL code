@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS bids_for cascade;
 DROP TABLE IF EXISTS c_pricelist cascade;
+DROP TABLE IF EXISTS c_ratings cascade;
 DROP TABLE IF EXISTS caretakers cascade;
 DROP TABLE IF EXISTS determines_mpl cascade;
 DROP TABLE IF EXISTS has_availability cascade;
@@ -8,11 +9,11 @@ DROP TABLE IF EXISTS nonadmin cascade;
 DROP TABLE IF EXISTS owns cascade;
 DROP TABLE IF EXISTS pays cascade; 	
 DROP TABLE IF EXISTS pcsadmin cascade;
+DROP TABLE IF EXISTS pet_days cascade;
 DROP TABLE IF EXISTS petowner cascade;
-DROP TABLE IF EXISTS ratings cascade;
 DROP TABLE IF EXISTS salary cascade;
+DROP TABLE IF EXISTS taken_care_of cascade;
 DROP TABLE IF EXISTS users cascade;
-
 
 
 -- CREATE TYPE transfer AS ENUM('0','1','2');	-- 0 for pet owner deliver, 1 for caretaker pick up, 2 for physical transfer
@@ -133,14 +134,14 @@ CREATE TABLE bids_for (
 	PRIMARY KEY (caretaker, petowner, date, pet_name)
 );
 
-CREATE TABLE pays (
+CREATE TABLE pet_days(							-- keeps track of the number of pet days each care taker has in a month
 	caretaker 	VARCHAR,
 	cphone 		INTEGER NOT NULL,
-	date 		DATE NOT NULL, 					-- represents for that month
-	pet_days 	INTEGER DEFAULT 0,				-- pet_days is the total number of pets taken care of in a month
+	date 		DATE NOT NULL, 				-- represents for that month
 	year 		INTEGER DEFAULT 0,
 	month 		INTEGER DEFAULT 0, 
-	FOREIGN KEY (caretaker, cphone) REFERENCES caretakers (name, phone) ON DELETE cascade ON UPDATE cascade,  
+	pet_days 	INTEGER DEFAULT 0,				-- pet_days is the total number of pets taken care of in a month
+	FOREIGN KEY (caretaker, cphone) REFERENCES caretakers (name, phone) ON DELETE cascade ON UPDATE cascade,
 	PRIMARY KEY (caretaker, date)
 );
 
@@ -152,43 +153,33 @@ CREATE TABLE leave_applied (			-- should be empty until the caretaker wants to a
 	PRIMARY KEY (caretaker, phone, leave_applied)
 );
 
-CREATE TABLE salary (					-- so each row will represent one pet the caretaker has taken care of
-	counter 	SERIAL, 
+CREATE TABLE salary(							-- salary of the caretaker in the month
 	caretaker 	VARCHAR NOT NULL,
 	cphone 		INTEGER NOT NULL, 
+	employed 	employed_as, 
 	petowner 	VARCHAR NOT NULL, 
-	pet_name 	VARCHAR NOT NULL, 
+	pet_name 	VARCHAR NOT NULL,
 	pet_type 	VARCHAR NOT NULL, 
 	price 		INTEGER NOT NULL, 
-	date		DATE NOT NULL,
+	date 		DATE NOT NULL,
 	year 		INTEGER DEFAULT 0,
 	month 		INTEGER DEFAULT 0,	
 	total_cost 	INTEGER DEFAULT 0,
 	final_salary 	INTEGER DEFAULT 0,
 	FOREIGN KEY (caretaker, petowner, date, pet_name) REFERENCES bids_for(caretaker, petowner, date, pet_name), 
 	FOREIGN KEY (pet_type, price, caretaker, cphone) REFERENCES c_pricelist(pet_type, price, cname, cphone), 
-	PRIMARY KEY (counter)
+	PRIMARY KEY (caretaker, pet_name, date)
 );
 
 
-
-
------- UPDATE TABLES AFTER EVERY INSERT INTO bids_for (could probs do with a trigger here but idk howwwwww) ---------------------------------
-UPDATE bids_for SET month = EXTRACT (MONTH FROM "date");
-UPDATE bids_for SET year = EXTRACT (YEAR FROM "date");
-UPDATE bids_for SET cost = (SELECT DISTINCT price FROM c_pricelist WHERE cname=caretaker);	-- assuming one day is 8 hours, can change 
-
-UPDATE c_ratings SET total_sum_ratings = (SELECT SUM(rating) FROM bids_for WHERE caretaker=cname);
-UPDATE c_ratings SET total_pets_taken_care_of = (SELECT COUNT(*) FROM bids_for WHERE caretaker=cname);
-UPDATE c_ratings SET overall_rating = total_sum_ratings/total_pets_taken_care_of;
-UPDATE c_ratings SET max_load=5 WHERE employed='1';
-
-UPDATE pays SET month = EXTRACT (MONTH FROM "date");
-UPDATE pays SET year = EXTRACT (YEAR FROM "date");
-UPDATE pays SET pet_days = (SELECT COUNT(*) FROM bids_for WHERE caretaker=pays.caretaker AND year=pays.year AND month=pays.month);
-
-UPDATE salary SET month = EXTRACT (MONTH FROM "date");
-UPDATE salary SET year = EXTRACT (YEAR FROM "date");
-UPDATE salary SET total_cost = price*0.8;
-UPDATE salary SET final_salary = CASE WHEN (SELECT COUNT(*) FROM salary)<=60 THEN 3000 ELSE 3000 + (SELECT SUM(total_cost) FROM salary WHERE counter >60) END;
----------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE taken_care_of (						-- so each row will represent one pet the caretaker has taken care of
+	counter SERIAL,
+	caretaker VARCHAR, 
+	cphone INTEGER, 
+	petowner VARCHAR,
+	pet_name VARCHAR, 
+	date DATE,
+	FOREIGN KEY (caretaker, petowner, date, pet_name) REFERENCES bids_for(caretaker, petowner, date, pet_name), 
+	FOREIGN KEY (caretaker, cphone) REFERENCES caretakers(name, phone),
+	PRIMARY KEY (counter)
+);
