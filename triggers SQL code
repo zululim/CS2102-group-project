@@ -1,12 +1,12 @@
 CREATE OR REPLACE FUNCTION not_pcs()			-- ISA nonoverlap for non admin (can be ct or po)
 RETURNS TRIGGER AS		
 $$ BEGIN 
-    SELECT COUNT(*) AS ctx FROM nonadmin na
-    WHERE NEW.name = na.name;
-    IF ctx > 0 THEN
-	RETURN NULL;
-    ELSE
+    PERFORM * FROM pcsadmin pa
+    WHERE NEW.name = pa.name AND new.phone = pa.phone;
+    IF NOT FOUND THEN
 	RETURN NEW;
+    ELSE
+	RETURN NULL;
     END IF;
     END; $$
 LANGUAGE plpgsql;
