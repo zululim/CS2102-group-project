@@ -23,9 +23,8 @@ FROM bids_for
 GROUP BY month 
 HAVING COUNT(month)=(SELECT MAX(count) FROM (SELECT COUNT(date) AS count FROM bids_for GROUP BY month, year) AS temp);
 
-SELECT * FROM pet_days p, caretakers c					                    -- q4d declare underperforming to be caretakers who have less than 25 pet days and ratings below 2
-WHERE p.caretaker=c.name AND p.pet_days <25 AND c.rating<2
-
+SELECT * FROM pays p, c_ratings c					-- q4d declare underperforming to be caretakers who have less than 25 pet days and ratings below 2
+WHERE p.caretaker=c.cname AND p.pet_days <25 AND c.overall_rating<2
 
 SELECT pet_days FROM pays WHERE month=12 AND year=2020; 		        -- q5a see the number of pet_days in dec 2020
 SELECT final_salary FROM salary WHERE month=12 AND year=2020; 		  -- q5b see the expected salary for dec 2020
