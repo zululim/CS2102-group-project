@@ -1,4 +1,5 @@
-CREATE OR REPLACE FUNCTION not_pcs()			-- ISA nonoverlap for non admin (can be ct or po)
+-- This trigger ensures that an existing admin user cannot be inserted as a non admin user
+CREATE OR REPLACE FUNCTION not_pcs()
 RETURNS TRIGGER AS		
 $$ BEGIN 
     PERFORM * FROM pcsadmin pa
@@ -17,8 +18,9 @@ FOR EACH ROW EXECUTE PROCEDURE not_pcs();
 
 
 
-CREATE OR REPLACE FUNCTION min_price()			-- checking that the price ct charges 
-RETURNS TRIGGER AS					-- is higher than the min price set by pcs
+-- This trigger ensures that the price set by the caretaker cannot be lower than the price defined in Minimum Price List
+CREATE OR REPLACE FUNCTION min_price()
+RETURNS TRIGGER AS
 $$ BEGIN
     PERFORM * FROM determines_mpl MPL 
     WHERE NEW.pet_type = MPL.pet_type AND NEW.price >= MPL.price;
@@ -36,9 +38,10 @@ FOR EACH ROW EXECUTE PROCEDURE min_price();
 
 
 
+-- This trigger ensures that a bid information is passed only when it is within the available date of the caretaker.
 DECLARE ctx NUMERIC;
-CREATE OR REPLACE FUNCTION has_availability()		-- checking if the ct is available at the 
-RETURNS TRIGGER AS					-- wanted time. 
+CREATE OR REPLACE FUNCTION has_availability()
+RETURNS TRIGGER AS
 $$ BEGIN
     PERFORM * FROM has_availability HA
     WHERE NEW.caretaker = HA.caretaker AND NEW.date = HA.date;
@@ -55,16 +58,17 @@ BEFORE INSERT OR UPDATE ON bids_for
 FOR EACH ROW EXECUTE PROCEDURE has_availability();
 
 
-DECLARE ctx AS NUMERIC;
-CREATE OR REPLACE FUNCTION check_possibility()		-- checking if the ct can take care of
-RETURNS TRIGGER AS					-- the pet type
+
+-- This trigger ensures that the caretaker has the abilibity to take care of this kind of pet.
+CREATE OR REPLACE FUNCTION check_possibility()
+RETURNS TRIGGER AS
 $$ BEGIN 
-    SELECT COUNT(*) AS ctx FROM c_pricelist CPL 
-    WHERE NEW.name=CPL.cname AND NEW.pet_type=CPL.pet_type;
-    IF ctx > 0 THEN 
-	RETURN NEW; 
-    ELSE 
+    PERFORM * FROM c_pricelist CPL 
+    WHERE NEW.caretaker = CPL.cname AND NEW.pet_type=CPL.pet_type;
+    IF NOT FOUND THEN 
 	RETURN NULL; 
+    ELSE 
+	RETURN NEW; 
     END IF; 
     END; $$
 LANGUAGE plpgsql;
@@ -78,7 +82,7 @@ FOR EACH ROW EXECUTE PROCEDURE check_possibility();
 CREATE OR REPLACE FUNCTION check_load()			-- checking that the cur_load of ct is 
 RETURNS TRIGGER AS 					-- less than the max number allowed. 
 $$ BEGIN
-    SELECT cur_load, max FROM caretakers CT
+    SELECT cur_load, max FROM caseleretakers CT
     WHERE NEW.caretaker=CT.name;
     IF cur_load <= max THEN 
 	RETURN NEW; 
