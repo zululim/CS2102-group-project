@@ -184,6 +184,103 @@ CREATE TABLE taken_care_of (						-- so each row will represent one pet the care
 );
 
 
+SELECT * FROM  bids_for;
+SELECT * FROM  c_pricelist;
+SELECT * FROM  c_ratings;
+SELECT * FROM  caretakers;
+SELECT * FROM  determines_mpl;
+SELECT * FROM  has_availability;
+SELECT * FROM  leave_applied;
+SELECT * FROM  nonadmin;
+SELECT * FROM  owns;	
+SELECT * FROM  pcsadmin;
+SELECT * FROM  pet_days;
+SELECT * FROM  petowner;
+SELECT * FROM  salary;
+SELECT * FROM  taken_care_of;
+SELECT * FROM  users;
+
+
+SELECT * FROM users;
+INSERT INTO users VALUES ('paul', 92392319);
+INSERT INTO users VALUES ('john', 42421341);
+INSERT INTO users VALUES ('mary', 31514344);
+INSERT INTO users VALUES ('kane', 51326346);
+INSERT INTO users VALUES ('harry', 13564642);
+INSERT INTO users VALUES ('henry', 73212442);
+--DELETE FROM users WHERE name='paul';
+--DELETE FROM users WHERE name='mary';
+
+SELECT * FROM nonadmin;
+INSERT INTO nonadmin VALUES ('mary', 31514344, 'hougang', '0');
+INSERT INTO nonadmin VALUES ('kane', 51326346, 'serangoon', '1');
+INSERT INTO nonadmin VALUES ('harry', 13564642, 'punggol', '1');
+INSERT INTO nonadmin VALUES ('henry', 73212442, 'sengkang', '2');
+
+SELECT * FROM caretakers;
+INSERT INTO caretakers VALUES ('harry', 13564642, 'punggol', '1');
+INSERT INTO caretakers VALUES ('henry', 73212442, 'sengkang', '2');
+
+SELECT * FROM c_ratings;
+INSERT INTO c_ratings VALUES ('harry', 13564642, '1');
+INSERT INTO c_ratings VALUES ('henry', 73212442, '0');
+
+SELECT * FROM petowner;
+INSERT INTO petowner VALUES ('mary', 31514344, 'hougang', '0', 7342, '2020-12-31');  -- same cc number accepted?
+INSERT INTO petowner VALUES ('kane', 51326346, 'serangoon', '1', 5235, '2020-12-31');
+
+SELECT * FROM owns;
+INSERT INTO owns VALUES ('mary', 31514344, 'buddy', 'dog', 'no'); 
+INSERT INTO owns VALUES ('mary', 31514344, 'maomi', 'cat', 'no');
+INSERT INTO owns VALUES ('kane', 51326346,'tweety', 'bird', 'no');
+
+SELECT * FROM pcsadmin;
+INSERT INTO pcsadmin VALUES ('paul', 92392319);
+INSERT INTO pcsadmin VALUES ('john', 42421341);
+
+SELECT * FROM has_availability;
+INSERT INTO has_availability VALUES ('harry', 13564642, '2020-12-31');
+INSERT INTO has_availability VALUES ('henry', 73212442, '2020-12-31');
+INSERT INTO has_availability VALUES ('henry', 73212442, '2020-10-31');
+INSERT INTO has_availability VALUES ('henry', 73212442, '2020-01-31');
+
+SELECT * FROM bids_for;
+INSERT INTO bids_for VALUES ('harry', 13564642, 'mary', '2020-12-31', 'buddy', 'dog', 'no', '2', '0', 'cc', 5); 
+INSERT INTO bids_for VALUES ('harry', 13564642, 'mary', '2020-12-31', 'maomi', 'cat', 'no', '2', '0', 'cc', 5); 
+INSERT INTO bids_for VALUES ('henry', 73212442, 'kane', '2020-12-31', 'tweety', 'bird', 'no', '2', '1', 'cash', 2); 
+INSERT INTO bids_for VALUES ('henry', 73212442, 'kane', '2020-10-31', 'tweety', 'bird', 'no', '2', '1', 'cash', 2);
+INSERT INTO bids_for VALUES ('henry', 73212442, 'mary', '2020-10-31', 'maomi', 'cat', 'no', '0', '0', 'cash', 2);
+
+SELECT * FROM c_pricelist;
+INSERT INTO c_pricelist VALUES ('harry', 13564642, 'dog', 30 ); 
+INSERT INTO c_pricelist VALUES ('harry', 13564642, 'cat', 30 ); 
+INSERT INTO c_pricelist VALUES ('henry', 73212442, 'dog', 30 ); 
+INSERT INTO c_pricelist VALUES ('henry', 73212442, 'cat', 30 ); 
+
+SELECT * FROM pet_days;
+INSERT INTO pet_days VALUES ('harry', 13564642, '2020-12-01'); 
+INSERT INTO pet_days VALUES ('harry', 13564642, '2020-10-01');
+INSERT INTO pet_days VALUES ('henry', 73212442, '2020-08-01'); 
+INSERT INTO pet_days VALUES ('henry', 73212442, '2020-09-01'); 
+INSERT INTO pet_days VALUES ('henry', 73212442, '2020-10-01'); 
+
+
+SELECT * FROM determines_mpl;
+INSERT INTO determines_mpl VALUES ('paul', 92392319, 'dog', 30);
+INSERT INTO determines_mpl VALUES ('john', 42421341, 'cat', 20);
+
+SELECT * FROM salary;
+INSERT INTO salary VALUES ('harry', 13564642, '1', 'mary', 'buddy', 'dog', 30, '2020-12-31');
+INSERT INTO salary VALUES ('harry', 13564642, '1', 'mary', 'maomi', 'cat', 30, '2020-12-31');
+INSERT INTO salary VALUES ('henry', 73212442, '0', 'mary', 'maomi', 'cat', 30, '2020-10-31');
+
+SELECT * FROM taken_care_of;
+INSERT INTO taken_care_of (caretaker, cphone, petowner, pet_name, date) VALUES ('harry', 13564642, 'mary', 'buddy' , '2020-12-31');
+INSERT INTO taken_care_of (caretaker, cphone, petowner, pet_name, date) VALUES ('henry', 73212442, 'mary', 'maomi' , '2020-10-31');
+
+SELECT * FROM leave_applied;
+INSERT INTO leave_applied VALUES ('henry', 73212442, '2020-01-31');
+
 
 ---------------------------------------------------------- UPDATE TABLES --------------------------------------------------------------------------
 UPDATE bids_for SET month = EXTRACT (MONTH FROM "date");
