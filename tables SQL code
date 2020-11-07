@@ -7,7 +7,6 @@ DROP TABLE IF EXISTS has_availability cascade;
 DROP TABLE IF EXISTS leave_applied cascade;
 DROP TABLE IF EXISTS nonadmin cascade;
 DROP TABLE IF EXISTS owns cascade;
-DROP TABLE IF EXISTS pays cascade; 	
 DROP TABLE IF EXISTS pcsadmin cascade;
 DROP TABLE IF EXISTS pet_days cascade;
 DROP TABLE IF EXISTS petowner cascade;
@@ -18,7 +17,7 @@ DROP TABLE IF EXISTS users cascade;
 
 -- CREATE TYPE transfer AS ENUM('0','1','2');	-- 0 for pet owner deliver, 1 for caretaker pick up, 2 for physical transfer
 -- CREATE TYPE employed_as AS ENUM ('0', '1');	-- 0 for pt and 1 for ft
--- CREATE TYPE status as ENUM('0', '1', '2'); 	-- 0 (pending) , 2 (in prog) , 3(completed)
+-- CREATE TYPE status as ENUM('0', '1', '2'); 	-- 0 (pending) , 1 (in prog) , 2(completed)
 
 
 CREATE TABLE users(
@@ -36,7 +35,7 @@ CREATE TABLE pcsadmin (
 
 
 CREATE TABLE nonadmin(					-- ISA table for this has to be overlap so this is one
-	name 		VARCHAR (100),		-- constrain that is not shown in the ERD. 
+	name 		VARCHAR (100),			-- constrain that is not shown in the ERD. 
 	phone 		INTEGER,
 	address 	VARCHAR (100) NOT NULL,
 	transfer 	transfer NOT NULL,
@@ -44,13 +43,13 @@ CREATE TABLE nonadmin(					-- ISA table for this has to be overlap so this is on
 	PRIMARY KEY(name, phone)
 );
 
-CREATE TABLE petowner (
+CREATE TABLE petowner (			
 	name 			VARCHAR (100),
 	phone 			INTEGER,
 	address 		VARCHAR (100) NOT NULL,
 	transfer 		transfer NOT NULL,
 	c_card_info 		VARCHAR(30) NOT NULL,
-	require_date 		DATE NOT NULL,
+	require_date 		DATE,
 	FOREIGN KEY(name, phone) REFERENCES nonadmin(name, phone) ON DELETE cascade ON UPDATE cascade,
 	PRIMARY KEY(name, phone)
 );
@@ -77,7 +76,7 @@ CREATE TABLE c_ratings (					-- keeps track of the ratings of the caretaker
 	PRIMARY KEY (cname)
 );
 
-CREATE TABLE has_availability (
+CREATE TABLE has_availability (					-- keeps track of availablitiy of the caretaker
 	caretaker 	VARCHAR(100),
 	phone 		INTEGER, 
 	date 		DATE,
@@ -95,7 +94,7 @@ CREATE TABLE c_pricelist (			-- price of each caretaker might change due to rati
 	PRIMARY KEY (pet_type, price, cname, cphone)
 );
 
-CREATE TABLE determines_mpl (
+CREATE TABLE determines_mpl (			-- keep tracks of which pcs admin determines the min price of a pet type
 	pcsadmin 	VARCHAR, 
 	phone 		INTEGER,
 	pet_type 	VARCHAR, 
@@ -104,7 +103,7 @@ CREATE TABLE determines_mpl (
 	PRIMARY KEY (pcsadmin, phone, pet_type)
 );
 
-CREATE TABLE owns (
+CREATE TABLE owns (				-- keep tracks of which pet is owned by who 
 	owner 			VARCHAR(100),
 	phone 			INTEGER NOT NULL, 
 	pet_name 		VARCHAR(100),
@@ -114,7 +113,7 @@ CREATE TABLE owns (
 	PRIMARY KEY (owner, pet_name, pet_type)
 );
 
-CREATE TABLE bids_for (
+CREATE TABLE bids_for (				-- keeps track of bids made, and their progress, etc.
 	caretaker 	VARCHAR(100) ,
 	cphone 		INTEGER NOT NULL,
 	petowner 	VARCHAR(100), 
@@ -137,7 +136,7 @@ CREATE TABLE bids_for (
 CREATE TABLE pet_days(							-- keeps track of the number of pet days each care taker has in a month
 	caretaker 	VARCHAR,
 	cphone 		INTEGER NOT NULL,
-	date 		DATE NOT NULL, 				-- represents for that month
+	date 		DATE NOT NULL, 					-- represents for that month
 	year 		INTEGER DEFAULT 0,
 	month 		INTEGER DEFAULT 0, 
 	pet_days 	INTEGER DEFAULT 0,				-- pet_days is the total number of pets taken care of in a month
@@ -145,7 +144,7 @@ CREATE TABLE pet_days(							-- keeps track of the number of pet days each care 
 	PRIMARY KEY (caretaker, date)
 );
 
-CREATE TABLE leave_applied (			-- should be empty until the caretaker wants to apply for leave
+CREATE TABLE leave_applied (						-- should be empty until the caretaker wants to apply for leave
 	caretaker 	VARCHAR,
 	phone 		INTEGER, 
 	leave_applied 	DATE, 
@@ -166,7 +165,6 @@ CREATE TABLE salary(							-- salary of the caretaker in the month
 	year 		INTEGER DEFAULT 0,
 	month 		INTEGER DEFAULT 0,	
 	total_cost 	INTEGER DEFAULT 0,
-	final_salary 	INTEGER DEFAULT 0,
 	FOREIGN KEY (caretaker, petowner, date, pet_name) REFERENCES bids_for(caretaker, petowner, date, pet_name), 
 	FOREIGN KEY (pet_type, price, caretaker, cphone) REFERENCES c_pricelist(pet_type, price, cname, cphone), 
 	PRIMARY KEY (caretaker, pet_name, date)
@@ -186,7 +184,8 @@ CREATE TABLE taken_care_of (						-- so each row will represent one pet the care
 );
 
 
----------------------------------------------------------- UPDATE TABLES --------------------------------------------------------------------------------------
+
+---------------------------------------------------------- UPDATE TABLES --------------------------------------------------------------------------
 UPDATE bids_for SET month = EXTRACT (MONTH FROM "date");
 UPDATE bids_for SET year = EXTRACT (YEAR FROM "date");
 UPDATE bids_for SET cost = (SELECT DISTINCT price FROM c_pricelist WHERE cname=caretaker);	-- assuming one day is 8 hours, can change 
@@ -203,12 +202,9 @@ UPDATE pet_days SET pet_days = (SELECT COUNT(*) FROM bids_for WHERE caretaker=pe
 UPDATE salary SET month = EXTRACT (MONTH FROM "date");
 UPDATE salary SET year = EXTRACT (YEAR FROM "date");
 UPDATE salary SET total_cost = CASE WHEN (employed='1') THEN price*0.8 ELSE price*0.75 END;
-UPDATE salary SET final_salary = 3000 WHERE (employed='1') AND (SELECT COUNT(*) FROM salary)<=60;
-UPDATE salary SET final_salary = 3000 + (SELECT SUM(total_cost) FROM salary) WHERE (employed='1') AND (SELECT COUNT(*) FROM salary)> 60; 								 
-UPDATE salary SET final_salary = total_cost WHERE (employed='0');
 
 UPDATE has_availability SET cur_load= (SELECT COUNT(*) FROM bids_for WHERE caretaker=has_availability.caretaker AND date=has_availability.date);
 
 UPDATE leave_applied SET successful = CASE WHEN (SELECT cur_load FROM has_availability WHERE date=leave_applied)=0 THEN TRUE ELSE FALSE END;
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
 
