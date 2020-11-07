@@ -160,7 +160,7 @@ CREATE TABLE salary(							-- salary of the caretaker in the month
 	petowner 	VARCHAR(100) NOT NULL, 
 	pet_name 	VARCHAR(100) NOT NULL,
 	pet_type 	VARCHAR(100) NOT NULL, 
-	price 		INTEGER(100) NOT NULL, 
+	price 		INTEGER NOT NULL, 
 	date 		DATE NOT NULL,
 	year 		INTEGER DEFAULT 0,
 	month 		INTEGER DEFAULT 0,	
