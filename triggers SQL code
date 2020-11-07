@@ -100,4 +100,3 @@ FOR EACH ROW EXECUTE PROCEDURE check_load();
 
 
 
--- one more trigger for updating the reviews when the bid is completed. 
