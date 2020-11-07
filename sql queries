@@ -1,33 +1,47 @@
 
 
-DELETE FROM users WHERE name='John';					                      -- q1 delete
-UPDATE users SET phone='87654322' WHERE name='John';			          -- q1 update
+
+DELETE FROM users WHERE name='John';					-- q1 delete
+UPDATE users SET phone='87654322' WHERE name='John';			-- q1 update
 
 
-SELECT rating FROM bids_for WHERE caretaker='Jerry';			          -- q2 pet owner view reviews of ct
-SELECT * FROM bids_for WHERE petowner='Tom';				                -- q2 pet owner see their own order
-SELECT rating FROM caretakers WHERE caretaker='Jerry';			        -- q2 caretakers see reviews
-SELECT * FROM bids_for WHERE caretaker='Jerry' AND status='2';		  -- q2 caretakers see past jobs
-SELECT * FROM has_availability WHERE date=''				                -- for ur page u wanted to bid for caretakers. 
+SELECT rating FROM bids_for WHERE caretaker='Jerry';			-- q2 pet owner view reviews of ct
+SELECT * FROM bids_for WHERE petowner='Tom';				-- q2 pet owner see their own order
+SELECT rating FROM caretakers WHERE caretaker='Jerry';			-- q2 caretakers see reviews
+SELECT * FROM bids_for WHERE caretaker='Jerry' AND status='2';		-- q2 caretakers see past jobs
+SELECT * FROM has_availability WHERE date=''				-- for ur page u wanted to bid for caretakers. 
 
-SELECT * FROM caretakers;					                                	-- q3 browsing of caretakers by pet owners
-SELECT * FROM caretakers WHERE name='Jerry'			                   	-- q3 searching of caretakers by pet owners
+SELECT * FROM caretakers;						-- q3 browsing of caretakers by pet owners
+SELECT * FROM caretakers WHERE name='Jerry'				-- q3 searching of caretakers by pet owners
 
 
-SELECT COUNT(*) FROM bids_for WHERE month=12 AND year=2020;	      	-- q4a see the number of pets taken care of in dec 2020
+SELECT SUM(pet_days) FROM pet_days WHERE month=12 AND year=2020;	-- q4a see the number of pets taken care of in dec 2020
 
 SELECT SUM(final_salary) FROM salary WHERE month=12 AND year=2020;	-- q4b total salary to be paid to all of caretakers in dec 2020
 
-SELECT month 							                                         	-- q4c month with the highest number of jobs
-FROM bids_for 
-GROUP BY month 
-HAVING COUNT(month)=(SELECT MAX(count) FROM (SELECT COUNT(date) AS count FROM bids_for GROUP BY month, year) AS temp);
 
-SELECT * FROM pays p, c_ratings c					-- q4d declare underperforming to be caretakers who have less than 25 pet days and ratings below 2
-WHERE p.caretaker=c.cname AND p.pet_days <25 AND c.overall_rating<2
-
-SELECT pet_days FROM pays WHERE month=12 AND year=2020; 		        -- q5a see the number of pet_days in dec 2020
-SELECT final_salary FROM salary WHERE month=12 AND year=2020; 		  -- q5b see the expected salary for dec 2020
+SELECT month 								-- q4c month with the highest number of jobs
+FROM pet_days
+WHERE pet_days=(SELECT MAX(count) FROM (SELECT SUM(pet_days) AS count FROM pet_days GROUP BY month, year) AS temp);
 
 
-SELECT * FROM owns WHERE owner = ''					                        -- q6c see their pet information
+SELECT * FROM (pet_days p JOIN c_ratings ON p.caretaker=c.cname)				-- q4d declare underperforming to be caretakers who have less than 25 pet days and ratings below 2
+WHERE p.pet_days <25 AND c.overall_rating<2 AND c.employed='1';
+
+
+SELECT pet_days FROM pet_days WHERE month=12 AND year=2020; 		-- q5a see the number of pet_days in dec 2020
+SELECT final_salary FROM salary WHERE month=12 AND year=2020; 		-- q5b see the expected salary for dec 2020
+
+    
+SELECT * FROM owns WHERE owner = ''					-- q6c see their pet information
+
+
+
+SELECT DISTINCT caretaker, date, month, year,									-- calculate estimated salary for both pt and ft
+	CASE
+		WHEN employed='0' THEN total_cost
+		WHEN (SELECT COUNT(*) FROM salary)<=60 AND employed='1'THEN 3000
+		WHEN (SELECT COUNT(*) FROM salary)>60 AND employed='1' THEN 3000 + (SELECT SUM(total_cost) FROM salary)
+	END total_paid
+FROM salary;
+
