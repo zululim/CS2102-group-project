@@ -109,7 +109,7 @@ CREATE TABLE owns (
 	phone 			INTEGER NOT NULL, 
 	pet_name 		VARCHAR(100),
 	pet_type 		VARCHAR(100),
-	special_reqs 		VARCHAR(500) NOT NULL,
+	special_reqs 		VARCHAR(500),
 	FOREIGN KEY (owner, phone)  REFERENCES petowner(name, phone) ON DELETE CASCADE ON UPDATE cascade,
 	PRIMARY KEY (owner, pet_name, pet_type)
 );
