@@ -85,7 +85,7 @@ $$ BEGIN
     PERFORM * FROM c_ratings CR, has_availability HA
     WHERE NEW.caretaker = CR.cname AND NEW.cphone = CR.cphone
     AND NEW.caretaker = HA.caretaker AND NEW.cphone = HA.phone AND NEW.date = HA.date
-    AND HA.cur_load <= CR.max_load;
+    AND HA.cur_load < CR.max_load;
     IF NOT FOUND THEN 
 	RETURN NULL; 
     ELSE 	
