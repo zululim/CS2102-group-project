@@ -1,0 +1,302 @@
+-- add 100 pcs admin users
+
+INSERT INTO users VALUES ('Christine Bonner', '75385972');
+INSERT INTO pcsadmin VALUES ('Christine Bonner', '75385972');
+
+INSERT INTO users VALUES ('Andrew Manning', '60145314');
+INSERT INTO pcsadmin VALUES ('Andrew Manning', '60145314');
+
+INSERT INTO users VALUES ('Sharon Stoltenberg', '62773436');
+INSERT INTO pcsadmin VALUES ('Sharon Stoltenberg', '62773436');
+
+INSERT INTO users VALUES ('Tom Hilliard', '91280786');
+INSERT INTO pcsadmin VALUES ('Tom Hilliard', '91280786');
+
+INSERT INTO users VALUES ('Janice Gutierrez', '64990723');
+INSERT INTO pcsadmin VALUES ('Janice Gutierrez', '64990723');
+
+INSERT INTO users VALUES ('Lisa Stamper', '26942416');
+INSERT INTO pcsadmin VALUES ('Lisa Stamper', '26942416');
+
+INSERT INTO users VALUES ('Scott Combs', '25938551');
+INSERT INTO pcsadmin VALUES ('Scott Combs', '25938551');
+
+INSERT INTO users VALUES ('Bernard Shulda', '19628147');
+INSERT INTO pcsadmin VALUES ('Bernard Shulda', '19628147');
+
+INSERT INTO users VALUES ('Nicole Calloway', '77392361');
+INSERT INTO pcsadmin VALUES ('Nicole Calloway', '77392361');
+
+INSERT INTO users VALUES ('Gerald Hall', '42915225');
+INSERT INTO pcsadmin VALUES ('Gerald Hall', '42915225');
+
+INSERT INTO users VALUES ('Elsa Boeding', '35755965');
+INSERT INTO pcsadmin VALUES ('Elsa Boeding', '35755965');
+
+INSERT INTO users VALUES ('James Story', '93322928');
+INSERT INTO pcsadmin VALUES ('James Story', '93322928');
+
+INSERT INTO users VALUES ('Richard Walker', '12756859');
+INSERT INTO pcsadmin VALUES ('Richard Walker', '12756859');
+
+INSERT INTO users VALUES ('Joyce Engle', '64807538');
+INSERT INTO pcsadmin VALUES ('Joyce Engle', '64807538');
+
+INSERT INTO users VALUES ('Ramon Mends', '84642993');
+INSERT INTO pcsadmin VALUES ('Ramon Mends', '84642993');
+
+INSERT INTO users VALUES ('Phyllis Krumroy', '28482294');
+INSERT INTO pcsadmin VALUES ('Phyllis Krumroy', '28482294');
+
+INSERT INTO users VALUES ('Dante Hunter', '16934558');
+INSERT INTO pcsadmin VALUES ('Dante Hunter', '16934558');
+
+INSERT INTO users VALUES ('Danial Mcpherson', '22316788');
+INSERT INTO pcsadmin VALUES ('Danial Mcpherson', '22316788');
+
+INSERT INTO users VALUES ('Robert Deen', '51173241');
+INSERT INTO pcsadmin VALUES ('Robert Deen', '51173241');
+
+INSERT INTO users VALUES ('Donna Herbert', '87534996');
+INSERT INTO pcsadmin VALUES ('Donna Herbert', '87534996');
+
+INSERT INTO users VALUES ('Antonio Robins', '57631827');
+INSERT INTO pcsadmin VALUES ('Antonio Robins', '57631827');
+
+INSERT INTO users VALUES ('Alicia Leonard', '64794399');
+INSERT INTO pcsadmin VALUES ('Alicia Leonard', '64794399');
+
+INSERT INTO users VALUES ('Daniel Porter', '26279103');
+INSERT INTO pcsadmin VALUES ('Daniel Porter', '26279103');
+
+INSERT INTO users VALUES ('Donna Mckinley', '56158112');
+INSERT INTO pcsadmin VALUES ('Donna Mckinley', '56158112');
+
+INSERT INTO users VALUES ('Micheal Jackson', '80245343');
+INSERT INTO pcsadmin VALUES ('Micheal Jackson', '80245343');
+
+INSERT INTO users VALUES ('Lester Leung', '40164021');
+INSERT INTO pcsadmin VALUES ('Lester Leung', '40164021');
+
+INSERT INTO users VALUES ('Sharon Smith', '19080794');
+INSERT INTO pcsadmin VALUES ('Sharon Smith', '19080794');
+
+INSERT INTO users VALUES ('Sharon Hardage', '23314599');
+INSERT INTO pcsadmin VALUES ('Sharon Hardage', '23314599');
+
+INSERT INTO users VALUES ('Rita Cole', '94416637');
+INSERT INTO pcsadmin VALUES ('Rita Cole', '94416637');
+
+INSERT INTO users VALUES ('Irma Channey', '96012235');
+INSERT INTO pcsadmin VALUES ('Irma Channey', '96012235');
+
+INSERT INTO users VALUES ('Gary Gain', '35760537');
+INSERT INTO pcsadmin VALUES ('Gary Gain', '35760537');
+
+INSERT INTO users VALUES ('Joseph Feltus', '42510678');
+INSERT INTO pcsadmin VALUES ('Joseph Feltus', '42510678');
+
+INSERT INTO users VALUES ('Ann Kesselman', '83683991');
+INSERT INTO pcsadmin VALUES ('Ann Kesselman', '83683991');
+
+INSERT INTO users VALUES ('Bobby Aspinall', '74799367');
+INSERT INTO pcsadmin VALUES ('Bobby Aspinall', '74799367');
+
+INSERT INTO users VALUES ('Nancy Pearce', '78579224');
+INSERT INTO pcsadmin VALUES ('Nancy Pearce', '78579224');
+
+INSERT INTO users VALUES ('Elizabeth Rounds', '64402095');
+INSERT INTO pcsadmin VALUES ('Elizabeth Rounds', '64402095');
+
+INSERT INTO users VALUES ('Samuel Vavra', '32997569');
+INSERT INTO pcsadmin VALUES ('Samuel Vavra', '32997569');
+
+INSERT INTO users VALUES ('Samuel Pierce', '29973294');
+INSERT INTO pcsadmin VALUES ('Samuel Pierce', '29973294');
+
+INSERT INTO users VALUES ('Milagros Avery', '52220584');
+INSERT INTO pcsadmin VALUES ('Milagros Avery', '52220584');
+
+INSERT INTO users VALUES ('John Lee', '92855306');
+INSERT INTO pcsadmin VALUES ('John Lee', '92855306');
+
+INSERT INTO users VALUES ('Beverly Oconnor', '30573840');
+INSERT INTO pcsadmin VALUES ('Beverly Oconnor', '30573840');
+
+INSERT INTO users VALUES ('Miguel Sutter', '36076275');
+INSERT INTO pcsadmin VALUES ('Miguel Sutter', '36076275');
+
+INSERT INTO users VALUES ('Glen Sas', '13640426');
+INSERT INTO pcsadmin VALUES ('Glen Sas', '13640426');
+
+INSERT INTO users VALUES ('Eugene Rose', '29661186');
+INSERT INTO pcsadmin VALUES ('Eugene Rose', '29661186');
+
+INSERT INTO users VALUES ('Jesus White', '73991088');
+INSERT INTO pcsadmin VALUES ('Jesus White', '73991088');
+
+INSERT INTO users VALUES ('Alvaro Carranza', '62193749');
+INSERT INTO pcsadmin VALUES ('Alvaro Carranza', '62193749');
+
+INSERT INTO users VALUES ('Bradley Hughes', '72979822');
+INSERT INTO pcsadmin VALUES ('Bradley Hughes', '72979822');
+
+INSERT INTO users VALUES ('Kim Rivera', '49407544');
+INSERT INTO pcsadmin VALUES ('Kim Rivera', '49407544');
+
+INSERT INTO users VALUES ('Robert Spector', '30989537');
+INSERT INTO pcsadmin VALUES ('Robert Spector', '30989537');
+
+INSERT INTO users VALUES ('Robert Lloyd', '40894571');
+INSERT INTO pcsadmin VALUES ('Robert Lloyd', '40894571');
+
+INSERT INTO users VALUES ('Levi Grissinger', '28495857');
+INSERT INTO pcsadmin VALUES ('Levi Grissinger', '28495857');
+
+INSERT INTO users VALUES ('James Watkins', '21006861');
+INSERT INTO pcsadmin VALUES ('James Watkins', '21006861');
+
+INSERT INTO users VALUES ('Doug Brown', '10801293');
+INSERT INTO pcsadmin VALUES ('Doug Brown', '10801293');
+
+INSERT INTO users VALUES ('Kathryn Schimmel', '51799729');
+INSERT INTO pcsadmin VALUES ('Kathryn Schimmel', '51799729');
+
+INSERT INTO users VALUES ('Kathleen Calhoun', '96867452');
+INSERT INTO pcsadmin VALUES ('Kathleen Calhoun', '96867452');
+
+INSERT INTO users VALUES ('Beverly Morse', '33426234');
+INSERT INTO pcsadmin VALUES ('Beverly Morse', '33426234');
+
+INSERT INTO users VALUES ('Joyce Plumley', '12777900');
+INSERT INTO pcsadmin VALUES ('Joyce Plumley', '12777900');
+
+INSERT INTO users VALUES ('Shelly Brown', '17114740');
+INSERT INTO pcsadmin VALUES ('Shelly Brown', '17114740');
+
+INSERT INTO users VALUES ('Paul Turner', '33938451');
+INSERT INTO pcsadmin VALUES ('Paul Turner', '33938451');
+
+INSERT INTO users VALUES ('Dorothy Hunter', '97521154');
+INSERT INTO pcsadmin VALUES ('Dorothy Hunter', '97521154');
+
+INSERT INTO users VALUES ('Doris Tapp', '42103803');
+INSERT INTO pcsadmin VALUES ('Doris Tapp', '42103803');
+
+INSERT INTO users VALUES ('James Witherspoon', '75282704');
+INSERT INTO pcsadmin VALUES ('James Witherspoon', '75282704');
+
+INSERT INTO users VALUES ('Dan Pantoja', '73176320');
+INSERT INTO pcsadmin VALUES ('Dan Pantoja', '73176320');
+
+INSERT INTO users VALUES ('Bobby Yarbrough', '12042306');
+INSERT INTO pcsadmin VALUES ('Bobby Yarbrough', '12042306');
+
+INSERT INTO users VALUES ('Lee Mcmillian', '91622938');
+INSERT INTO pcsadmin VALUES ('Lee Mcmillian', '91622938');
+
+INSERT INTO users VALUES ('Gerald Collins', '61642692');
+INSERT INTO pcsadmin VALUES ('Gerald Collins', '61642692');
+
+INSERT INTO users VALUES ('Joseph West', '77945918');
+INSERT INTO pcsadmin VALUES ('Joseph West', '77945918');
+
+INSERT INTO users VALUES ('Lee Zimmer', '65955502');
+INSERT INTO pcsadmin VALUES ('Lee Zimmer', '65955502');
+
+INSERT INTO users VALUES ('Emmanuel Mccormick', '72674343');
+INSERT INTO pcsadmin VALUES ('Emmanuel Mccormick', '72674343');
+
+INSERT INTO users VALUES ('Jillian Downing', '43711087');
+INSERT INTO pcsadmin VALUES ('Jillian Downing', '43711087');
+
+INSERT INTO users VALUES ('Michelle Cantor', '93082136');
+INSERT INTO pcsadmin VALUES ('Michelle Cantor', '93082136');
+
+INSERT INTO users VALUES ('Anna Moore', '30775407');
+INSERT INTO pcsadmin VALUES ('Anna Moore', '30775407');
+
+INSERT INTO users VALUES ('Aimee Tsai', '41821337');
+INSERT INTO pcsadmin VALUES ('Aimee Tsai', '41821337');
+
+INSERT INTO users VALUES ('Christopher Carter', '49272589');
+INSERT INTO pcsadmin VALUES ('Christopher Carter', '49272589');
+
+INSERT INTO users VALUES ('Ezequiel Cassidy', '24096308');
+INSERT INTO pcsadmin VALUES ('Ezequiel Cassidy', '24096308');
+
+INSERT INTO users VALUES ('David Gose', '95225183');
+INSERT INTO pcsadmin VALUES ('David Gose', '95225183');
+
+INSERT INTO users VALUES ('Cecilia Sanders', '67993744');
+INSERT INTO pcsadmin VALUES ('Cecilia Sanders', '67993744');
+
+INSERT INTO users VALUES ('Philip Stovall', '32518104');
+INSERT INTO pcsadmin VALUES ('Philip Stovall', '32518104');
+
+INSERT INTO users VALUES ('Lydia Lemke', '64672034');
+INSERT INTO pcsadmin VALUES ('Lydia Lemke', '64672034');
+
+INSERT INTO users VALUES ('Mary Lee', '95445552');
+INSERT INTO pcsadmin VALUES ('Mary Lee', '95445552');
+
+INSERT INTO users VALUES ('Luther Ledesma', '14028328');
+INSERT INTO pcsadmin VALUES ('Luther Ledesma', '14028328');
+
+INSERT INTO users VALUES ('Mary Bullock', '17949518');
+INSERT INTO pcsadmin VALUES ('Mary Bullock', '17949518');
+
+INSERT INTO users VALUES ('Ronald Abbott', '63611566');
+INSERT INTO pcsadmin VALUES ('Ronald Abbott', '63611566');
+
+INSERT INTO users VALUES ('Nick Swindle', '85714382');
+INSERT INTO pcsadmin VALUES ('Nick Swindle', '85714382');
+
+INSERT INTO users VALUES ('Frank Moyers', '89430477');
+INSERT INTO pcsadmin VALUES ('Frank Moyers', '89430477');
+
+INSERT INTO users VALUES ('Federico Johnson', '63204709');
+INSERT INTO pcsadmin VALUES ('Federico Johnson', '63204709');
+
+INSERT INTO users VALUES ('Marie Olewine', '47074940');
+INSERT INTO pcsadmin VALUES ('Marie Olewine', '47074940');
+
+INSERT INTO users VALUES ('Nancy Arra', '86679824');
+INSERT INTO pcsadmin VALUES ('Nancy Arra', '86679824');
+
+INSERT INTO users VALUES ('Yolanda Blanton', '11145745');
+INSERT INTO pcsadmin VALUES ('Yolanda Blanton', '11145745');
+
+INSERT INTO users VALUES ('Christopher Waters', '69625065');
+INSERT INTO pcsadmin VALUES ('Christopher Waters', '69625065');
+
+INSERT INTO users VALUES ('Vickie Babcock', '99055129');
+INSERT INTO pcsadmin VALUES ('Vickie Babcock', '99055129');
+
+INSERT INTO users VALUES ('Johnna Boone', '77410481');
+INSERT INTO pcsadmin VALUES ('Johnna Boone', '77410481');
+
+INSERT INTO users VALUES ('Marion Spillett', '25622885');
+INSERT INTO pcsadmin VALUES ('Marion Spillett', '25622885');
+
+INSERT INTO users VALUES ('Jacqueline Gladney', '78421447');
+INSERT INTO pcsadmin VALUES ('Jacqueline Gladney', '78421447');
+
+INSERT INTO users VALUES ('Stephanie Turner', '79559797');
+INSERT INTO pcsadmin VALUES ('Stephanie Turner', '79559797');
+
+INSERT INTO users VALUES ('Elmira Schwendinger', '38429349');
+INSERT INTO pcsadmin VALUES ('Elmira Schwendinger', '38429349');
+
+INSERT INTO users VALUES ('Micheal Williams', '43220478');
+INSERT INTO pcsadmin VALUES ('Micheal Williams', '43220478');
+
+INSERT INTO users VALUES ('Stephanie Newton', '19397947');
+INSERT INTO pcsadmin VALUES ('Stephanie Newton', '19397947');
+
+INSERT INTO users VALUES ('Donna Green', '83745771');
+INSERT INTO pcsadmin VALUES ('Donna Green', '83745771');
+
+INSERT INTO users VALUES ('Miranda Baumeister', '17017559');
+INSERT INTO pcsadmin VALUES ('Miranda Baumeister', '17017559');
+
