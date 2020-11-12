@@ -1,0 +1,2002 @@
+-- add 500 care takers
+
+INSERT INTO users VALUES ('Apolonia Bowers', '44346707');
+INSERT INTO nonadmin VALUES ('Apolonia Bowers', '44346707', '9920 Williams Tunnel, Mannstad, MS 05042','2');
+INSERT INTO caretakers VALUES ('Apolonia Bowers', '44346707', '9920 Williams Tunnel, Mannstad, MS 05042', '2');
+
+INSERT INTO users VALUES ('Timothy Abbott', '84893921');
+INSERT INTO nonadmin VALUES ('Timothy Abbott', '84893921', 'USNS Mccoy, FPO AE 61339','0');
+INSERT INTO caretakers VALUES ('Timothy Abbott', '84893921', 'USNS Mccoy, FPO AE 61339', '0');
+
+INSERT INTO users VALUES ('Phyllis Carr', '57715049');
+INSERT INTO nonadmin VALUES ('Phyllis Carr', '57715049', '061 Miller Row, Port Nicole, GA 61503','0');
+INSERT INTO caretakers VALUES ('Phyllis Carr', '57715049', '061 Miller Row, Port Nicole, GA 61503', '0');
+
+INSERT INTO users VALUES ('Paul Swelgart', '49290068');
+INSERT INTO nonadmin VALUES ('Paul Swelgart', '49290068', '38187 Alexa Path Suite 159, East Karenside, LA 87264','1');
+INSERT INTO caretakers VALUES ('Paul Swelgart', '49290068', '38187 Alexa Path Suite 159, East Karenside, LA 87264', '1');
+
+INSERT INTO users VALUES ('Jonathan Hollingsworth', '64964373');
+INSERT INTO nonadmin VALUES ('Jonathan Hollingsworth', '64964373', '168 Eric Turnpike, Barnettborough, AL 04562','1');
+INSERT INTO caretakers VALUES ('Jonathan Hollingsworth', '64964373', '168 Eric Turnpike, Barnettborough, AL 04562', '1');
+
+INSERT INTO users VALUES ('Sandra Saade', '30961440');
+INSERT INTO nonadmin VALUES ('Sandra Saade', '30961440', '9007 Shaffer Forge, West Erictown, IN 18777','2');
+INSERT INTO caretakers VALUES ('Sandra Saade', '30961440', '9007 Shaffer Forge, West Erictown, IN 18777', '2');
+
+INSERT INTO users VALUES ('Kristopher Robledo', '84204450');
+INSERT INTO nonadmin VALUES ('Kristopher Robledo', '84204450', '791 Giles Estate, Port Cory, OK 56246','1');
+INSERT INTO caretakers VALUES ('Kristopher Robledo', '84204450', '791 Giles Estate, Port Cory, OK 56246', '1');
+
+INSERT INTO users VALUES ('Annette Jenkins', '16377280');
+INSERT INTO nonadmin VALUES ('Annette Jenkins', '16377280', '8376 Mitchell Streets, Port Kimberly, KS 70909','2');
+INSERT INTO caretakers VALUES ('Annette Jenkins', '16377280', '8376 Mitchell Streets, Port Kimberly, KS 70909', '2');
+
+INSERT INTO users VALUES ('Esther Johnson', '52840789');
+INSERT INTO nonadmin VALUES ('Esther Johnson', '52840789', '5028 Ryan Place Apt. 827, Robinsonshire, MI 49951','0');
+INSERT INTO caretakers VALUES ('Esther Johnson', '52840789', '5028 Ryan Place Apt. 827, Robinsonshire, MI 49951', '0');
+
+INSERT INTO users VALUES ('Sherell Sotelo', '61165239');
+INSERT INTO nonadmin VALUES ('Sherell Sotelo', '61165239', '67899 Robert Rue Suite 364, South Suzanne, NH 44050','1');
+INSERT INTO caretakers VALUES ('Sherell Sotelo', '61165239', '67899 Robert Rue Suite 364, South Suzanne, NH 44050', '1');
+
+INSERT INTO users VALUES ('Chad Trinidad', '89899248');
+INSERT INTO nonadmin VALUES ('Chad Trinidad', '89899248', '0310 Daniel Garden, Rileyside, OK 38396','0');
+INSERT INTO caretakers VALUES ('Chad Trinidad', '89899248', '0310 Daniel Garden, Rileyside, OK 38396', '0');
+
+INSERT INTO users VALUES ('Karen Rabello', '89455273');
+INSERT INTO nonadmin VALUES ('Karen Rabello', '89455273', '6211 Caitlin Wall, Lake Manuel, SC 20042','2');
+INSERT INTO caretakers VALUES ('Karen Rabello', '89455273', '6211 Caitlin Wall, Lake Manuel, SC 20042', '2');
+
+INSERT INTO users VALUES ('Willie Maddox', '23705379');
+INSERT INTO nonadmin VALUES ('Willie Maddox', '23705379', '347 Baker Ford Apt. 002, Port Tyler, NH 23885','0');
+INSERT INTO caretakers VALUES ('Willie Maddox', '23705379', '347 Baker Ford Apt. 002, Port Tyler, NH 23885', '0');
+
+INSERT INTO users VALUES ('Steven Mccray', '71283075');
+INSERT INTO nonadmin VALUES ('Steven Mccray', '71283075', '3898 Crawford Summit, Johnville, LA 95405','1');
+INSERT INTO caretakers VALUES ('Steven Mccray', '71283075', '3898 Crawford Summit, Johnville, LA 95405', '1');
+
+INSERT INTO users VALUES ('Romana Arthur', '27463512');
+INSERT INTO nonadmin VALUES ('Romana Arthur', '27463512', '45124 Ellis Views, North Kennethhaven, KS 26554','1');
+INSERT INTO caretakers VALUES ('Romana Arthur', '27463512', '45124 Ellis Views, North Kennethhaven, KS 26554', '1');
+
+INSERT INTO users VALUES ('Samuel Hachting', '37616026');
+INSERT INTO nonadmin VALUES ('Samuel Hachting', '37616026', '61055 James Curve Apt. 818, New Whitneyberg, MO 78377','1');
+INSERT INTO caretakers VALUES ('Samuel Hachting', '37616026', '61055 James Curve Apt. 818, New Whitneyberg, MO 78377', '1');
+
+INSERT INTO users VALUES ('Teresa Henderson', '53637883');
+INSERT INTO nonadmin VALUES ('Teresa Henderson', '53637883', 'Unit 7521 Box 9811, DPO AE 18766','2');
+INSERT INTO caretakers VALUES ('Teresa Henderson', '53637883', 'Unit 7521 Box 9811, DPO AE 18766', '2');
+
+INSERT INTO users VALUES ('Marco Carrales', '59947012');
+INSERT INTO nonadmin VALUES ('Marco Carrales', '59947012', '564 Steven Forest Apt. 038, New Calebside, AZ 17670','2');
+INSERT INTO caretakers VALUES ('Marco Carrales', '59947012', '564 Steven Forest Apt. 038, New Calebside, AZ 17670', '2');
+
+INSERT INTO users VALUES ('Peggy Brown', '33625149');
+INSERT INTO nonadmin VALUES ('Peggy Brown', '33625149', '97757 Brown Views Suite 110, Osborneberg, KY 13484','1');
+INSERT INTO caretakers VALUES ('Peggy Brown', '33625149', '97757 Brown Views Suite 110, Osborneberg, KY 13484', '1');
+
+INSERT INTO users VALUES ('Eric Denmon', '35702357');
+INSERT INTO nonadmin VALUES ('Eric Denmon', '35702357', '64656 Michael Port, New Steven, FL 98058','0');
+INSERT INTO caretakers VALUES ('Eric Denmon', '35702357', '64656 Michael Port, New Steven, FL 98058', '0');
+
+INSERT INTO users VALUES ('Andrea Mcadoo', '25839965');
+INSERT INTO nonadmin VALUES ('Andrea Mcadoo', '25839965', '0193 Clinton Drive Suite 209, West Cynthia, NY 73204','0');
+INSERT INTO caretakers VALUES ('Andrea Mcadoo', '25839965', '0193 Clinton Drive Suite 209, West Cynthia, NY 73204', '0');
+
+INSERT INTO users VALUES ('Terry Schneider', '60509998');
+INSERT INTO nonadmin VALUES ('Terry Schneider', '60509998', '43910 Johnson Club Apt. 447, Williamsberg, RI 09783','1');
+INSERT INTO caretakers VALUES ('Terry Schneider', '60509998', '43910 Johnson Club Apt. 447, Williamsberg, RI 09783', '1');
+
+INSERT INTO users VALUES ('Jimmy Wendt', '51889381');
+INSERT INTO nonadmin VALUES ('Jimmy Wendt', '51889381', '4799 Shannon Fields Apt. 816, North Brandy, OR 44882','2');
+INSERT INTO caretakers VALUES ('Jimmy Wendt', '51889381', '4799 Shannon Fields Apt. 816, North Brandy, OR 44882', '2');
+
+INSERT INTO users VALUES ('Gladys Garza', '59352719');
+INSERT INTO nonadmin VALUES ('Gladys Garza', '59352719', 'PSC 3543, Box 9669, APO AE 50485','2');
+INSERT INTO caretakers VALUES ('Gladys Garza', '59352719', 'PSC 3543, Box 9669, APO AE 50485', '2');
+
+INSERT INTO users VALUES ('Sheldon Randel', '56134895');
+INSERT INTO nonadmin VALUES ('Sheldon Randel', '56134895', '44972 Mackenzie Centers Apt. 156, Melissamouth, MI 09727','2');
+INSERT INTO caretakers VALUES ('Sheldon Randel', '56134895', '44972 Mackenzie Centers Apt. 156, Melissamouth, MI 09727', '2');
+
+INSERT INTO users VALUES ('Jennifer Henke', '10314044');
+INSERT INTO nonadmin VALUES ('Jennifer Henke', '10314044', '510 Tucker Crossing Apt. 610, Sanchezstad, WY 06229','1');
+INSERT INTO caretakers VALUES ('Jennifer Henke', '10314044', '510 Tucker Crossing Apt. 610, Sanchezstad, WY 06229', '1');
+
+INSERT INTO users VALUES ('Renee Tiller', '60091835');
+INSERT INTO nonadmin VALUES ('Renee Tiller', '60091835', '8535 Evans Trail Apt. 861, Lake Robert, FL 00731','1');
+INSERT INTO caretakers VALUES ('Renee Tiller', '60091835', '8535 Evans Trail Apt. 861, Lake Robert, FL 00731', '1');
+
+INSERT INTO users VALUES ('Vannessa Verret', '36926278');
+INSERT INTO nonadmin VALUES ('Vannessa Verret', '36926278', '7419 Bradley Drive, Lake Johnstad, WY 67251','1');
+INSERT INTO caretakers VALUES ('Vannessa Verret', '36926278', '7419 Bradley Drive, Lake Johnstad, WY 67251', '1');
+
+INSERT INTO users VALUES ('Ryan Johnson', '92957173');
+INSERT INTO nonadmin VALUES ('Ryan Johnson', '92957173', '968 Ward Highway Apt. 831, Joshuatown, UT 60348','2');
+INSERT INTO caretakers VALUES ('Ryan Johnson', '92957173', '968 Ward Highway Apt. 831, Joshuatown, UT 60348', '2');
+
+INSERT INTO users VALUES ('Maria Gautier', '57457796');
+INSERT INTO nonadmin VALUES ('Maria Gautier', '57457796', '489 Christopher Vista, Port Chloe, ID 53985','0');
+INSERT INTO caretakers VALUES ('Maria Gautier', '57457796', '489 Christopher Vista, Port Chloe, ID 53985', '0');
+
+INSERT INTO users VALUES ('Frank Shubert', '12564644');
+INSERT INTO nonadmin VALUES ('Frank Shubert', '12564644', '842 Washington Gateway, Craigfurt, MO 11125','1');
+INSERT INTO caretakers VALUES ('Frank Shubert', '12564644', '842 Washington Gateway, Craigfurt, MO 11125', '1');
+
+INSERT INTO users VALUES ('Lucile Armstrong', '85943416');
+INSERT INTO nonadmin VALUES ('Lucile Armstrong', '85943416', '195 Tony Fall, Christianmouth, MO 19300','0');
+INSERT INTO caretakers VALUES ('Lucile Armstrong', '85943416', '195 Tony Fall, Christianmouth, MO 19300', '0');
+
+INSERT INTO users VALUES ('Aline Alexander', '37331527');
+INSERT INTO nonadmin VALUES ('Aline Alexander', '37331527', '1236 Angela Circles, East Debbiebury, CO 11393','0');
+INSERT INTO caretakers VALUES ('Aline Alexander', '37331527', '1236 Angela Circles, East Debbiebury, CO 11393', '0');
+
+INSERT INTO users VALUES ('Paul Jean', '74115868');
+INSERT INTO nonadmin VALUES ('Paul Jean', '74115868', '2544 Roy Mountain, South David, ID 06801','1');
+INSERT INTO caretakers VALUES ('Paul Jean', '74115868', '2544 Roy Mountain, South David, ID 06801', '1');
+
+INSERT INTO users VALUES ('Hector Saylors', '85006711');
+INSERT INTO nonadmin VALUES ('Hector Saylors', '85006711', '5581 Meghan Cove, Smithview, KS 35949','0');
+INSERT INTO caretakers VALUES ('Hector Saylors', '85006711', '5581 Meghan Cove, Smithview, KS 35949', '0');
+
+INSERT INTO users VALUES ('Jonathan Woods', '84428484');
+INSERT INTO nonadmin VALUES ('Jonathan Woods', '84428484', '06106 Mccarthy Curve, Port Edwin, MN 12307','0');
+INSERT INTO caretakers VALUES ('Jonathan Woods', '84428484', '06106 Mccarthy Curve, Port Edwin, MN 12307', '0');
+
+INSERT INTO users VALUES ('Elmer Shouse', '10302368');
+INSERT INTO nonadmin VALUES ('Elmer Shouse', '10302368', '50928 Mclean Place, Andrewshire, NE 85380','2');
+INSERT INTO caretakers VALUES ('Elmer Shouse', '10302368', '50928 Mclean Place, Andrewshire, NE 85380', '2');
+
+INSERT INTO users VALUES ('Ronda Seeman', '51498838');
+INSERT INTO nonadmin VALUES ('Ronda Seeman', '51498838', '513 Tom Run, North Kimfurt, PA 66057','1');
+INSERT INTO caretakers VALUES ('Ronda Seeman', '51498838', '513 Tom Run, North Kimfurt, PA 66057', '1');
+
+INSERT INTO users VALUES ('John Stogner', '79579562');
+INSERT INTO nonadmin VALUES ('John Stogner', '79579562', '10714 Richardson Harbors, Barnestown, NV 29811','2');
+INSERT INTO caretakers VALUES ('John Stogner', '79579562', '10714 Richardson Harbors, Barnestown, NV 29811', '2');
+
+INSERT INTO users VALUES ('Eva Lastrapes', '25727533');
+INSERT INTO nonadmin VALUES ('Eva Lastrapes', '25727533', '596 Davis Mission, Montgomeryport, WY 07214','2');
+INSERT INTO caretakers VALUES ('Eva Lastrapes', '25727533', '596 Davis Mission, Montgomeryport, WY 07214', '2');
+
+INSERT INTO users VALUES ('Elizabeth Motes', '77610199');
+INSERT INTO nonadmin VALUES ('Elizabeth Motes', '77610199', '2454 Ingram Courts, West Maxhaven, VT 50460','2');
+INSERT INTO caretakers VALUES ('Elizabeth Motes', '77610199', '2454 Ingram Courts, West Maxhaven, VT 50460', '2');
+
+INSERT INTO users VALUES ('Richard Anderson', '32744075');
+INSERT INTO nonadmin VALUES ('Richard Anderson', '32744075', '149 Mills Locks Suite 707, North Elizabeth, NE 66060','1');
+INSERT INTO caretakers VALUES ('Richard Anderson', '32744075', '149 Mills Locks Suite 707, North Elizabeth, NE 66060', '1');
+
+INSERT INTO users VALUES ('David Bradwell', '68847525');
+INSERT INTO nonadmin VALUES ('David Bradwell', '68847525', '27407 Corey Isle Suite 687, Johnhaven, MS 24604','0');
+INSERT INTO caretakers VALUES ('David Bradwell', '68847525', '27407 Corey Isle Suite 687, Johnhaven, MS 24604', '0');
+
+INSERT INTO users VALUES ('Abbie Ulrich', '72849331');
+INSERT INTO nonadmin VALUES ('Abbie Ulrich', '72849331', '605 Anderson Mountain, Juanborough, MI 74392','0');
+INSERT INTO caretakers VALUES ('Abbie Ulrich', '72849331', '605 Anderson Mountain, Juanborough, MI 74392', '0');
+
+INSERT INTO users VALUES ('Daniel Custer', '18218290');
+INSERT INTO nonadmin VALUES ('Daniel Custer', '18218290', '67906 Jose Street Apt. 816, Thomasbury, NV 96095','0');
+INSERT INTO caretakers VALUES ('Daniel Custer', '18218290', '67906 Jose Street Apt. 816, Thomasbury, NV 96095', '0');
+
+INSERT INTO users VALUES ('Jean Bergman', '26240069');
+INSERT INTO nonadmin VALUES ('Jean Bergman', '26240069', '47517 Smith Locks Suite 336, West Patricia, VA 56343','1');
+INSERT INTO caretakers VALUES ('Jean Bergman', '26240069', '47517 Smith Locks Suite 336, West Patricia, VA 56343', '1');
+
+INSERT INTO users VALUES ('Bobby Spencer', '43544393');
+INSERT INTO nonadmin VALUES ('Bobby Spencer', '43544393', '732 David Crest, Lake Samanthaberg, NC 15412','2');
+INSERT INTO caretakers VALUES ('Bobby Spencer', '43544393', '732 David Crest, Lake Samanthaberg, NC 15412', '2');
+
+INSERT INTO users VALUES ('Matthew Kessler', '92476090');
+INSERT INTO nonadmin VALUES ('Matthew Kessler', '92476090', '78244 Hill Junctions Suite 674, West Juliaton, CT 24561','1');
+INSERT INTO caretakers VALUES ('Matthew Kessler', '92476090', '78244 Hill Junctions Suite 674, West Juliaton, CT 24561', '1');
+
+INSERT INTO users VALUES ('Shirley Coakley', '36460210');
+INSERT INTO nonadmin VALUES ('Shirley Coakley', '36460210', '0380 Gwendolyn Walks Suite 684, Andersonstad, NY 13096','2');
+INSERT INTO caretakers VALUES ('Shirley Coakley', '36460210', '0380 Gwendolyn Walks Suite 684, Andersonstad, NY 13096', '2');
+
+INSERT INTO users VALUES ('Jerry White', '63779152');
+INSERT INTO nonadmin VALUES ('Jerry White', '63779152', '20571 Mccoy Gardens Suite 061, Port Robin, DE 53835','0');
+INSERT INTO caretakers VALUES ('Jerry White', '63779152', '20571 Mccoy Gardens Suite 061, Port Robin, DE 53835', '0');
+
+INSERT INTO users VALUES ('Christopher Leonard', '77379095');
+INSERT INTO nonadmin VALUES ('Christopher Leonard', '77379095', '0694 Wise Park, New Gabrielle, NH 42671','1');
+INSERT INTO caretakers VALUES ('Christopher Leonard', '77379095', '0694 Wise Park, New Gabrielle, NH 42671', '1');
+
+INSERT INTO users VALUES ('Kirk Moore', '48249383');
+INSERT INTO nonadmin VALUES ('Kirk Moore', '48249383', '39436 Edward Port Apt. 223, Yvonnechester, NY 22821','1');
+INSERT INTO caretakers VALUES ('Kirk Moore', '48249383', '39436 Edward Port Apt. 223, Yvonnechester, NY 22821', '1');
+
+INSERT INTO users VALUES ('Annette Brockman', '14261948');
+INSERT INTO nonadmin VALUES ('Annette Brockman', '14261948', '357 Crane Shore, Marialand, KS 26196','0');
+INSERT INTO caretakers VALUES ('Annette Brockman', '14261948', '357 Crane Shore, Marialand, KS 26196', '0');
+
+INSERT INTO users VALUES ('Robin Anthony', '36755926');
+INSERT INTO nonadmin VALUES ('Robin Anthony', '36755926', '02573 Wood Extensions, West Robinview, FL 20165','0');
+INSERT INTO caretakers VALUES ('Robin Anthony', '36755926', '02573 Wood Extensions, West Robinview, FL 20165', '0');
+
+INSERT INTO users VALUES ('Melissa Mallin', '88220189');
+INSERT INTO nonadmin VALUES ('Melissa Mallin', '88220189', 'PSC 4759, Box 0042, APO AE 15887','2');
+INSERT INTO caretakers VALUES ('Melissa Mallin', '88220189', 'PSC 4759, Box 0042, APO AE 15887', '2');
+
+INSERT INTO users VALUES ('John King', '77645059');
+INSERT INTO nonadmin VALUES ('John King', '77645059', '035 Lawrence Spring, Leonardmouth, WI 48102','2');
+INSERT INTO caretakers VALUES ('John King', '77645059', '035 Lawrence Spring, Leonardmouth, WI 48102', '2');
+
+INSERT INTO users VALUES ('Rebecca Cox', '30598220');
+INSERT INTO nonadmin VALUES ('Rebecca Cox', '30598220', '1217 Horton Camp Suite 487, North Jenniferberg, KY 39232','2');
+INSERT INTO caretakers VALUES ('Rebecca Cox', '30598220', '1217 Horton Camp Suite 487, North Jenniferberg, KY 39232', '2');
+
+INSERT INTO users VALUES ('William Brooks', '93212303');
+INSERT INTO nonadmin VALUES ('William Brooks', '93212303', '28661 Karen Bypass, Stevenmouth, IN 60523','1');
+INSERT INTO caretakers VALUES ('William Brooks', '93212303', '28661 Karen Bypass, Stevenmouth, IN 60523', '1');
+
+INSERT INTO users VALUES ('Amanda Haas', '72930463');
+INSERT INTO nonadmin VALUES ('Amanda Haas', '72930463', '31221 Lopez Port Suite 438, North Jeffrey, MT 50357','2');
+INSERT INTO caretakers VALUES ('Amanda Haas', '72930463', '31221 Lopez Port Suite 438, North Jeffrey, MT 50357', '2');
+
+INSERT INTO users VALUES ('Stephaine Stansel', '67015143');
+INSERT INTO nonadmin VALUES ('Stephaine Stansel', '67015143', '856 Grant Land, Pattonbury, VT 14135','0');
+INSERT INTO caretakers VALUES ('Stephaine Stansel', '67015143', '856 Grant Land, Pattonbury, VT 14135', '0');
+
+INSERT INTO users VALUES ('Wilma Gaona', '17128054');
+INSERT INTO nonadmin VALUES ('Wilma Gaona', '17128054', '230 Luis Fall Suite 242, New Shannonchester, CA 50291','0');
+INSERT INTO caretakers VALUES ('Wilma Gaona', '17128054', '230 Luis Fall Suite 242, New Shannonchester, CA 50291', '0');
+
+INSERT INTO users VALUES ('Thomas Vollstedt', '44849714');
+INSERT INTO nonadmin VALUES ('Thomas Vollstedt', '44849714', '783 Kramer Drive, West Rhondaburgh, NJ 45894','1');
+INSERT INTO caretakers VALUES ('Thomas Vollstedt', '44849714', '783 Kramer Drive, West Rhondaburgh, NJ 45894', '1');
+
+INSERT INTO users VALUES ('Rita Stickel', '88499352');
+INSERT INTO nonadmin VALUES ('Rita Stickel', '88499352', 'USCGC Wiggins, FPO AA 67448','0');
+INSERT INTO caretakers VALUES ('Rita Stickel', '88499352', 'USCGC Wiggins, FPO AA 67448', '0');
+
+INSERT INTO users VALUES ('Daniel Richmond', '84589090');
+INSERT INTO nonadmin VALUES ('Daniel Richmond', '84589090', '1459 Christina Squares, Melissashire, MI 35616','1');
+INSERT INTO caretakers VALUES ('Daniel Richmond', '84589090', '1459 Christina Squares, Melissashire, MI 35616', '1');
+
+INSERT INTO users VALUES ('Peggy Malboeuf', '86358643');
+INSERT INTO nonadmin VALUES ('Peggy Malboeuf', '86358643', 'PSC 8141, Box 7882, APO AE 97359','0');
+INSERT INTO caretakers VALUES ('Peggy Malboeuf', '86358643', 'PSC 8141, Box 7882, APO AE 97359', '0');
+
+INSERT INTO users VALUES ('Eleanore Dejesus', '68849609');
+INSERT INTO nonadmin VALUES ('Eleanore Dejesus', '68849609', '95161 Natasha Courts, Lake Michael, MS 40360','0');
+INSERT INTO caretakers VALUES ('Eleanore Dejesus', '68849609', '95161 Natasha Courts, Lake Michael, MS 40360', '0');
+
+INSERT INTO users VALUES ('Andrew Macri', '10352872');
+INSERT INTO nonadmin VALUES ('Andrew Macri', '10352872', '626 Christopher Lodge, North Emilyville, VT 83072','0');
+INSERT INTO caretakers VALUES ('Andrew Macri', '10352872', '626 Christopher Lodge, North Emilyville, VT 83072', '0');
+
+INSERT INTO users VALUES ('Janice Milligan', '57136482');
+INSERT INTO nonadmin VALUES ('Janice Milligan', '57136482', '213 Jose Ways, Port Larryside, MA 61482','1');
+INSERT INTO caretakers VALUES ('Janice Milligan', '57136482', '213 Jose Ways, Port Larryside, MA 61482', '1');
+
+INSERT INTO users VALUES ('Melissa Castro', '91524125');
+INSERT INTO nonadmin VALUES ('Melissa Castro', '91524125', '719 Wallace Road Suite 477, Micheleburgh, TX 54901','1');
+INSERT INTO caretakers VALUES ('Melissa Castro', '91524125', '719 Wallace Road Suite 477, Micheleburgh, TX 54901', '1');
+
+INSERT INTO users VALUES ('Robin Pies', '12287688');
+INSERT INTO nonadmin VALUES ('Robin Pies', '12287688', '915 Valerie Extensions, South Matthewside, ME 67175','1');
+INSERT INTO caretakers VALUES ('Robin Pies', '12287688', '915 Valerie Extensions, South Matthewside, ME 67175', '1');
+
+INSERT INTO users VALUES ('Sidney Waite', '26073722');
+INSERT INTO nonadmin VALUES ('Sidney Waite', '26073722', '8054 Ramirez Hollow Suite 510, Morganmouth, MI 33779','0');
+INSERT INTO caretakers VALUES ('Sidney Waite', '26073722', '8054 Ramirez Hollow Suite 510, Morganmouth, MI 33779', '0');
+
+INSERT INTO users VALUES ('Miriam Charles', '80050231');
+INSERT INTO nonadmin VALUES ('Miriam Charles', '80050231', '4201 Brian Divide Apt. 041, Lindamouth, WV 64407','1');
+INSERT INTO caretakers VALUES ('Miriam Charles', '80050231', '4201 Brian Divide Apt. 041, Lindamouth, WV 64407', '1');
+
+INSERT INTO users VALUES ('Maria Stella', '86925019');
+INSERT INTO nonadmin VALUES ('Maria Stella', '86925019', '54050 Murray Loop, West Seanville, VA 09215','0');
+INSERT INTO caretakers VALUES ('Maria Stella', '86925019', '54050 Murray Loop, West Seanville, VA 09215', '0');
+
+INSERT INTO users VALUES ('Kelly Barth', '31694548');
+INSERT INTO nonadmin VALUES ('Kelly Barth', '31694548', 'Unit 0973 Box 1211, DPO AA 24412','2');
+INSERT INTO caretakers VALUES ('Kelly Barth', '31694548', 'Unit 0973 Box 1211, DPO AA 24412', '2');
+
+INSERT INTO users VALUES ('Grant Mizell', '61374761');
+INSERT INTO nonadmin VALUES ('Grant Mizell', '61374761', '63422 Anderson Centers, South Kerriburgh, VT 19079','1');
+INSERT INTO caretakers VALUES ('Grant Mizell', '61374761', '63422 Anderson Centers, South Kerriburgh, VT 19079', '1');
+
+INSERT INTO users VALUES ('Reginald Mills', '90372653');
+INSERT INTO nonadmin VALUES ('Reginald Mills', '90372653', '9999 Pierce Ridges, West Christy, CA 97422','2');
+INSERT INTO caretakers VALUES ('Reginald Mills', '90372653', '9999 Pierce Ridges, West Christy, CA 97422', '2');
+
+INSERT INTO users VALUES ('Marvin Hitchcock', '75955855');
+INSERT INTO nonadmin VALUES ('Marvin Hitchcock', '75955855', '72958 Chase Grove Suite 229, Walkerfort, SD 08597','1');
+INSERT INTO caretakers VALUES ('Marvin Hitchcock', '75955855', '72958 Chase Grove Suite 229, Walkerfort, SD 08597', '1');
+
+INSERT INTO users VALUES ('Alvin Jackson', '91726874');
+INSERT INTO nonadmin VALUES ('Alvin Jackson', '91726874', 'USCGC Ware, FPO AE 20552','2');
+INSERT INTO caretakers VALUES ('Alvin Jackson', '91726874', 'USCGC Ware, FPO AE 20552', '2');
+
+INSERT INTO users VALUES ('Richard Lechner', '24891710');
+INSERT INTO nonadmin VALUES ('Richard Lechner', '24891710', '292 Horton Well, Yvettefurt, IA 42312','1');
+INSERT INTO caretakers VALUES ('Richard Lechner', '24891710', '292 Horton Well, Yvettefurt, IA 42312', '1');
+
+INSERT INTO users VALUES ('April Baker', '88477448');
+INSERT INTO nonadmin VALUES ('April Baker', '88477448', '49399 Carolyn Alley Suite 146, Owensshire, ID 61982','0');
+INSERT INTO caretakers VALUES ('April Baker', '88477448', '49399 Carolyn Alley Suite 146, Owensshire, ID 61982', '0');
+
+INSERT INTO users VALUES ('Florence Braithwaite', '69239854');
+INSERT INTO nonadmin VALUES ('Florence Braithwaite', '69239854', '095 Williams Isle, North Dakota, NE 72437','2');
+INSERT INTO caretakers VALUES ('Florence Braithwaite', '69239854', '095 Williams Isle, North Dakota, NE 72437', '2');
+
+INSERT INTO users VALUES ('Vicente Fallon', '99588549');
+INSERT INTO nonadmin VALUES ('Vicente Fallon', '99588549', '007 Anderson Tunnel Suite 026, Lake Heatherborough, VT 06359','1');
+INSERT INTO caretakers VALUES ('Vicente Fallon', '99588549', '007 Anderson Tunnel Suite 026, Lake Heatherborough, VT 06359', '1');
+
+INSERT INTO users VALUES ('Donald Gendel', '80624021');
+INSERT INTO nonadmin VALUES ('Donald Gendel', '80624021', '9516 Ortiz Stream Apt. 636, North Meganchester, SD 70643','2');
+INSERT INTO caretakers VALUES ('Donald Gendel', '80624021', '9516 Ortiz Stream Apt. 636, North Meganchester, SD 70643', '2');
+
+INSERT INTO users VALUES ('Harold Kinsey', '90590292');
+INSERT INTO nonadmin VALUES ('Harold Kinsey', '90590292', '25410 Nicholas Row, Patriciaport, SD 19328','1');
+INSERT INTO caretakers VALUES ('Harold Kinsey', '90590292', '25410 Nicholas Row, Patriciaport, SD 19328', '1');
+
+INSERT INTO users VALUES ('Erik Kahan', '33142041');
+INSERT INTO nonadmin VALUES ('Erik Kahan', '33142041', '28614 Keller Flats Suite 442, Jonathanfurt, PA 86584','2');
+INSERT INTO caretakers VALUES ('Erik Kahan', '33142041', '28614 Keller Flats Suite 442, Jonathanfurt, PA 86584', '2');
+
+INSERT INTO users VALUES ('Andrew Wong', '68120034');
+INSERT INTO nonadmin VALUES ('Andrew Wong', '68120034', '223 Bryan Unions, Santosport, MA 66394','0');
+INSERT INTO caretakers VALUES ('Andrew Wong', '68120034', '223 Bryan Unions, Santosport, MA 66394', '0');
+
+INSERT INTO users VALUES ('Abby Espinoza', '69988398');
+INSERT INTO nonadmin VALUES ('Abby Espinoza', '69988398', '01970 Wise Throughway, West Carmenview, KS 64579','0');
+INSERT INTO caretakers VALUES ('Abby Espinoza', '69988398', '01970 Wise Throughway, West Carmenview, KS 64579', '0');
+
+INSERT INTO users VALUES ('Brenda Smith', '52548022');
+INSERT INTO nonadmin VALUES ('Brenda Smith', '52548022', 'PSC 2395, Box 0013, APO AP 89132','0');
+INSERT INTO caretakers VALUES ('Brenda Smith', '52548022', 'PSC 2395, Box 0013, APO AP 89132', '0');
+
+INSERT INTO users VALUES ('Deborah Elkins', '52771331');
+INSERT INTO nonadmin VALUES ('Deborah Elkins', '52771331', 'PSC 7514, Box 3650, APO AP 99770','1');
+INSERT INTO caretakers VALUES ('Deborah Elkins', '52771331', 'PSC 7514, Box 3650, APO AP 99770', '1');
+
+INSERT INTO users VALUES ('Teresa Barajas', '28974067');
+INSERT INTO nonadmin VALUES ('Teresa Barajas', '28974067', '15358 Samuel Underpass Apt. 514, Port Matthewmouth, NE 34076','1');
+INSERT INTO caretakers VALUES ('Teresa Barajas', '28974067', '15358 Samuel Underpass Apt. 514, Port Matthewmouth, NE 34076', '1');
+
+INSERT INTO users VALUES ('Tracy Aronoff', '89129051');
+INSERT INTO nonadmin VALUES ('Tracy Aronoff', '89129051', '3289 Howard Gateway Suite 156, Cynthiafort, SD 65160','0');
+INSERT INTO caretakers VALUES ('Tracy Aronoff', '89129051', '3289 Howard Gateway Suite 156, Cynthiafort, SD 65160', '0');
+
+INSERT INTO users VALUES ('Laura Ashcraft', '56554813');
+INSERT INTO nonadmin VALUES ('Laura Ashcraft', '56554813', '2650 Barrera Street Apt. 905, Port Susan, NE 47373','0');
+INSERT INTO caretakers VALUES ('Laura Ashcraft', '56554813', '2650 Barrera Street Apt. 905, Port Susan, NE 47373', '0');
+
+INSERT INTO users VALUES ('Susan Illsley', '72193279');
+INSERT INTO nonadmin VALUES ('Susan Illsley', '72193279', '5374 Mcdaniel Crossroad Apt. 754, Lake Christine, UT 35239','0');
+INSERT INTO caretakers VALUES ('Susan Illsley', '72193279', '5374 Mcdaniel Crossroad Apt. 754, Lake Christine, UT 35239', '0');
+
+INSERT INTO users VALUES ('Brittany Martin', '90264843');
+INSERT INTO nonadmin VALUES ('Brittany Martin', '90264843', '299 Barry Forks Apt. 441, North Matthew, AR 39948','1');
+INSERT INTO caretakers VALUES ('Brittany Martin', '90264843', '299 Barry Forks Apt. 441, North Matthew, AR 39948', '1');
+
+INSERT INTO users VALUES ('Cynthia Pugh', '71771338');
+INSERT INTO nonadmin VALUES ('Cynthia Pugh', '71771338', '341 Janice Corners, North Franciscoberg, UT 51691','2');
+INSERT INTO caretakers VALUES ('Cynthia Pugh', '71771338', '341 Janice Corners, North Franciscoberg, UT 51691', '2');
+
+INSERT INTO users VALUES ('Charles Sheppard', '35595257');
+INSERT INTO nonadmin VALUES ('Charles Sheppard', '35595257', '26523 Jamie Corners Apt. 449, Smithhaven, NY 27922','0');
+INSERT INTO caretakers VALUES ('Charles Sheppard', '35595257', '26523 Jamie Corners Apt. 449, Smithhaven, NY 27922', '0');
+
+INSERT INTO users VALUES ('Sandra Mertens', '49335016');
+INSERT INTO nonadmin VALUES ('Sandra Mertens', '49335016', '552 Butler Grove, Nicoleshire, DE 76151','0');
+INSERT INTO caretakers VALUES ('Sandra Mertens', '49335016', '552 Butler Grove, Nicoleshire, DE 76151', '0');
+
+INSERT INTO users VALUES ('Dottie Erickson', '27457053');
+INSERT INTO nonadmin VALUES ('Dottie Erickson', '27457053', '310 Andrew Brook Suite 342, Ballmouth, UT 87108','1');
+INSERT INTO caretakers VALUES ('Dottie Erickson', '27457053', '310 Andrew Brook Suite 342, Ballmouth, UT 87108', '1');
+
+INSERT INTO users VALUES ('Rosie Roberts', '37154047');
+INSERT INTO nonadmin VALUES ('Rosie Roberts', '37154047', '1811 Eric Squares, South Emilyville, MN 35023','1');
+INSERT INTO caretakers VALUES ('Rosie Roberts', '37154047', '1811 Eric Squares, South Emilyville, MN 35023', '1');
+
+INSERT INTO users VALUES ('April Wright', '72815101');
+INSERT INTO nonadmin VALUES ('April Wright', '72815101', '701 Byrd Ports, Tanyafort, MN 59079','0');
+INSERT INTO caretakers VALUES ('April Wright', '72815101', '701 Byrd Ports, Tanyafort, MN 59079', '0');
+
+INSERT INTO users VALUES ('Heather Quinonez', '77489245');
+INSERT INTO nonadmin VALUES ('Heather Quinonez', '77489245', '583 David Rest Suite 988, East Nicoleburgh, CO 92897','2');
+INSERT INTO caretakers VALUES ('Heather Quinonez', '77489245', '583 David Rest Suite 988, East Nicoleburgh, CO 92897', '2');
+
+INSERT INTO users VALUES ('Jordan Washington', '12164380');
+INSERT INTO nonadmin VALUES ('Jordan Washington', '12164380', 'USS Davis, FPO AE 03142','2');
+INSERT INTO caretakers VALUES ('Jordan Washington', '12164380', 'USS Davis, FPO AE 03142', '2');
+
+INSERT INTO users VALUES ('Lesa Abel', '33581776');
+INSERT INTO nonadmin VALUES ('Lesa Abel', '33581776', '7676 Mercado Brook, Debraborough, ID 97246','2');
+INSERT INTO caretakers VALUES ('Lesa Abel', '33581776', '7676 Mercado Brook, Debraborough, ID 97246', '2');
+
+INSERT INTO users VALUES ('Patricia Irby', '96272360');
+INSERT INTO nonadmin VALUES ('Patricia Irby', '96272360', '521 Thomas Court, South Monica, DC 93921','2');
+INSERT INTO caretakers VALUES ('Patricia Irby', '96272360', '521 Thomas Court, South Monica, DC 93921', '2');
+
+INSERT INTO users VALUES ('April Killough', '50583526');
+INSERT INTO nonadmin VALUES ('April Killough', '50583526', '4719 Vazquez Mount, Brianshire, KY 52047','1');
+INSERT INTO caretakers VALUES ('April Killough', '50583526', '4719 Vazquez Mount, Brianshire, KY 52047', '1');
+
+INSERT INTO users VALUES ('Donna Giles', '35627646');
+INSERT INTO nonadmin VALUES ('Donna Giles', '35627646', '2590 William Shore, West Deanfort, CO 65679','1');
+INSERT INTO caretakers VALUES ('Donna Giles', '35627646', '2590 William Shore, West Deanfort, CO 65679', '1');
+
+INSERT INTO users VALUES ('Krystin June', '15914426');
+INSERT INTO nonadmin VALUES ('Krystin June', '15914426', '5131 Melvin Trail Suite 229, Kristineville, RI 35872','0');
+INSERT INTO caretakers VALUES ('Krystin June', '15914426', '5131 Melvin Trail Suite 229, Kristineville, RI 35872', '0');
+
+INSERT INTO users VALUES ('Guy Shawl', '78253078');
+INSERT INTO nonadmin VALUES ('Guy Shawl', '78253078', '88521 Cabrera Lock, Kathrynport, OK 61034','0');
+INSERT INTO caretakers VALUES ('Guy Shawl', '78253078', '88521 Cabrera Lock, Kathrynport, OK 61034', '0');
+
+INSERT INTO users VALUES ('William Phillips', '63973028');
+INSERT INTO nonadmin VALUES ('William Phillips', '63973028', '237 Michelle Viaduct Suite 712, New Tammyton, WV 39666','2');
+INSERT INTO caretakers VALUES ('William Phillips', '63973028', '237 Michelle Viaduct Suite 712, New Tammyton, WV 39666', '2');
+
+INSERT INTO users VALUES ('Ethel Hodges', '27691999');
+INSERT INTO nonadmin VALUES ('Ethel Hodges', '27691999', '6358 Sarah Ports Apt. 631, South Lauraside, TN 96231','1');
+INSERT INTO caretakers VALUES ('Ethel Hodges', '27691999', '6358 Sarah Ports Apt. 631, South Lauraside, TN 96231', '1');
+
+INSERT INTO users VALUES ('Annie Cosselman', '52593848');
+INSERT INTO nonadmin VALUES ('Annie Cosselman', '52593848', '646 Gardner View Apt. 157, Jonesbury, DE 51127','1');
+INSERT INTO caretakers VALUES ('Annie Cosselman', '52593848', '646 Gardner View Apt. 157, Jonesbury, DE 51127', '1');
+
+INSERT INTO users VALUES ('Christian Crews', '32803545');
+INSERT INTO nonadmin VALUES ('Christian Crews', '32803545', '4326 Lloyd Crescent Suite 521, Lake Keithburgh, HI 12721','0');
+INSERT INTO caretakers VALUES ('Christian Crews', '32803545', '4326 Lloyd Crescent Suite 521, Lake Keithburgh, HI 12721', '0');
+
+INSERT INTO users VALUES ('John Slinkard', '98342740');
+INSERT INTO nonadmin VALUES ('John Slinkard', '98342740', '2850 Clark Avenue Suite 291, Jordanville, ME 13071','0');
+INSERT INTO caretakers VALUES ('John Slinkard', '98342740', '2850 Clark Avenue Suite 291, Jordanville, ME 13071', '0');
+
+INSERT INTO users VALUES ('William Thornton', '22810325');
+INSERT INTO nonadmin VALUES ('William Thornton', '22810325', '35245 Tiffany Ports Suite 332, South Megan, MD 59701','2');
+INSERT INTO caretakers VALUES ('William Thornton', '22810325', '35245 Tiffany Ports Suite 332, South Megan, MD 59701', '2');
+
+INSERT INTO users VALUES ('Ronald Graves', '90689136');
+INSERT INTO nonadmin VALUES ('Ronald Graves', '90689136', 'USNV Russo, FPO AA 39207','0');
+INSERT INTO caretakers VALUES ('Ronald Graves', '90689136', 'USNV Russo, FPO AA 39207', '0');
+
+INSERT INTO users VALUES ('Ned Mink', '84979290');
+INSERT INTO nonadmin VALUES ('Ned Mink', '84979290', '853 Bryan Village, Aprilberg, VT 40132','0');
+INSERT INTO caretakers VALUES ('Ned Mink', '84979290', '853 Bryan Village, Aprilberg, VT 40132', '0');
+
+INSERT INTO users VALUES ('Jayson Darr', '49500158');
+INSERT INTO nonadmin VALUES ('Jayson Darr', '49500158', '7673 Walsh Track Suite 384, Scottport, IN 96746','2');
+INSERT INTO caretakers VALUES ('Jayson Darr', '49500158', '7673 Walsh Track Suite 384, Scottport, IN 96746', '2');
+
+INSERT INTO users VALUES ('Franklin Simmons', '64209927');
+INSERT INTO nonadmin VALUES ('Franklin Simmons', '64209927', '9130 Davies Tunnel Apt. 555, Port Dariuston, ME 79898','1');
+INSERT INTO caretakers VALUES ('Franklin Simmons', '64209927', '9130 Davies Tunnel Apt. 555, Port Dariuston, ME 79898', '1');
+
+INSERT INTO users VALUES ('Daniel Garcia', '80353668');
+INSERT INTO nonadmin VALUES ('Daniel Garcia', '80353668', '6839 Hunt Glen, Heatherhaven, NJ 20374','1');
+INSERT INTO caretakers VALUES ('Daniel Garcia', '80353668', '6839 Hunt Glen, Heatherhaven, NJ 20374', '1');
+
+INSERT INTO users VALUES ('Louis Duncan', '37044371');
+INSERT INTO nonadmin VALUES ('Louis Duncan', '37044371', '424 Harris Station Suite 918, Kellybury, TN 84153','2');
+INSERT INTO caretakers VALUES ('Louis Duncan', '37044371', '424 Harris Station Suite 918, Kellybury, TN 84153', '2');
+
+INSERT INTO users VALUES ('Alfred Velazquez', '64521721');
+INSERT INTO nonadmin VALUES ('Alfred Velazquez', '64521721', '3576 Wilkins Ford Suite 612, Lake Matthew, MT 95381','0');
+INSERT INTO caretakers VALUES ('Alfred Velazquez', '64521721', '3576 Wilkins Ford Suite 612, Lake Matthew, MT 95381', '0');
+
+INSERT INTO users VALUES ('Edith Daddio', '61454089');
+INSERT INTO nonadmin VALUES ('Edith Daddio', '61454089', '55965 Contreras Wells Suite 318, New Brenda, NM 97713','1');
+INSERT INTO caretakers VALUES ('Edith Daddio', '61454089', '55965 Contreras Wells Suite 318, New Brenda, NM 97713', '1');
+
+INSERT INTO users VALUES ('Loren Roach', '59255809');
+INSERT INTO nonadmin VALUES ('Loren Roach', '59255809', '627 Amber Valley, Bellmouth, AR 37689','0');
+INSERT INTO caretakers VALUES ('Loren Roach', '59255809', '627 Amber Valley, Bellmouth, AR 37689', '0');
+
+INSERT INTO users VALUES ('Cary Shelton', '74888773');
+INSERT INTO nonadmin VALUES ('Cary Shelton', '74888773', '44069 Brianna Locks Suite 350, Davisfurt, VA 41280','2');
+INSERT INTO caretakers VALUES ('Cary Shelton', '74888773', '44069 Brianna Locks Suite 350, Davisfurt, VA 41280', '2');
+
+INSERT INTO users VALUES ('John Ciprian', '21921849');
+INSERT INTO nonadmin VALUES ('John Ciprian', '21921849', '077 Savannah Flats, Brianville, MO 20550','2');
+INSERT INTO caretakers VALUES ('John Ciprian', '21921849', '077 Savannah Flats, Brianville, MO 20550', '2');
+
+INSERT INTO users VALUES ('Richard Malone', '74851298');
+INSERT INTO nonadmin VALUES ('Richard Malone', '74851298', '705 Jackson Extension Apt. 543, Sophiaport, RI 58221','0');
+INSERT INTO caretakers VALUES ('Richard Malone', '74851298', '705 Jackson Extension Apt. 543, Sophiaport, RI 58221', '0');
+
+INSERT INTO users VALUES ('Beverly Avery', '16196769');
+INSERT INTO nonadmin VALUES ('Beverly Avery', '16196769', '31059 Dawn Cove, Bakerside, NY 37446','1');
+INSERT INTO caretakers VALUES ('Beverly Avery', '16196769', '31059 Dawn Cove, Bakerside, NY 37446', '1');
+
+INSERT INTO users VALUES ('Earl Smith', '49265108');
+INSERT INTO nonadmin VALUES ('Earl Smith', '49265108', '6787 Baker Pine, East Wendy, PA 58655','1');
+INSERT INTO caretakers VALUES ('Earl Smith', '49265108', '6787 Baker Pine, East Wendy, PA 58655', '1');
+
+INSERT INTO users VALUES ('Ida Berland', '33222060');
+INSERT INTO nonadmin VALUES ('Ida Berland', '33222060', '35230 Knox Forge Apt. 877, Jasmineborough, DC 62169','1');
+INSERT INTO caretakers VALUES ('Ida Berland', '33222060', '35230 Knox Forge Apt. 877, Jasmineborough, DC 62169', '1');
+
+INSERT INTO users VALUES ('Colton Harrison', '81614966');
+INSERT INTO nonadmin VALUES ('Colton Harrison', '81614966', 'USS Reese, FPO AA 02594','2');
+INSERT INTO caretakers VALUES ('Colton Harrison', '81614966', 'USS Reese, FPO AA 02594', '2');
+
+INSERT INTO users VALUES ('Tyrone Jim', '52886104');
+INSERT INTO nonadmin VALUES ('Tyrone Jim', '52886104', 'PSC 0577, Box 9756, APO AP 57577','1');
+INSERT INTO caretakers VALUES ('Tyrone Jim', '52886104', 'PSC 0577, Box 9756, APO AP 57577', '1');
+
+INSERT INTO users VALUES ('Polly Bey', '27954512');
+INSERT INTO nonadmin VALUES ('Polly Bey', '27954512', '475 Shields Club, Lake Katiemouth, NY 46861','1');
+INSERT INTO caretakers VALUES ('Polly Bey', '27954512', '475 Shields Club, Lake Katiemouth, NY 46861', '1');
+
+INSERT INTO users VALUES ('Esther Callis', '29652341');
+INSERT INTO nonadmin VALUES ('Esther Callis', '29652341', 'Unit 1293 Box 4729, DPO AA 60731','0');
+INSERT INTO caretakers VALUES ('Esther Callis', '29652341', 'Unit 1293 Box 4729, DPO AA 60731', '0');
+
+INSERT INTO users VALUES ('Maria Hurd', '34731467');
+INSERT INTO nonadmin VALUES ('Maria Hurd', '34731467', '34226 Henry Springs, Smithtown, IL 16714','1');
+INSERT INTO caretakers VALUES ('Maria Hurd', '34731467', '34226 Henry Springs, Smithtown, IL 16714', '1');
+
+INSERT INTO users VALUES ('Robert Cruz', '61135084');
+INSERT INTO nonadmin VALUES ('Robert Cruz', '61135084', '51997 Jones Meadows Apt. 296, Williamberg, CO 08728','0');
+INSERT INTO caretakers VALUES ('Robert Cruz', '61135084', '51997 Jones Meadows Apt. 296, Williamberg, CO 08728', '0');
+
+INSERT INTO users VALUES ('Jennifer Conger', '88464956');
+INSERT INTO nonadmin VALUES ('Jennifer Conger', '88464956', '551 Brown Lodge, Tanyafurt, MA 19965','1');
+INSERT INTO caretakers VALUES ('Jennifer Conger', '88464956', '551 Brown Lodge, Tanyafurt, MA 19965', '1');
+
+INSERT INTO users VALUES ('Rachel Randall', '60519996');
+INSERT INTO nonadmin VALUES ('Rachel Randall', '60519996', '9653 Byrd Wall, Moorestad, TN 46243','2');
+INSERT INTO caretakers VALUES ('Rachel Randall', '60519996', '9653 Byrd Wall, Moorestad, TN 46243', '2');
+
+INSERT INTO users VALUES ('Robert Cuevas', '25937602');
+INSERT INTO nonadmin VALUES ('Robert Cuevas', '25937602', '62633 Robin Parks, Nelsonshire, AK 89729','1');
+INSERT INTO caretakers VALUES ('Robert Cuevas', '25937602', '62633 Robin Parks, Nelsonshire, AK 89729', '1');
+
+INSERT INTO users VALUES ('Ida Thompson', '18152822');
+INSERT INTO nonadmin VALUES ('Ida Thompson', '18152822', '6088 Hood Throughway, Hunthaven, MN 44532','1');
+INSERT INTO caretakers VALUES ('Ida Thompson', '18152822', '6088 Hood Throughway, Hunthaven, MN 44532', '1');
+
+INSERT INTO users VALUES ('Mamie Washington', '68250902');
+INSERT INTO nonadmin VALUES ('Mamie Washington', '68250902', '4003 Lori Cove, Valerieland, UT 79672','2');
+INSERT INTO caretakers VALUES ('Mamie Washington', '68250902', '4003 Lori Cove, Valerieland, UT 79672', '2');
+
+INSERT INTO users VALUES ('John Buza', '10642400');
+INSERT INTO nonadmin VALUES ('John Buza', '10642400', 'PSC 5291, Box 7505, APO AP 85610','1');
+INSERT INTO caretakers VALUES ('John Buza', '10642400', 'PSC 5291, Box 7505, APO AP 85610', '1');
+
+INSERT INTO users VALUES ('Adam Massa', '95820907');
+INSERT INTO nonadmin VALUES ('Adam Massa', '95820907', '27437 Roberts Green Suite 070, Jenniferstad, MD 53124','0');
+INSERT INTO caretakers VALUES ('Adam Massa', '95820907', '27437 Roberts Green Suite 070, Jenniferstad, MD 53124', '0');
+
+INSERT INTO users VALUES ('Ed Cochran', '93940062');
+INSERT INTO nonadmin VALUES ('Ed Cochran', '93940062', '876 Aaron Haven Apt. 156, West Jamestown, AZ 81198','0');
+INSERT INTO caretakers VALUES ('Ed Cochran', '93940062', '876 Aaron Haven Apt. 156, West Jamestown, AZ 81198', '0');
+
+INSERT INTO users VALUES ('Marion Johnson', '77087983');
+INSERT INTO nonadmin VALUES ('Marion Johnson', '77087983', '0927 Jason Alley, New Jean, HI 82181','1');
+INSERT INTO caretakers VALUES ('Marion Johnson', '77087983', '0927 Jason Alley, New Jean, HI 82181', '1');
+
+INSERT INTO users VALUES ('Christian Dailey', '98161358');
+INSERT INTO nonadmin VALUES ('Christian Dailey', '98161358', '15360 Susan Pass, North James, IA 95314','1');
+INSERT INTO caretakers VALUES ('Christian Dailey', '98161358', '15360 Susan Pass, North James, IA 95314', '1');
+
+INSERT INTO users VALUES ('Sam Richmon', '84522158');
+INSERT INTO nonadmin VALUES ('Sam Richmon', '84522158', '097 Anderson Haven Suite 377, Sharonside, OR 45731','1');
+INSERT INTO caretakers VALUES ('Sam Richmon', '84522158', '097 Anderson Haven Suite 377, Sharonside, OR 45731', '1');
+
+INSERT INTO users VALUES ('Rita Suzuki', '27274972');
+INSERT INTO nonadmin VALUES ('Rita Suzuki', '27274972', '8701 Bullock Knoll, Blackwellshire, AL 82237','0');
+INSERT INTO caretakers VALUES ('Rita Suzuki', '27274972', '8701 Bullock Knoll, Blackwellshire, AL 82237', '0');
+
+INSERT INTO users VALUES ('Ruth Mayberry', '62282942');
+INSERT INTO nonadmin VALUES ('Ruth Mayberry', '62282942', '43009 Travis Prairie, Williamsmouth, OK 60509','1');
+INSERT INTO caretakers VALUES ('Ruth Mayberry', '62282942', '43009 Travis Prairie, Williamsmouth, OK 60509', '1');
+
+INSERT INTO users VALUES ('James Bebee', '30285109');
+INSERT INTO nonadmin VALUES ('James Bebee', '30285109', '9951 Smith Plaza, Port Randyville, CO 45421','0');
+INSERT INTO caretakers VALUES ('James Bebee', '30285109', '9951 Smith Plaza, Port Randyville, CO 45421', '0');
+
+INSERT INTO users VALUES ('Irene Chao', '53345513');
+INSERT INTO nonadmin VALUES ('Irene Chao', '53345513', '065 Adriana Point Apt. 518, East Dennis, PA 36630','0');
+INSERT INTO caretakers VALUES ('Irene Chao', '53345513', '065 Adriana Point Apt. 518, East Dennis, PA 36630', '0');
+
+INSERT INTO users VALUES ('Kathy Lamont', '14495020');
+INSERT INTO nonadmin VALUES ('Kathy Lamont', '14495020', '1389 Susan Roads Suite 946, New Michele, AK 39396','1');
+INSERT INTO caretakers VALUES ('Kathy Lamont', '14495020', '1389 Susan Roads Suite 946, New Michele, AK 39396', '1');
+
+INSERT INTO users VALUES ('David Williams', '38230252');
+INSERT INTO nonadmin VALUES ('David Williams', '38230252', '552 Harris Brook, Jenniferfort, LA 67213','2');
+INSERT INTO caretakers VALUES ('David Williams', '38230252', '552 Harris Brook, Jenniferfort, LA 67213', '2');
+
+INSERT INTO users VALUES ('Mary Carovski', '20639451');
+INSERT INTO nonadmin VALUES ('Mary Carovski', '20639451', '5116 Lindsey Mission Apt. 033, Colemanville, OK 05191','2');
+INSERT INTO caretakers VALUES ('Mary Carovski', '20639451', '5116 Lindsey Mission Apt. 033, Colemanville, OK 05191', '2');
+
+INSERT INTO users VALUES ('Keith Nay', '48763719');
+INSERT INTO nonadmin VALUES ('Keith Nay', '48763719', '2338 Hall Groves, Rodriguezfort, AL 21577','2');
+INSERT INTO caretakers VALUES ('Keith Nay', '48763719', '2338 Hall Groves, Rodriguezfort, AL 21577', '2');
+
+INSERT INTO users VALUES ('Raymond Quinn', '89204623');
+INSERT INTO nonadmin VALUES ('Raymond Quinn', '89204623', '628 Castillo Spurs Suite 710, Petersonborough, OR 43161','0');
+INSERT INTO caretakers VALUES ('Raymond Quinn', '89204623', '628 Castillo Spurs Suite 710, Petersonborough, OR 43161', '0');
+
+INSERT INTO users VALUES ('Janet Olson', '46409096');
+INSERT INTO nonadmin VALUES ('Janet Olson', '46409096', '8413 Elizabeth Road Suite 133, Port Robert, ME 98467','2');
+INSERT INTO caretakers VALUES ('Janet Olson', '46409096', '8413 Elizabeth Road Suite 133, Port Robert, ME 98467', '2');
+
+INSERT INTO users VALUES ('Joyce Vanhoy', '86619381');
+INSERT INTO nonadmin VALUES ('Joyce Vanhoy', '86619381', '7044 Johnston Place Apt. 562, Weaverborough, VT 48534','0');
+INSERT INTO caretakers VALUES ('Joyce Vanhoy', '86619381', '7044 Johnston Place Apt. 562, Weaverborough, VT 48534', '0');
+
+INSERT INTO users VALUES ('Maurice White', '37431380');
+INSERT INTO nonadmin VALUES ('Maurice White', '37431380', '59600 Jessica Gardens, Smithchester, OK 34097','2');
+INSERT INTO caretakers VALUES ('Maurice White', '37431380', '59600 Jessica Gardens, Smithchester, OK 34097', '2');
+
+INSERT INTO users VALUES ('Curtis Kohnke', '69532376');
+INSERT INTO nonadmin VALUES ('Curtis Kohnke', '69532376', '58777 Nicole Shoal Suite 772, North Robert, MA 95122','2');
+INSERT INTO caretakers VALUES ('Curtis Kohnke', '69532376', '58777 Nicole Shoal Suite 772, North Robert, MA 95122', '2');
+
+INSERT INTO users VALUES ('Jamie Willson', '77381724');
+INSERT INTO nonadmin VALUES ('Jamie Willson', '77381724', '877 Luis Curve Suite 536, North Herbertland, WY 21451','2');
+INSERT INTO caretakers VALUES ('Jamie Willson', '77381724', '877 Luis Curve Suite 536, North Herbertland, WY 21451', '2');
+
+INSERT INTO users VALUES ('Amber Bright', '54202647');
+INSERT INTO nonadmin VALUES ('Amber Bright', '54202647', '3038 Schultz Parkways, North Brandonton, WV 02115','2');
+INSERT INTO caretakers VALUES ('Amber Bright', '54202647', '3038 Schultz Parkways, North Brandonton, WV 02115', '2');
+
+INSERT INTO users VALUES ('James Aplin', '71363274');
+INSERT INTO nonadmin VALUES ('James Aplin', '71363274', '22756 Carlos Loop, West Joshua, OH 73112','0');
+INSERT INTO caretakers VALUES ('James Aplin', '71363274', '22756 Carlos Loop, West Joshua, OH 73112', '0');
+
+INSERT INTO users VALUES ('Mary Gleason', '66295857');
+INSERT INTO nonadmin VALUES ('Mary Gleason', '66295857', '8722 Denise Burg Suite 854, Johnsonburgh, NM 42185','2');
+INSERT INTO caretakers VALUES ('Mary Gleason', '66295857', '8722 Denise Burg Suite 854, Johnsonburgh, NM 42185', '2');
+
+INSERT INTO users VALUES ('Sherita Mccarthy', '18334949');
+INSERT INTO nonadmin VALUES ('Sherita Mccarthy', '18334949', 'USS Lee, FPO AP 02324','1');
+INSERT INTO caretakers VALUES ('Sherita Mccarthy', '18334949', 'USS Lee, FPO AP 02324', '1');
+
+INSERT INTO users VALUES ('Dora Owens', '31645580');
+INSERT INTO nonadmin VALUES ('Dora Owens', '31645580', '826 Michael Grove Suite 139, Williamside, MD 37026','2');
+INSERT INTO caretakers VALUES ('Dora Owens', '31645580', '826 Michael Grove Suite 139, Williamside, MD 37026', '2');
+
+INSERT INTO users VALUES ('Carlos Dattilo', '73719616');
+INSERT INTO nonadmin VALUES ('Carlos Dattilo', '73719616', '3966 Silva Square Suite 862, Grantfort, ND 02931','0');
+INSERT INTO caretakers VALUES ('Carlos Dattilo', '73719616', '3966 Silva Square Suite 862, Grantfort, ND 02931', '0');
+
+INSERT INTO users VALUES ('Bessie Ward', '20672794');
+INSERT INTO nonadmin VALUES ('Bessie Ward', '20672794', '020 Gray Mission Suite 507, East Angela, PA 23173','0');
+INSERT INTO caretakers VALUES ('Bessie Ward', '20672794', '020 Gray Mission Suite 507, East Angela, PA 23173', '0');
+
+INSERT INTO users VALUES ('Walter Miller', '39881389');
+INSERT INTO nonadmin VALUES ('Walter Miller', '39881389', '5654 Hunter Turnpike, Karenshire, MA 93690','2');
+INSERT INTO caretakers VALUES ('Walter Miller', '39881389', '5654 Hunter Turnpike, Karenshire, MA 93690', '2');
+
+INSERT INTO users VALUES ('Alvin Shepardson', '53741382');
+INSERT INTO nonadmin VALUES ('Alvin Shepardson', '53741382', 'USCGC Medina, FPO AE 43751','1');
+INSERT INTO caretakers VALUES ('Alvin Shepardson', '53741382', 'USCGC Medina, FPO AE 43751', '1');
+
+INSERT INTO users VALUES ('Kelly Borton', '82516498');
+INSERT INTO nonadmin VALUES ('Kelly Borton', '82516498', '77596 Michelle Corner Apt. 504, Kentview, KY 53312','1');
+INSERT INTO caretakers VALUES ('Kelly Borton', '82516498', '77596 Michelle Corner Apt. 504, Kentview, KY 53312', '1');
+
+INSERT INTO users VALUES ('James Watkins', '39057418');
+INSERT INTO nonadmin VALUES ('James Watkins', '39057418', '26022 Munoz Hill Apt. 612, Port Melodyborough, LA 48469','1');
+INSERT INTO caretakers VALUES ('James Watkins', '39057418', '26022 Munoz Hill Apt. 612, Port Melodyborough, LA 48469', '1');
+
+INSERT INTO users VALUES ('Ethel Pederson', '85231287');
+INSERT INTO nonadmin VALUES ('Ethel Pederson', '85231287', 'USNV Miller, FPO AP 75387','2');
+INSERT INTO caretakers VALUES ('Ethel Pederson', '85231287', 'USNV Miller, FPO AP 75387', '2');
+
+INSERT INTO users VALUES ('Charlene Butcher', '10989844');
+INSERT INTO nonadmin VALUES ('Charlene Butcher', '10989844', '1690 Julie Pines Suite 928, Barrettville, MI 08894','0');
+INSERT INTO caretakers VALUES ('Charlene Butcher', '10989844', '1690 Julie Pines Suite 928, Barrettville, MI 08894', '0');
+
+INSERT INTO users VALUES ('Ella Aguiar', '10274936');
+INSERT INTO nonadmin VALUES ('Ella Aguiar', '10274936', '21840 Thompson Forges Suite 869, Lake Stephanie, NM 80754','2');
+INSERT INTO caretakers VALUES ('Ella Aguiar', '10274936', '21840 Thompson Forges Suite 869, Lake Stephanie, NM 80754', '2');
+
+INSERT INTO users VALUES ('Emmett Melby', '52196488');
+INSERT INTO nonadmin VALUES ('Emmett Melby', '52196488', '362 James Turnpike, South Ericland, NC 49659','0');
+INSERT INTO caretakers VALUES ('Emmett Melby', '52196488', '362 James Turnpike, South Ericland, NC 49659', '0');
+
+INSERT INTO users VALUES ('Steven Gonzalez', '13765460');
+INSERT INTO nonadmin VALUES ('Steven Gonzalez', '13765460', 'Unit 6604 Box 0135, DPO AP 69229','2');
+INSERT INTO caretakers VALUES ('Steven Gonzalez', '13765460', 'Unit 6604 Box 0135, DPO AP 69229', '2');
+
+INSERT INTO users VALUES ('Cecile Lewis', '90354315');
+INSERT INTO nonadmin VALUES ('Cecile Lewis', '90354315', '544 Daniel Oval Suite 558, New Susan, WA 79304','1');
+INSERT INTO caretakers VALUES ('Cecile Lewis', '90354315', '544 Daniel Oval Suite 558, New Susan, WA 79304', '1');
+
+INSERT INTO users VALUES ('Arthur Clark', '65916721');
+INSERT INTO nonadmin VALUES ('Arthur Clark', '65916721', '76343 Bailey Viaduct Apt. 829, Lake Shannon, AK 07347','0');
+INSERT INTO caretakers VALUES ('Arthur Clark', '65916721', '76343 Bailey Viaduct Apt. 829, Lake Shannon, AK 07347', '0');
+
+INSERT INTO users VALUES ('Alonzo Talbot', '60104125');
+INSERT INTO nonadmin VALUES ('Alonzo Talbot', '60104125', '6414 Young Spurs, Gardnermouth, NV 34712','1');
+INSERT INTO caretakers VALUES ('Alonzo Talbot', '60104125', '6414 Young Spurs, Gardnermouth, NV 34712', '1');
+
+INSERT INTO users VALUES ('Iris Purcell', '89122756');
+INSERT INTO nonadmin VALUES ('Iris Purcell', '89122756', '5161 White Trace Suite 921, New Joel, ND 60510','2');
+INSERT INTO caretakers VALUES ('Iris Purcell', '89122756', '5161 White Trace Suite 921, New Joel, ND 60510', '2');
+
+INSERT INTO users VALUES ('Virginia Lawrence', '64444619');
+INSERT INTO nonadmin VALUES ('Virginia Lawrence', '64444619', '46430 Green Parkway, Tonystad, RI 98694','0');
+INSERT INTO caretakers VALUES ('Virginia Lawrence', '64444619', '46430 Green Parkway, Tonystad, RI 98694', '0');
+
+INSERT INTO users VALUES ('Connie Matusz', '30107206');
+INSERT INTO nonadmin VALUES ('Connie Matusz', '30107206', '5427 Lopez Loaf Suite 807, North Matthewmouth, MI 06527','0');
+INSERT INTO caretakers VALUES ('Connie Matusz', '30107206', '5427 Lopez Loaf Suite 807, North Matthewmouth, MI 06527', '0');
+
+INSERT INTO users VALUES ('Vida Younger', '99320678');
+INSERT INTO nonadmin VALUES ('Vida Younger', '99320678', '29258 Carla Square Apt. 027, East Cameron, MO 37696','2');
+INSERT INTO caretakers VALUES ('Vida Younger', '99320678', '29258 Carla Square Apt. 027, East Cameron, MO 37696', '2');
+
+INSERT INTO users VALUES ('Trinity Harris', '88954682');
+INSERT INTO nonadmin VALUES ('Trinity Harris', '88954682', '48567 Jones Field Suite 545, Lake Matthew, WI 22948','1');
+INSERT INTO caretakers VALUES ('Trinity Harris', '88954682', '48567 Jones Field Suite 545, Lake Matthew, WI 22948', '1');
+
+INSERT INTO users VALUES ('Mildred Gonzalez', '79180207');
+INSERT INTO nonadmin VALUES ('Mildred Gonzalez', '79180207', '62903 Pierce Lock Apt. 601, Harrisside, DC 53545','0');
+INSERT INTO caretakers VALUES ('Mildred Gonzalez', '79180207', '62903 Pierce Lock Apt. 601, Harrisside, DC 53545', '0');
+
+INSERT INTO users VALUES ('Charles Chenoweth', '48397267');
+INSERT INTO nonadmin VALUES ('Charles Chenoweth', '48397267', '508 Miranda Causeway, West Chadville, NE 72724','2');
+INSERT INTO caretakers VALUES ('Charles Chenoweth', '48397267', '508 Miranda Causeway, West Chadville, NE 72724', '2');
+
+INSERT INTO users VALUES ('Patsy Noel', '90721406');
+INSERT INTO nonadmin VALUES ('Patsy Noel', '90721406', '982 Brown Burg Apt. 652, Lake Aaron, KY 02226','0');
+INSERT INTO caretakers VALUES ('Patsy Noel', '90721406', '982 Brown Burg Apt. 652, Lake Aaron, KY 02226', '0');
+
+INSERT INTO users VALUES ('Donna Leggett', '90481879');
+INSERT INTO nonadmin VALUES ('Donna Leggett', '90481879', '4363 Brown Lodge Suite 056, North Evan, NC 14950','1');
+INSERT INTO caretakers VALUES ('Donna Leggett', '90481879', '4363 Brown Lodge Suite 056, North Evan, NC 14950', '1');
+
+INSERT INTO users VALUES ('Renda Spears', '38795701');
+INSERT INTO nonadmin VALUES ('Renda Spears', '38795701', '7074 David Shores, East Jasonfort, NJ 59064','0');
+INSERT INTO caretakers VALUES ('Renda Spears', '38795701', '7074 David Shores, East Jasonfort, NJ 59064', '0');
+
+INSERT INTO users VALUES ('Marie Orr', '93772581');
+INSERT INTO nonadmin VALUES ('Marie Orr', '93772581', '17625 Hodges Plains, New Peter, VA 84087','0');
+INSERT INTO caretakers VALUES ('Marie Orr', '93772581', '17625 Hodges Plains, New Peter, VA 84087', '0');
+
+INSERT INTO users VALUES ('Lloyd Smith', '42477730');
+INSERT INTO nonadmin VALUES ('Lloyd Smith', '42477730', '9647 Fisher Station, Jeffreychester, CA 36943','1');
+INSERT INTO caretakers VALUES ('Lloyd Smith', '42477730', '9647 Fisher Station, Jeffreychester, CA 36943', '1');
+
+INSERT INTO users VALUES ('Cynthia Hester', '21845983');
+INSERT INTO nonadmin VALUES ('Cynthia Hester', '21845983', '1606 James Overpass, New Melissa, OH 18029','0');
+INSERT INTO caretakers VALUES ('Cynthia Hester', '21845983', '1606 James Overpass, New Melissa, OH 18029', '0');
+
+INSERT INTO users VALUES ('Sandra Fermin', '53657322');
+INSERT INTO nonadmin VALUES ('Sandra Fermin', '53657322', '58241 Lamb Tunnel, Joshuastad, WV 34233','1');
+INSERT INTO caretakers VALUES ('Sandra Fermin', '53657322', '58241 Lamb Tunnel, Joshuastad, WV 34233', '1');
+
+INSERT INTO users VALUES ('Terri Ramos', '96157567');
+INSERT INTO nonadmin VALUES ('Terri Ramos', '96157567', 'PSC 8027, Box 7909, APO AP 67400','0');
+INSERT INTO caretakers VALUES ('Terri Ramos', '96157567', 'PSC 8027, Box 7909, APO AP 67400', '0');
+
+INSERT INTO users VALUES ('Tricia Shaffer', '62242651');
+INSERT INTO nonadmin VALUES ('Tricia Shaffer', '62242651', '795 Allen Center Suite 334, Port Julie, ME 26515','0');
+INSERT INTO caretakers VALUES ('Tricia Shaffer', '62242651', '795 Allen Center Suite 334, Port Julie, ME 26515', '0');
+
+INSERT INTO users VALUES ('Lily Carpenter', '56148636');
+INSERT INTO nonadmin VALUES ('Lily Carpenter', '56148636', '54640 Patterson Fords, Lake Michael, NE 99075','2');
+INSERT INTO caretakers VALUES ('Lily Carpenter', '56148636', '54640 Patterson Fords, Lake Michael, NE 99075', '2');
+
+INSERT INTO users VALUES ('Mozell Wooden', '41335232');
+INSERT INTO nonadmin VALUES ('Mozell Wooden', '41335232', '91179 Heather Cliff, West Tinaborough, OH 59441','1');
+INSERT INTO caretakers VALUES ('Mozell Wooden', '41335232', '91179 Heather Cliff, West Tinaborough, OH 59441', '1');
+
+INSERT INTO users VALUES ('Mary Latta', '36464262');
+INSERT INTO nonadmin VALUES ('Mary Latta', '36464262', '411 Greene Mills Suite 284, Robertfort, NY 68589','1');
+INSERT INTO caretakers VALUES ('Mary Latta', '36464262', '411 Greene Mills Suite 284, Robertfort, NY 68589', '1');
+
+INSERT INTO users VALUES ('Ashley Hill', '56502612');
+INSERT INTO nonadmin VALUES ('Ashley Hill', '56502612', '5128 Erica Mall, Kimberlyhaven, CT 30476','1');
+INSERT INTO caretakers VALUES ('Ashley Hill', '56502612', '5128 Erica Mall, Kimberlyhaven, CT 30476', '1');
+
+INSERT INTO users VALUES ('Sharon Marie', '32012014');
+INSERT INTO nonadmin VALUES ('Sharon Marie', '32012014', '6714 Jenna Islands Suite 684, Lake Sharonchester, NM 21624','0');
+INSERT INTO caretakers VALUES ('Sharon Marie', '32012014', '6714 Jenna Islands Suite 684, Lake Sharonchester, NM 21624', '0');
+
+INSERT INTO users VALUES ('Tracy Thompson', '30169696');
+INSERT INTO nonadmin VALUES ('Tracy Thompson', '30169696', '475 Gordon Crescent, West Deniseview, NJ 32257','0');
+INSERT INTO caretakers VALUES ('Tracy Thompson', '30169696', '475 Gordon Crescent, West Deniseview, NJ 32257', '0');
+
+INSERT INTO users VALUES ('Yvonne Escobedo', '20750854');
+INSERT INTO nonadmin VALUES ('Yvonne Escobedo', '20750854', '164 Stacey Cove, Collinschester, DE 43517','0');
+INSERT INTO caretakers VALUES ('Yvonne Escobedo', '20750854', '164 Stacey Cove, Collinschester, DE 43517', '0');
+
+INSERT INTO users VALUES ('Germaine Yau', '82261846');
+INSERT INTO nonadmin VALUES ('Germaine Yau', '82261846', '899 Cowan Vista, East Mariamouth, WI 74851','0');
+INSERT INTO caretakers VALUES ('Germaine Yau', '82261846', '899 Cowan Vista, East Mariamouth, WI 74851', '0');
+
+INSERT INTO users VALUES ('William Zocklein', '59806591');
+INSERT INTO nonadmin VALUES ('William Zocklein', '59806591', '1864 James Wall Suite 286, South Brenda, MS 26217','1');
+INSERT INTO caretakers VALUES ('William Zocklein', '59806591', '1864 James Wall Suite 286, South Brenda, MS 26217', '1');
+
+INSERT INTO users VALUES ('Rita Nelson', '24663159');
+INSERT INTO nonadmin VALUES ('Rita Nelson', '24663159', '39557 Reed Common, Lake Robertbury, WA 26711','2');
+INSERT INTO caretakers VALUES ('Rita Nelson', '24663159', '39557 Reed Common, Lake Robertbury, WA 26711', '2');
+
+INSERT INTO users VALUES ('Tommy Machado', '48314208');
+INSERT INTO nonadmin VALUES ('Tommy Machado', '48314208', 'Unit 5379 Box 3915, DPO AP 64695','1');
+INSERT INTO caretakers VALUES ('Tommy Machado', '48314208', 'Unit 5379 Box 3915, DPO AP 64695', '1');
+
+INSERT INTO users VALUES ('Michael Dean', '76243819');
+INSERT INTO nonadmin VALUES ('Michael Dean', '76243819', '709 Lang Street Apt. 884, Martintown, DC 82019','2');
+INSERT INTO caretakers VALUES ('Michael Dean', '76243819', '709 Lang Street Apt. 884, Martintown, DC 82019', '2');
+
+INSERT INTO users VALUES ('Frances Robinson', '29440697');
+INSERT INTO nonadmin VALUES ('Frances Robinson', '29440697', '42701 Stephanie Rapid, Peterstad, AZ 67909','2');
+INSERT INTO caretakers VALUES ('Frances Robinson', '29440697', '42701 Stephanie Rapid, Peterstad, AZ 67909', '2');
+
+INSERT INTO users VALUES ('Scott Hughes', '94912121');
+INSERT INTO nonadmin VALUES ('Scott Hughes', '94912121', '5056 Nancy Branch Suite 694, North Nicoleshire, RI 64146','2');
+INSERT INTO caretakers VALUES ('Scott Hughes', '94912121', '5056 Nancy Branch Suite 694, North Nicoleshire, RI 64146', '2');
+
+INSERT INTO users VALUES ('Lindsay Stewart', '12951768');
+INSERT INTO nonadmin VALUES ('Lindsay Stewart', '12951768', '025 Arias Locks, East Glennview, CO 08352','2');
+INSERT INTO caretakers VALUES ('Lindsay Stewart', '12951768', '025 Arias Locks, East Glennview, CO 08352', '2');
+
+INSERT INTO users VALUES ('Dorothy Boelter', '76528059');
+INSERT INTO nonadmin VALUES ('Dorothy Boelter', '76528059', '27125 Nicholas Stream Suite 330, Lake Matthew, MA 22937','0');
+INSERT INTO caretakers VALUES ('Dorothy Boelter', '76528059', '27125 Nicholas Stream Suite 330, Lake Matthew, MA 22937', '0');
+
+INSERT INTO users VALUES ('Dian Maupin', '93665861');
+INSERT INTO nonadmin VALUES ('Dian Maupin', '93665861', '665 Richardson Center Suite 524, Ashleymouth, SC 20409','0');
+INSERT INTO caretakers VALUES ('Dian Maupin', '93665861', '665 Richardson Center Suite 524, Ashleymouth, SC 20409', '0');
+
+INSERT INTO users VALUES ('Natalia Gullickson', '54306280');
+INSERT INTO nonadmin VALUES ('Natalia Gullickson', '54306280', '93696 Wright Mission Suite 471, South Sonyafort, ME 89112','1');
+INSERT INTO caretakers VALUES ('Natalia Gullickson', '54306280', '93696 Wright Mission Suite 471, South Sonyafort, ME 89112', '1');
+
+INSERT INTO users VALUES ('Hubert Day', '43647788');
+INSERT INTO nonadmin VALUES ('Hubert Day', '43647788', '182 Grace Mountains Apt. 616, Jacksonshire, KY 45773','2');
+INSERT INTO caretakers VALUES ('Hubert Day', '43647788', '182 Grace Mountains Apt. 616, Jacksonshire, KY 45773', '2');
+
+INSERT INTO users VALUES ('Beverly Mcdowell', '74366030');
+INSERT INTO nonadmin VALUES ('Beverly Mcdowell', '74366030', '79173 Faulkner Valley Suite 841, Port Kevinbury, TX 79545','1');
+INSERT INTO caretakers VALUES ('Beverly Mcdowell', '74366030', '79173 Faulkner Valley Suite 841, Port Kevinbury, TX 79545', '1');
+
+INSERT INTO users VALUES ('Earl Preston', '68938018');
+INSERT INTO nonadmin VALUES ('Earl Preston', '68938018', '574 Anthony Lock, West Donaldshire, CT 69039','1');
+INSERT INTO caretakers VALUES ('Earl Preston', '68938018', '574 Anthony Lock, West Donaldshire, CT 69039', '1');
+
+INSERT INTO users VALUES ('Barbara Willemsen', '87579405');
+INSERT INTO nonadmin VALUES ('Barbara Willemsen', '87579405', '87251 Olsen Pass, New Jennifer, CA 47149','0');
+INSERT INTO caretakers VALUES ('Barbara Willemsen', '87579405', '87251 Olsen Pass, New Jennifer, CA 47149', '0');
+
+INSERT INTO users VALUES ('Lonna Kube', '49859636');
+INSERT INTO nonadmin VALUES ('Lonna Kube', '49859636', '987 Bell Underpass, Sotohaven, AK 28076','2');
+INSERT INTO caretakers VALUES ('Lonna Kube', '49859636', '987 Bell Underpass, Sotohaven, AK 28076', '2');
+
+INSERT INTO users VALUES ('Bridgette Chandler', '88479907');
+INSERT INTO nonadmin VALUES ('Bridgette Chandler', '88479907', '51067 Andrew Keys, North Patricia, MI 92214','0');
+INSERT INTO caretakers VALUES ('Bridgette Chandler', '88479907', '51067 Andrew Keys, North Patricia, MI 92214', '0');
+
+INSERT INTO users VALUES ('Tomasa Allen', '70492725');
+INSERT INTO nonadmin VALUES ('Tomasa Allen', '70492725', '9503 Garrett Corner, Stevenmouth, OH 45332','1');
+INSERT INTO caretakers VALUES ('Tomasa Allen', '70492725', '9503 Garrett Corner, Stevenmouth, OH 45332', '1');
+
+INSERT INTO users VALUES ('Larry Stlouis', '52770637');
+INSERT INTO nonadmin VALUES ('Larry Stlouis', '52770637', 'PSC 1618, Box 4495, APO AE 66760','0');
+INSERT INTO caretakers VALUES ('Larry Stlouis', '52770637', 'PSC 1618, Box 4495, APO AE 66760', '0');
+
+INSERT INTO users VALUES ('James Kramer', '10317736');
+INSERT INTO nonadmin VALUES ('James Kramer', '10317736', '8351 Nathan Walks, Georgeberg, ID 24682','0');
+INSERT INTO caretakers VALUES ('James Kramer', '10317736', '8351 Nathan Walks, Georgeberg, ID 24682', '0');
+
+INSERT INTO users VALUES ('Harry Simmons', '76712843');
+INSERT INTO nonadmin VALUES ('Harry Simmons', '76712843', '169 Flores Union Apt. 989, Samanthaland, CT 41342','2');
+INSERT INTO caretakers VALUES ('Harry Simmons', '76712843', '169 Flores Union Apt. 989, Samanthaland, CT 41342', '2');
+
+INSERT INTO users VALUES ('Cindy Hartwell', '61744002');
+INSERT INTO nonadmin VALUES ('Cindy Hartwell', '61744002', '053 Zachary Points, South Rebecca, VT 04234','1');
+INSERT INTO caretakers VALUES ('Cindy Hartwell', '61744002', '053 Zachary Points, South Rebecca, VT 04234', '1');
+
+INSERT INTO users VALUES ('Toni Dunn', '56618793');
+INSERT INTO nonadmin VALUES ('Toni Dunn', '56618793', '9650 Hughes Crescent, Stephaniebury, CO 12858','1');
+INSERT INTO caretakers VALUES ('Toni Dunn', '56618793', '9650 Hughes Crescent, Stephaniebury, CO 12858', '1');
+
+INSERT INTO users VALUES ('Reina Simien', '93886168');
+INSERT INTO nonadmin VALUES ('Reina Simien', '93886168', 'Unit 4007 Box 1679, DPO AE 03830','2');
+INSERT INTO caretakers VALUES ('Reina Simien', '93886168', 'Unit 4007 Box 1679, DPO AE 03830', '2');
+
+INSERT INTO users VALUES ('Preston Strohschein', '13338457');
+INSERT INTO nonadmin VALUES ('Preston Strohschein', '13338457', '5167 Jonathan Burgs Suite 664, Port Walter, OH 76980','1');
+INSERT INTO caretakers VALUES ('Preston Strohschein', '13338457', '5167 Jonathan Burgs Suite 664, Port Walter, OH 76980', '1');
+
+INSERT INTO users VALUES ('Rick Brown', '10988860');
+INSERT INTO nonadmin VALUES ('Rick Brown', '10988860', '03226 Benjamin Wells, West Kelly, AL 65666','0');
+INSERT INTO caretakers VALUES ('Rick Brown', '10988860', '03226 Benjamin Wells, West Kelly, AL 65666', '0');
+
+INSERT INTO users VALUES ('Mary Rogers', '96501704');
+INSERT INTO nonadmin VALUES ('Mary Rogers', '96501704', '006 Bradley Port Suite 630, New Michael, DE 48036','2');
+INSERT INTO caretakers VALUES ('Mary Rogers', '96501704', '006 Bradley Port Suite 630, New Michael, DE 48036', '2');
+
+INSERT INTO users VALUES ('Olivia Highshaw', '84945925');
+INSERT INTO nonadmin VALUES ('Olivia Highshaw', '84945925', '37550 Gregory Unions Apt. 430, East Josetown, CT 94207','2');
+INSERT INTO caretakers VALUES ('Olivia Highshaw', '84945925', '37550 Gregory Unions Apt. 430, East Josetown, CT 94207', '2');
+
+INSERT INTO users VALUES ('Vincent Mezick', '64800717');
+INSERT INTO nonadmin VALUES ('Vincent Mezick', '64800717', '7953 Conner Unions, Laurenshire, MI 76082','0');
+INSERT INTO caretakers VALUES ('Vincent Mezick', '64800717', '7953 Conner Unions, Laurenshire, MI 76082', '0');
+
+INSERT INTO users VALUES ('Arthur Smith', '23846104');
+INSERT INTO nonadmin VALUES ('Arthur Smith', '23846104', '82454 James Overpass Apt. 473, South Kellyborough, MD 03177','1');
+INSERT INTO caretakers VALUES ('Arthur Smith', '23846104', '82454 James Overpass Apt. 473, South Kellyborough, MD 03177', '1');
+
+INSERT INTO users VALUES ('Margaret Hernandez', '54711638');
+INSERT INTO nonadmin VALUES ('Margaret Hernandez', '54711638', '7758 Tracy Curve Suite 366, Ricechester, NC 38100','0');
+INSERT INTO caretakers VALUES ('Margaret Hernandez', '54711638', '7758 Tracy Curve Suite 366, Ricechester, NC 38100', '0');
+
+INSERT INTO users VALUES ('Nicole Hopping', '46135077');
+INSERT INTO nonadmin VALUES ('Nicole Hopping', '46135077', '26887 Romero Lane, South Sarah, MT 09419','0');
+INSERT INTO caretakers VALUES ('Nicole Hopping', '46135077', '26887 Romero Lane, South Sarah, MT 09419', '0');
+
+INSERT INTO users VALUES ('Donald Isch', '40763372');
+INSERT INTO nonadmin VALUES ('Donald Isch', '40763372', '13423 Daniel Parks, East Kathy, AZ 57506','0');
+INSERT INTO caretakers VALUES ('Donald Isch', '40763372', '13423 Daniel Parks, East Kathy, AZ 57506', '0');
+
+INSERT INTO users VALUES ('Rob Lancaster', '21426309');
+INSERT INTO nonadmin VALUES ('Rob Lancaster', '21426309', 'PSC 3614, Box 7215, APO AE 95885','2');
+INSERT INTO caretakers VALUES ('Rob Lancaster', '21426309', 'PSC 3614, Box 7215, APO AE 95885', '2');
+
+INSERT INTO users VALUES ('Ariane Peoples', '88797698');
+INSERT INTO nonadmin VALUES ('Ariane Peoples', '88797698', '54954 Stephanie Ways, Garciaville, NY 02233','0');
+INSERT INTO caretakers VALUES ('Ariane Peoples', '88797698', '54954 Stephanie Ways, Garciaville, NY 02233', '0');
+
+INSERT INTO users VALUES ('Frank Bell', '99155999');
+INSERT INTO nonadmin VALUES ('Frank Bell', '99155999', '95207 James Vista, Davidmouth, DE 01696','2');
+INSERT INTO caretakers VALUES ('Frank Bell', '99155999', '95207 James Vista, Davidmouth, DE 01696', '2');
+
+INSERT INTO users VALUES ('Adrian Stevens', '18988645');
+INSERT INTO nonadmin VALUES ('Adrian Stevens', '18988645', '5584 Alexander Shores Apt. 768, Craigview, NC 63345','0');
+INSERT INTO caretakers VALUES ('Adrian Stevens', '18988645', '5584 Alexander Shores Apt. 768, Craigview, NC 63345', '0');
+
+INSERT INTO users VALUES ('Julia Blache', '15704613');
+INSERT INTO nonadmin VALUES ('Julia Blache', '15704613', '01724 Lee Squares, Georgetown, AR 45504','1');
+INSERT INTO caretakers VALUES ('Julia Blache', '15704613', '01724 Lee Squares, Georgetown, AR 45504', '1');
+
+INSERT INTO users VALUES ('David Stewart', '42035279');
+INSERT INTO nonadmin VALUES ('David Stewart', '42035279', '120 Brown Knolls, Jeffreymouth, NE 52365','2');
+INSERT INTO caretakers VALUES ('David Stewart', '42035279', '120 Brown Knolls, Jeffreymouth, NE 52365', '2');
+
+INSERT INTO users VALUES ('Joyce Aguilar', '87018072');
+INSERT INTO nonadmin VALUES ('Joyce Aguilar', '87018072', '220 Miller Club, New Belinda, DC 29704','1');
+INSERT INTO caretakers VALUES ('Joyce Aguilar', '87018072', '220 Miller Club, New Belinda, DC 29704', '1');
+
+INSERT INTO users VALUES ('Jacob Smith', '10887989');
+INSERT INTO nonadmin VALUES ('Jacob Smith', '10887989', '97531 Julie Turnpike, Port Sharonland, WA 60193','2');
+INSERT INTO caretakers VALUES ('Jacob Smith', '10887989', '97531 Julie Turnpike, Port Sharonland, WA 60193', '2');
+
+INSERT INTO users VALUES ('William Lewis', '67752352');
+INSERT INTO nonadmin VALUES ('William Lewis', '67752352', '006 Hammond Forges Suite 823, West Nathanview, ID 42839','1');
+INSERT INTO caretakers VALUES ('William Lewis', '67752352', '006 Hammond Forges Suite 823, West Nathanview, ID 42839', '1');
+
+INSERT INTO users VALUES ('Mireya Riley', '70739186');
+INSERT INTO nonadmin VALUES ('Mireya Riley', '70739186', '7019 King Well, South Dalton, MD 89830','2');
+INSERT INTO caretakers VALUES ('Mireya Riley', '70739186', '7019 King Well, South Dalton, MD 89830', '2');
+
+INSERT INTO users VALUES ('Amanda Mccary', '86040843');
+INSERT INTO nonadmin VALUES ('Amanda Mccary', '86040843', '20345 Gonzalez Keys, Amandaton, DE 91738','0');
+INSERT INTO caretakers VALUES ('Amanda Mccary', '86040843', '20345 Gonzalez Keys, Amandaton, DE 91738', '0');
+
+INSERT INTO users VALUES ('Richard Daniels', '74093802');
+INSERT INTO nonadmin VALUES ('Richard Daniels', '74093802', '477 Amanda Parkway Suite 295, Lake Stacy, ME 17219','2');
+INSERT INTO caretakers VALUES ('Richard Daniels', '74093802', '477 Amanda Parkway Suite 295, Lake Stacy, ME 17219', '2');
+
+INSERT INTO users VALUES ('Mary Dibartolomeo', '30608075');
+INSERT INTO nonadmin VALUES ('Mary Dibartolomeo', '30608075', '66406 Anthony Spurs Apt. 223, Lauriefort, DC 28649','2');
+INSERT INTO caretakers VALUES ('Mary Dibartolomeo', '30608075', '66406 Anthony Spurs Apt. 223, Lauriefort, DC 28649', '2');
+
+INSERT INTO users VALUES ('Janet Wilson', '11176218');
+INSERT INTO nonadmin VALUES ('Janet Wilson', '11176218', 'Unit 1460 Box 9865, DPO AA 02243','2');
+INSERT INTO caretakers VALUES ('Janet Wilson', '11176218', 'Unit 1460 Box 9865, DPO AA 02243', '2');
+
+INSERT INTO users VALUES ('Christopher Spruill', '59308689');
+INSERT INTO nonadmin VALUES ('Christopher Spruill', '59308689', '5999 Leon Circle, West Jason, IL 41011','0');
+INSERT INTO caretakers VALUES ('Christopher Spruill', '59308689', '5999 Leon Circle, West Jason, IL 41011', '0');
+
+INSERT INTO users VALUES ('Daniel Wilson', '34342498');
+INSERT INTO nonadmin VALUES ('Daniel Wilson', '34342498', '623 Kenneth Extension Suite 904, Matthewberg, KS 87474','0');
+INSERT INTO caretakers VALUES ('Daniel Wilson', '34342498', '623 Kenneth Extension Suite 904, Matthewberg, KS 87474', '0');
+
+INSERT INTO users VALUES ('Mary Barnett', '94478461');
+INSERT INTO nonadmin VALUES ('Mary Barnett', '94478461', '084 Bullock Trace, South Calvinport, NJ 05807','1');
+INSERT INTO caretakers VALUES ('Mary Barnett', '94478461', '084 Bullock Trace, South Calvinport, NJ 05807', '1');
+
+INSERT INTO users VALUES ('Michael Simpson', '33515324');
+INSERT INTO nonadmin VALUES ('Michael Simpson', '33515324', '0602 Michelle Mills Apt. 430, Reyesberg, WV 63115','1');
+INSERT INTO caretakers VALUES ('Michael Simpson', '33515324', '0602 Michelle Mills Apt. 430, Reyesberg, WV 63115', '1');
+
+INSERT INTO users VALUES ('Douglas Spadaro', '91634703');
+INSERT INTO nonadmin VALUES ('Douglas Spadaro', '91634703', '8670 David Plaza Suite 425, North Stephen, OK 06492','2');
+INSERT INTO caretakers VALUES ('Douglas Spadaro', '91634703', '8670 David Plaza Suite 425, North Stephen, OK 06492', '2');
+
+INSERT INTO users VALUES ('Douglas Davis', '53685958');
+INSERT INTO nonadmin VALUES ('Douglas Davis', '53685958', '8810 Duffy Vista, Brianborough, MO 34506','0');
+INSERT INTO caretakers VALUES ('Douglas Davis', '53685958', '8810 Duffy Vista, Brianborough, MO 34506', '0');
+
+INSERT INTO users VALUES ('James Gordon', '89884824');
+INSERT INTO nonadmin VALUES ('James Gordon', '89884824', '74831 Murphy Forges Suite 950, New Christopher, MT 72662','1');
+INSERT INTO caretakers VALUES ('James Gordon', '89884824', '74831 Murphy Forges Suite 950, New Christopher, MT 72662', '1');
+
+INSERT INTO users VALUES ('Chester Benson', '34947884');
+INSERT INTO nonadmin VALUES ('Chester Benson', '34947884', 'Unit 9504 Box 0906, DPO AA 19104','1');
+INSERT INTO caretakers VALUES ('Chester Benson', '34947884', 'Unit 9504 Box 0906, DPO AA 19104', '1');
+
+INSERT INTO users VALUES ('Kari Petty', '37765738');
+INSERT INTO nonadmin VALUES ('Kari Petty', '37765738', '983 Gary Brook, Aguilarfort, OR 25134','1');
+INSERT INTO caretakers VALUES ('Kari Petty', '37765738', '983 Gary Brook, Aguilarfort, OR 25134', '1');
+
+INSERT INTO users VALUES ('Orval Gonzales', '23053065');
+INSERT INTO nonadmin VALUES ('Orval Gonzales', '23053065', '0110 Mackenzie Pine Apt. 418, Destinymouth, WA 96165','1');
+INSERT INTO caretakers VALUES ('Orval Gonzales', '23053065', '0110 Mackenzie Pine Apt. 418, Destinymouth, WA 96165', '1');
+
+INSERT INTO users VALUES ('Ollie Isbell', '16918448');
+INSERT INTO nonadmin VALUES ('Ollie Isbell', '16918448', '4170 Tyler Lights Apt. 904, Lake Williamburgh, IL 08818','1');
+INSERT INTO caretakers VALUES ('Ollie Isbell', '16918448', '4170 Tyler Lights Apt. 904, Lake Williamburgh, IL 08818', '1');
+
+INSERT INTO users VALUES ('Isabelle Sanpedro', '70471411');
+INSERT INTO nonadmin VALUES ('Isabelle Sanpedro', '70471411', '69045 Mary Trafficway Suite 567, North Thomas, NC 13447','0');
+INSERT INTO caretakers VALUES ('Isabelle Sanpedro', '70471411', '69045 Mary Trafficway Suite 567, North Thomas, NC 13447', '0');
+
+INSERT INTO users VALUES ('Steven James', '19511125');
+INSERT INTO nonadmin VALUES ('Steven James', '19511125', '9070 Cody Ramp, Whitetown, AR 31318','1');
+INSERT INTO caretakers VALUES ('Steven James', '19511125', '9070 Cody Ramp, Whitetown, AR 31318', '1');
+
+INSERT INTO users VALUES ('Ella Skinner', '10001742');
+INSERT INTO nonadmin VALUES ('Ella Skinner', '10001742', '021 Micheal Points, Colonland, MO 86628','1');
+INSERT INTO caretakers VALUES ('Ella Skinner', '10001742', '021 Micheal Points, Colonland, MO 86628', '1');
+
+INSERT INTO users VALUES ('Roberto Cohen', '74517570');
+INSERT INTO nonadmin VALUES ('Roberto Cohen', '74517570', '471 Diane Centers Apt. 193, Sarahstad, AZ 04114','2');
+INSERT INTO caretakers VALUES ('Roberto Cohen', '74517570', '471 Diane Centers Apt. 193, Sarahstad, AZ 04114', '2');
+
+INSERT INTO users VALUES ('Roger Quandt', '55139177');
+INSERT INTO nonadmin VALUES ('Roger Quandt', '55139177', '50964 Cooper Shoals Suite 494, South Kelly, TX 86377','2');
+INSERT INTO caretakers VALUES ('Roger Quandt', '55139177', '50964 Cooper Shoals Suite 494, South Kelly, TX 86377', '2');
+
+INSERT INTO users VALUES ('Sherry Patron', '44909001');
+INSERT INTO nonadmin VALUES ('Sherry Patron', '44909001', '2102 Miller Mission, Michelleview, MT 83647','0');
+INSERT INTO caretakers VALUES ('Sherry Patron', '44909001', '2102 Miller Mission, Michelleview, MT 83647', '0');
+
+INSERT INTO users VALUES ('Allison Palmer', '89279706');
+INSERT INTO nonadmin VALUES ('Allison Palmer', '89279706', '8552 Justin Curve, South Nancyton, WA 76801','0');
+INSERT INTO caretakers VALUES ('Allison Palmer', '89279706', '8552 Justin Curve, South Nancyton, WA 76801', '0');
+
+INSERT INTO users VALUES ('Dwight Currie', '36737974');
+INSERT INTO nonadmin VALUES ('Dwight Currie', '36737974', '693 Noah Cliff, Deborahshire, TX 49993','0');
+INSERT INTO caretakers VALUES ('Dwight Currie', '36737974', '693 Noah Cliff, Deborahshire, TX 49993', '0');
+
+INSERT INTO users VALUES ('Frederick Davis', '72048115');
+INSERT INTO nonadmin VALUES ('Frederick Davis', '72048115', '888 Bell Cliffs, Kevinhaven, CO 84160','1');
+INSERT INTO caretakers VALUES ('Frederick Davis', '72048115', '888 Bell Cliffs, Kevinhaven, CO 84160', '1');
+
+INSERT INTO users VALUES ('Andrea Smith', '20711422');
+INSERT INTO nonadmin VALUES ('Andrea Smith', '20711422', '97082 Anderson Walk, South Kimberly, AR 94271','1');
+INSERT INTO caretakers VALUES ('Andrea Smith', '20711422', '97082 Anderson Walk, South Kimberly, AR 94271', '1');
+
+INSERT INTO users VALUES ('Vanessa King', '89502883');
+INSERT INTO nonadmin VALUES ('Vanessa King', '89502883', '6748 Hughes Drive, Lake Donald, NJ 95933','1');
+INSERT INTO caretakers VALUES ('Vanessa King', '89502883', '6748 Hughes Drive, Lake Donald, NJ 95933', '1');
+
+INSERT INTO users VALUES ('Ashley Rivera', '29542448');
+INSERT INTO nonadmin VALUES ('Ashley Rivera', '29542448', '639 Michael Walk, South Patrickmouth, WV 98926','0');
+INSERT INTO caretakers VALUES ('Ashley Rivera', '29542448', '639 Michael Walk, South Patrickmouth, WV 98926', '0');
+
+INSERT INTO users VALUES ('Irene Burton', '13479088');
+INSERT INTO nonadmin VALUES ('Irene Burton', '13479088', 'USS Lee, FPO AA 09436','1');
+INSERT INTO caretakers VALUES ('Irene Burton', '13479088', 'USS Lee, FPO AA 09436', '1');
+
+INSERT INTO users VALUES ('Lindsey Sites', '18349041');
+INSERT INTO nonadmin VALUES ('Lindsey Sites', '18349041', '91040 Christopher Estate, Johnsonfurt, RI 33052','0');
+INSERT INTO caretakers VALUES ('Lindsey Sites', '18349041', '91040 Christopher Estate, Johnsonfurt, RI 33052', '0');
+
+INSERT INTO users VALUES ('Ashley Golightly', '36684517');
+INSERT INTO nonadmin VALUES ('Ashley Golightly', '36684517', '82614 Stone Junctions Suite 466, Tylerstad, NE 34248','1');
+INSERT INTO caretakers VALUES ('Ashley Golightly', '36684517', '82614 Stone Junctions Suite 466, Tylerstad, NE 34248', '1');
+
+INSERT INTO users VALUES ('Shane Parent', '43529658');
+INSERT INTO nonadmin VALUES ('Shane Parent', '43529658', 'Unit 1472 Box 6926, DPO AA 69110','2');
+INSERT INTO caretakers VALUES ('Shane Parent', '43529658', 'Unit 1472 Box 6926, DPO AA 69110', '2');
+
+INSERT INTO users VALUES ('Sylvia Deatherage', '94211238');
+INSERT INTO nonadmin VALUES ('Sylvia Deatherage', '94211238', 'USNS Cox, FPO AA 16680','2');
+INSERT INTO caretakers VALUES ('Sylvia Deatherage', '94211238', 'USNS Cox, FPO AA 16680', '2');
+
+INSERT INTO users VALUES ('John Nichols', '47089759');
+INSERT INTO nonadmin VALUES ('John Nichols', '47089759', '38366 Tammy Way Apt. 926, Lake Dana, ME 44574','2');
+INSERT INTO caretakers VALUES ('John Nichols', '47089759', '38366 Tammy Way Apt. 926, Lake Dana, ME 44574', '2');
+
+INSERT INTO users VALUES ('Erin Fowler', '22530345');
+INSERT INTO nonadmin VALUES ('Erin Fowler', '22530345', '49676 Kramer Knolls, Lake Zachary, DC 67864','0');
+INSERT INTO caretakers VALUES ('Erin Fowler', '22530345', '49676 Kramer Knolls, Lake Zachary, DC 67864', '0');
+
+INSERT INTO users VALUES ('Ken Davis', '39603462');
+INSERT INTO nonadmin VALUES ('Ken Davis', '39603462', '589 Goodman Gateway, Robbinsbury, TN 70330','2');
+INSERT INTO caretakers VALUES ('Ken Davis', '39603462', '589 Goodman Gateway, Robbinsbury, TN 70330', '2');
+
+INSERT INTO users VALUES ('Jason Loughborough', '36191754');
+INSERT INTO nonadmin VALUES ('Jason Loughborough', '36191754', '48720 Lewis Crossroad Suite 966, Lake Laura, WI 42485','0');
+INSERT INTO caretakers VALUES ('Jason Loughborough', '36191754', '48720 Lewis Crossroad Suite 966, Lake Laura, WI 42485', '0');
+
+INSERT INTO users VALUES ('Gary Cochran', '14785258');
+INSERT INTO nonadmin VALUES ('Gary Cochran', '14785258', '688 Michelle Vista, Castillotown, AK 26158','1');
+INSERT INTO caretakers VALUES ('Gary Cochran', '14785258', '688 Michelle Vista, Castillotown, AK 26158', '1');
+
+INSERT INTO users VALUES ('Dianne Ohlson', '32097734');
+INSERT INTO nonadmin VALUES ('Dianne Ohlson', '32097734', '1843 King Islands Suite 538, Michaelberg, IA 32547','0');
+INSERT INTO caretakers VALUES ('Dianne Ohlson', '32097734', '1843 King Islands Suite 538, Michaelberg, IA 32547', '0');
+
+INSERT INTO users VALUES ('Paul Young', '64842388');
+INSERT INTO nonadmin VALUES ('Paul Young', '64842388', '53673 Jonathan Walk Apt. 266, Lucasland, MO 48962','1');
+INSERT INTO caretakers VALUES ('Paul Young', '64842388', '53673 Jonathan Walk Apt. 266, Lucasland, MO 48962', '1');
+
+INSERT INTO users VALUES ('Delbert Straight', '80052316');
+INSERT INTO nonadmin VALUES ('Delbert Straight', '80052316', '8492 Flynn Trace Apt. 482, Michaelside, WV 45619','1');
+INSERT INTO caretakers VALUES ('Delbert Straight', '80052316', '8492 Flynn Trace Apt. 482, Michaelside, WV 45619', '1');
+
+INSERT INTO users VALUES ('Loretta Hinson', '53764592');
+INSERT INTO nonadmin VALUES ('Loretta Hinson', '53764592', '18818 Andrea Mountains Apt. 777, Hamiltonborough, WA 12617','1');
+INSERT INTO caretakers VALUES ('Loretta Hinson', '53764592', '18818 Andrea Mountains Apt. 777, Hamiltonborough, WA 12617', '1');
+
+INSERT INTO users VALUES ('James Sturgis', '14009122');
+INSERT INTO nonadmin VALUES ('James Sturgis', '14009122', '234 Michael Way Apt. 713, Victoriachester, MS 48998','0');
+INSERT INTO caretakers VALUES ('James Sturgis', '14009122', '234 Michael Way Apt. 713, Victoriachester, MS 48998', '0');
+
+INSERT INTO users VALUES ('Kimberly Garvin', '12260559');
+INSERT INTO nonadmin VALUES ('Kimberly Garvin', '12260559', '15660 Bethany Streets Apt. 188, Youngstad, MO 81729','1');
+INSERT INTO caretakers VALUES ('Kimberly Garvin', '12260559', '15660 Bethany Streets Apt. 188, Youngstad, MO 81729', '1');
+
+INSERT INTO users VALUES ('Rosetta Juarez', '31896195');
+INSERT INTO nonadmin VALUES ('Rosetta Juarez', '31896195', '924 Carpenter Fort, Youngshire, SC 93530','0');
+INSERT INTO caretakers VALUES ('Rosetta Juarez', '31896195', '924 Carpenter Fort, Youngshire, SC 93530', '0');
+
+INSERT INTO users VALUES ('Ralph Glory', '64433078');
+INSERT INTO nonadmin VALUES ('Ralph Glory', '64433078', '7760 Hall Viaduct, Leeton, WA 30853','2');
+INSERT INTO caretakers VALUES ('Ralph Glory', '64433078', '7760 Hall Viaduct, Leeton, WA 30853', '2');
+
+INSERT INTO users VALUES ('Shawnta Cronin', '10796041');
+INSERT INTO nonadmin VALUES ('Shawnta Cronin', '10796041', '80382 Jarvis Streets, East Eric, NY 60942','2');
+INSERT INTO caretakers VALUES ('Shawnta Cronin', '10796041', '80382 Jarvis Streets, East Eric, NY 60942', '2');
+
+INSERT INTO users VALUES ('Jessica Jones', '86899635');
+INSERT INTO nonadmin VALUES ('Jessica Jones', '86899635', '4939 Tiffany Brook, Patriciaside, VT 48467','0');
+INSERT INTO caretakers VALUES ('Jessica Jones', '86899635', '4939 Tiffany Brook, Patriciaside, VT 48467', '0');
+
+INSERT INTO users VALUES ('Ashley Simpson', '98801073');
+INSERT INTO nonadmin VALUES ('Ashley Simpson', '98801073', 'USS Rodriguez, FPO AP 95956','1');
+INSERT INTO caretakers VALUES ('Ashley Simpson', '98801073', 'USS Rodriguez, FPO AP 95956', '1');
+
+INSERT INTO users VALUES ('Bill Shanker', '94682457');
+INSERT INTO nonadmin VALUES ('Bill Shanker', '94682457', '5930 Tina Crest, North Amandashire, CA 48030','0');
+INSERT INTO caretakers VALUES ('Bill Shanker', '94682457', '5930 Tina Crest, North Amandashire, CA 48030', '0');
+
+INSERT INTO users VALUES ('Sabrina Bauman', '27847353');
+INSERT INTO nonadmin VALUES ('Sabrina Bauman', '27847353', '752 Nathaniel Row Suite 267, Bellport, NJ 89890','0');
+INSERT INTO caretakers VALUES ('Sabrina Bauman', '27847353', '752 Nathaniel Row Suite 267, Bellport, NJ 89890', '0');
+
+INSERT INTO users VALUES ('Ann Logan', '55660704');
+INSERT INTO nonadmin VALUES ('Ann Logan', '55660704', '192 Walker Harbor, North Troy, AK 39404','2');
+INSERT INTO caretakers VALUES ('Ann Logan', '55660704', '192 Walker Harbor, North Troy, AK 39404', '2');
+
+INSERT INTO users VALUES ('David Green', '87617928');
+INSERT INTO nonadmin VALUES ('David Green', '87617928', '12900 Diaz Circle Suite 256, Staceyberg, WI 93987','1');
+INSERT INTO caretakers VALUES ('David Green', '87617928', '12900 Diaz Circle Suite 256, Staceyberg, WI 93987', '1');
+
+INSERT INTO users VALUES ('Anthony Garcia', '23727114');
+INSERT INTO nonadmin VALUES ('Anthony Garcia', '23727114', '419 Mays Neck Suite 864, Marquezbury, TX 69058','2');
+INSERT INTO caretakers VALUES ('Anthony Garcia', '23727114', '419 Mays Neck Suite 864, Marquezbury, TX 69058', '2');
+
+INSERT INTO users VALUES ('Sharon Berg', '27760535');
+INSERT INTO nonadmin VALUES ('Sharon Berg', '27760535', '9900 Christopher Union, Valeriemouth, NE 50638','0');
+INSERT INTO caretakers VALUES ('Sharon Berg', '27760535', '9900 Christopher Union, Valeriemouth, NE 50638', '0');
+
+INSERT INTO users VALUES ('Donald Prescott', '16976747');
+INSERT INTO nonadmin VALUES ('Donald Prescott', '16976747', '6627 Melton Green, Laraville, NJ 06283','2');
+INSERT INTO caretakers VALUES ('Donald Prescott', '16976747', '6627 Melton Green, Laraville, NJ 06283', '2');
+
+INSERT INTO users VALUES ('Mark Sullivan', '29208270');
+INSERT INTO nonadmin VALUES ('Mark Sullivan', '29208270', '6403 Matthew Ways, Port Elizabethburgh, IA 39052','0');
+INSERT INTO caretakers VALUES ('Mark Sullivan', '29208270', '6403 Matthew Ways, Port Elizabethburgh, IA 39052', '0');
+
+INSERT INTO users VALUES ('Gary Terry', '96736107');
+INSERT INTO nonadmin VALUES ('Gary Terry', '96736107', '913 Riley Parkway, East Jenniferview, IL 11592','0');
+INSERT INTO caretakers VALUES ('Gary Terry', '96736107', '913 Riley Parkway, East Jenniferview, IL 11592', '0');
+
+INSERT INTO users VALUES ('Natalie Tagle', '77485247');
+INSERT INTO nonadmin VALUES ('Natalie Tagle', '77485247', '6020 Rebecca Grove Suite 648, East Sarahview, CA 51972','1');
+INSERT INTO caretakers VALUES ('Natalie Tagle', '77485247', '6020 Rebecca Grove Suite 648, East Sarahview, CA 51972', '1');
+
+INSERT INTO users VALUES ('Joseph Patrick', '99716461');
+INSERT INTO nonadmin VALUES ('Joseph Patrick', '99716461', '7079 Lang Unions, Lauratown, IN 87749','2');
+INSERT INTO caretakers VALUES ('Joseph Patrick', '99716461', '7079 Lang Unions, Lauratown, IN 87749', '2');
+
+INSERT INTO users VALUES ('Mary Whiteford', '65837134');
+INSERT INTO nonadmin VALUES ('Mary Whiteford', '65837134', '262 Floyd Rapid, Rossberg, ID 99396','1');
+INSERT INTO caretakers VALUES ('Mary Whiteford', '65837134', '262 Floyd Rapid, Rossberg, ID 99396', '1');
+
+INSERT INTO users VALUES ('Jacquelyn Baeza', '96089299');
+INSERT INTO nonadmin VALUES ('Jacquelyn Baeza', '96089299', 'USNS Smith, FPO AA 10751','1');
+INSERT INTO caretakers VALUES ('Jacquelyn Baeza', '96089299', 'USNS Smith, FPO AA 10751', '1');
+
+INSERT INTO users VALUES ('Lois Pickett', '43232292');
+INSERT INTO nonadmin VALUES ('Lois Pickett', '43232292', '30605 Mary Junctions Suite 191, West Brentborough, NV 77946','2');
+INSERT INTO caretakers VALUES ('Lois Pickett', '43232292', '30605 Mary Junctions Suite 191, West Brentborough, NV 77946', '2');
+
+INSERT INTO users VALUES ('Maria Hoehn', '57405910');
+INSERT INTO nonadmin VALUES ('Maria Hoehn', '57405910', '230 Jessica Greens Apt. 129, Steveside, VT 84856','1');
+INSERT INTO caretakers VALUES ('Maria Hoehn', '57405910', '230 Jessica Greens Apt. 129, Steveside, VT 84856', '1');
+
+INSERT INTO users VALUES ('Ruth Ramirez', '33488808');
+INSERT INTO nonadmin VALUES ('Ruth Ramirez', '33488808', '071 Joseph Lights, Weeksborough, MS 47201','2');
+INSERT INTO caretakers VALUES ('Ruth Ramirez', '33488808', '071 Joseph Lights, Weeksborough, MS 47201', '2');
+
+INSERT INTO users VALUES ('Mathew Huffman', '31534641');
+INSERT INTO nonadmin VALUES ('Mathew Huffman', '31534641', '68203 Schultz Mountain Suite 028, East Kathleen, ID 74350','0');
+INSERT INTO caretakers VALUES ('Mathew Huffman', '31534641', '68203 Schultz Mountain Suite 028, East Kathleen, ID 74350', '0');
+
+INSERT INTO users VALUES ('Doug Crowder', '29561218');
+INSERT INTO nonadmin VALUES ('Doug Crowder', '29561218', '41375 Lauren Spring, East Randy, VT 29090','1');
+INSERT INTO caretakers VALUES ('Doug Crowder', '29561218', '41375 Lauren Spring, East Randy, VT 29090', '1');
+
+INSERT INTO users VALUES ('Anthony Pyles', '31958711');
+INSERT INTO nonadmin VALUES ('Anthony Pyles', '31958711', 'USS Nelson, FPO AE 24904','2');
+INSERT INTO caretakers VALUES ('Anthony Pyles', '31958711', 'USS Nelson, FPO AE 24904', '2');
+
+INSERT INTO users VALUES ('Margaret Mutz', '47436945');
+INSERT INTO nonadmin VALUES ('Margaret Mutz', '47436945', '848 Jessica Track Suite 095, South Kimberly, MS 92536','1');
+INSERT INTO caretakers VALUES ('Margaret Mutz', '47436945', '848 Jessica Track Suite 095, South Kimberly, MS 92536', '1');
+
+INSERT INTO users VALUES ('Mack Hertler', '92690834');
+INSERT INTO nonadmin VALUES ('Mack Hertler', '92690834', 'USCGC Hartman, FPO AP 63174','1');
+INSERT INTO caretakers VALUES ('Mack Hertler', '92690834', 'USCGC Hartman, FPO AP 63174', '1');
+
+INSERT INTO users VALUES ('Max Fields', '81873950');
+INSERT INTO nonadmin VALUES ('Max Fields', '81873950', '96344 Jonathan Lane Suite 861, Meredithport, DE 32269','1');
+INSERT INTO caretakers VALUES ('Max Fields', '81873950', '96344 Jonathan Lane Suite 861, Meredithport, DE 32269', '1');
+
+INSERT INTO users VALUES ('James Bird', '72362004');
+INSERT INTO nonadmin VALUES ('James Bird', '72362004', '837 Andrew Stravenue Suite 956, North Gregory, NV 81574','2');
+INSERT INTO caretakers VALUES ('James Bird', '72362004', '837 Andrew Stravenue Suite 956, North Gregory, NV 81574', '2');
+
+INSERT INTO users VALUES ('Nancy Hayes', '34744538');
+INSERT INTO nonadmin VALUES ('Nancy Hayes', '34744538', '565 Angel Islands Suite 823, Christinefurt, WA 76536','0');
+INSERT INTO caretakers VALUES ('Nancy Hayes', '34744538', '565 Angel Islands Suite 823, Christinefurt, WA 76536', '0');
+
+INSERT INTO users VALUES ('Jeremy Tran', '26669734');
+INSERT INTO nonadmin VALUES ('Jeremy Tran', '26669734', '954 Schmidt Haven Suite 065, North Kennethside, ID 61680','1');
+INSERT INTO caretakers VALUES ('Jeremy Tran', '26669734', '954 Schmidt Haven Suite 065, North Kennethside, ID 61680', '1');
+
+INSERT INTO users VALUES ('Timothy Noel', '63370038');
+INSERT INTO nonadmin VALUES ('Timothy Noel', '63370038', '71524 Abigail Streets Apt. 455, Chavezland, SD 86545','1');
+INSERT INTO caretakers VALUES ('Timothy Noel', '63370038', '71524 Abigail Streets Apt. 455, Chavezland, SD 86545', '1');
+
+INSERT INTO users VALUES ('Leland Leach', '41310892');
+INSERT INTO nonadmin VALUES ('Leland Leach', '41310892', '6943 Carlson Oval, Robertborough, HI 29626','0');
+INSERT INTO caretakers VALUES ('Leland Leach', '41310892', '6943 Carlson Oval, Robertborough, HI 29626', '0');
+
+INSERT INTO users VALUES ('Jeffry Wells', '57401352');
+INSERT INTO nonadmin VALUES ('Jeffry Wells', '57401352', '85706 Patrick Inlet, Lake Daniellefort, NH 28708','2');
+INSERT INTO caretakers VALUES ('Jeffry Wells', '57401352', '85706 Patrick Inlet, Lake Daniellefort, NH 28708', '2');
+
+INSERT INTO users VALUES ('Andrea Watson', '43445710');
+INSERT INTO nonadmin VALUES ('Andrea Watson', '43445710', '22443 Dana Way Apt. 675, South Sarafurt, IA 54108','0');
+INSERT INTO caretakers VALUES ('Andrea Watson', '43445710', '22443 Dana Way Apt. 675, South Sarafurt, IA 54108', '0');
+
+INSERT INTO users VALUES ('Belinda Orlando', '53787184');
+INSERT INTO nonadmin VALUES ('Belinda Orlando', '53787184', '415 Adams Inlet Apt. 814, Jasonview, NC 03009','2');
+INSERT INTO caretakers VALUES ('Belinda Orlando', '53787184', '415 Adams Inlet Apt. 814, Jasonview, NC 03009', '2');
+
+INSERT INTO users VALUES ('Cheri Willis', '48295976');
+INSERT INTO nonadmin VALUES ('Cheri Willis', '48295976', '25333 Richard Falls, Kaylaville, WV 94386','1');
+INSERT INTO caretakers VALUES ('Cheri Willis', '48295976', '25333 Richard Falls, Kaylaville, WV 94386', '1');
+
+INSERT INTO users VALUES ('Alissa Jackson', '13992711');
+INSERT INTO nonadmin VALUES ('Alissa Jackson', '13992711', '59724 Joseph Village Suite 709, Port Richard, CO 07723','0');
+INSERT INTO caretakers VALUES ('Alissa Jackson', '13992711', '59724 Joseph Village Suite 709, Port Richard, CO 07723', '0');
+
+INSERT INTO users VALUES ('William Conkle', '19588094');
+INSERT INTO nonadmin VALUES ('William Conkle', '19588094', '4877 Higgins Circle Suite 061, East Cameron, NC 40614','1');
+INSERT INTO caretakers VALUES ('William Conkle', '19588094', '4877 Higgins Circle Suite 061, East Cameron, NC 40614', '1');
+
+INSERT INTO users VALUES ('Patsy Applewhite', '29624027');
+INSERT INTO nonadmin VALUES ('Patsy Applewhite', '29624027', '8745 Pittman Mountain Apt. 643, Spencerport, GA 12697','1');
+INSERT INTO caretakers VALUES ('Patsy Applewhite', '29624027', '8745 Pittman Mountain Apt. 643, Spencerport, GA 12697', '1');
+
+INSERT INTO users VALUES ('Willie Stanford', '84020175');
+INSERT INTO nonadmin VALUES ('Willie Stanford', '84020175', '623 Jason Ridges, Lorifurt, ID 31488','2');
+INSERT INTO caretakers VALUES ('Willie Stanford', '84020175', '623 Jason Ridges, Lorifurt, ID 31488', '2');
+
+INSERT INTO users VALUES ('Donald Wright', '20757590');
+INSERT INTO nonadmin VALUES ('Donald Wright', '20757590', '025 Gerald Trail Suite 860, West Robert, WY 74901','0');
+INSERT INTO caretakers VALUES ('Donald Wright', '20757590', '025 Gerald Trail Suite 860, West Robert, WY 74901', '0');
+
+INSERT INTO users VALUES ('Eric Benson', '71002805');
+INSERT INTO nonadmin VALUES ('Eric Benson', '71002805', '0949 Thornton Rapids, New Roger, DC 98067','0');
+INSERT INTO caretakers VALUES ('Eric Benson', '71002805', '0949 Thornton Rapids, New Roger, DC 98067', '0');
+
+INSERT INTO users VALUES ('Sandy Fuchs', '33408468');
+INSERT INTO nonadmin VALUES ('Sandy Fuchs', '33408468', '836 Brown Rapids, East Kimberly, WY 30711','0');
+INSERT INTO caretakers VALUES ('Sandy Fuchs', '33408468', '836 Brown Rapids, East Kimberly, WY 30711', '0');
+
+INSERT INTO users VALUES ('Margaret Cope', '81733206');
+INSERT INTO nonadmin VALUES ('Margaret Cope', '81733206', '12047 Reid Rue Suite 168, Mccartyshire, AL 85226','2');
+INSERT INTO caretakers VALUES ('Margaret Cope', '81733206', '12047 Reid Rue Suite 168, Mccartyshire, AL 85226', '2');
+
+INSERT INTO users VALUES ('Justin Eckert', '83123656');
+INSERT INTO nonadmin VALUES ('Justin Eckert', '83123656', '6500 Edwards Forge Apt. 311, Gonzalesburgh, MD 46583','0');
+INSERT INTO caretakers VALUES ('Justin Eckert', '83123656', '6500 Edwards Forge Apt. 311, Gonzalesburgh, MD 46583', '0');
+
+INSERT INTO users VALUES ('Steve Allen', '20921216');
+INSERT INTO nonadmin VALUES ('Steve Allen', '20921216', '9237 Sarah Extensions, East Michael, AR 68425','0');
+INSERT INTO caretakers VALUES ('Steve Allen', '20921216', '9237 Sarah Extensions, East Michael, AR 68425', '0');
+
+INSERT INTO users VALUES ('Eugene Meador', '47790802');
+INSERT INTO nonadmin VALUES ('Eugene Meador', '47790802', '206 Perez Loop Suite 561, East Jeremy, CA 98291','2');
+INSERT INTO caretakers VALUES ('Eugene Meador', '47790802', '206 Perez Loop Suite 561, East Jeremy, CA 98291', '2');
+
+INSERT INTO users VALUES ('Pamela Gordon', '68925267');
+INSERT INTO nonadmin VALUES ('Pamela Gordon', '68925267', '71744 Joel Mountains Apt. 050, Weeksland, NY 06590','0');
+INSERT INTO caretakers VALUES ('Pamela Gordon', '68925267', '71744 Joel Mountains Apt. 050, Weeksland, NY 06590', '0');
+
+INSERT INTO users VALUES ('Tom Brown', '76206854');
+INSERT INTO nonadmin VALUES ('Tom Brown', '76206854', '1375 Wells Loaf Suite 763, Brooksfort, NV 04285','2');
+INSERT INTO caretakers VALUES ('Tom Brown', '76206854', '1375 Wells Loaf Suite 763, Brooksfort, NV 04285', '2');
+
+INSERT INTO users VALUES ('Paul Zander', '72458380');
+INSERT INTO nonadmin VALUES ('Paul Zander', '72458380', '32216 Newman Lock Suite 824, South Brandon, DC 32514','2');
+INSERT INTO caretakers VALUES ('Paul Zander', '72458380', '32216 Newman Lock Suite 824, South Brandon, DC 32514', '2');
+
+INSERT INTO users VALUES ('Josephine Shaw', '51753429');
+INSERT INTO nonadmin VALUES ('Josephine Shaw', '51753429', '29306 Jonathan Hills Apt. 720, North Rachelton, WV 46492','1');
+INSERT INTO caretakers VALUES ('Josephine Shaw', '51753429', '29306 Jonathan Hills Apt. 720, North Rachelton, WV 46492', '1');
+
+INSERT INTO users VALUES ('Olga Adams', '14301018');
+INSERT INTO nonadmin VALUES ('Olga Adams', '14301018', '65974 Jocelyn Mountain Apt. 050, North Stephanie, NE 10518','0');
+INSERT INTO caretakers VALUES ('Olga Adams', '14301018', '65974 Jocelyn Mountain Apt. 050, North Stephanie, NE 10518', '0');
+
+INSERT INTO users VALUES ('Jennie Borke', '59880234');
+INSERT INTO nonadmin VALUES ('Jennie Borke', '59880234', '55472 Smith Road Apt. 854, Hortonville, DC 14081','0');
+INSERT INTO caretakers VALUES ('Jennie Borke', '59880234', '55472 Smith Road Apt. 854, Hortonville, DC 14081', '0');
+
+INSERT INTO users VALUES ('John Hull', '15534687');
+INSERT INTO nonadmin VALUES ('John Hull', '15534687', '972 Sanders Ridge, Samuelland, ID 90742','0');
+INSERT INTO caretakers VALUES ('John Hull', '15534687', '972 Sanders Ridge, Samuelland, ID 90742', '0');
+
+INSERT INTO users VALUES ('Robert Nicolosi', '24940526');
+INSERT INTO nonadmin VALUES ('Robert Nicolosi', '24940526', '9325 Nancy Estates Suite 301, Port Ericchester, RI 52414','2');
+INSERT INTO caretakers VALUES ('Robert Nicolosi', '24940526', '9325 Nancy Estates Suite 301, Port Ericchester, RI 52414', '2');
+
+INSERT INTO users VALUES ('Charles Yon', '40447197');
+INSERT INTO nonadmin VALUES ('Charles Yon', '40447197', '437 Sims Rue Suite 265, Gabrielborough, NJ 00908','2');
+INSERT INTO caretakers VALUES ('Charles Yon', '40447197', '437 Sims Rue Suite 265, Gabrielborough, NJ 00908', '2');
+
+INSERT INTO users VALUES ('William Monson', '64845432');
+INSERT INTO nonadmin VALUES ('William Monson', '64845432', '21854 Leon Lock, Port Melissastad, PA 97651','0');
+INSERT INTO caretakers VALUES ('William Monson', '64845432', '21854 Leon Lock, Port Melissastad, PA 97651', '0');
+
+INSERT INTO users VALUES ('Justin Diaz', '18356342');
+INSERT INTO nonadmin VALUES ('Justin Diaz', '18356342', 'USCGC Ortiz, FPO AA 54590','0');
+INSERT INTO caretakers VALUES ('Justin Diaz', '18356342', 'USCGC Ortiz, FPO AA 54590', '0');
+
+INSERT INTO users VALUES ('Mary Schneider', '15561357');
+INSERT INTO nonadmin VALUES ('Mary Schneider', '15561357', '504 Paul Glens, East Crystal, KY 03228','2');
+INSERT INTO caretakers VALUES ('Mary Schneider', '15561357', '504 Paul Glens, East Crystal, KY 03228', '2');
+
+INSERT INTO users VALUES ('Estella Mcneil', '58766527');
+INSERT INTO nonadmin VALUES ('Estella Mcneil', '58766527', '760 Evelyn Turnpike, Kristineside, GA 06051','1');
+INSERT INTO caretakers VALUES ('Estella Mcneil', '58766527', '760 Evelyn Turnpike, Kristineside, GA 06051', '1');
+
+INSERT INTO users VALUES ('Ronald Hayman', '89937498');
+INSERT INTO nonadmin VALUES ('Ronald Hayman', '89937498', '448 Jared Inlet, Marcton, CT 27451','1');
+INSERT INTO caretakers VALUES ('Ronald Hayman', '89937498', '448 Jared Inlet, Marcton, CT 27451', '1');
+
+INSERT INTO users VALUES ('Eva Boyer', '43990942');
+INSERT INTO nonadmin VALUES ('Eva Boyer', '43990942', '82036 Hall Burg Suite 301, New Shirleyhaven, MD 02245','2');
+INSERT INTO caretakers VALUES ('Eva Boyer', '43990942', '82036 Hall Burg Suite 301, New Shirleyhaven, MD 02245', '2');
+
+INSERT INTO users VALUES ('Karen Mozie', '65186449');
+INSERT INTO nonadmin VALUES ('Karen Mozie', '65186449', '503 Ryan Drive Apt. 448, Katelynberg, OH 89984','1');
+INSERT INTO caretakers VALUES ('Karen Mozie', '65186449', '503 Ryan Drive Apt. 448, Katelynberg, OH 89984', '1');
+
+INSERT INTO users VALUES ('Nathan Cruz', '37399377');
+INSERT INTO nonadmin VALUES ('Nathan Cruz', '37399377', '62790 Grant Square Apt. 239, Maddoxchester, FL 28835','1');
+INSERT INTO caretakers VALUES ('Nathan Cruz', '37399377', '62790 Grant Square Apt. 239, Maddoxchester, FL 28835', '1');
+
+INSERT INTO users VALUES ('Gabriela Michaelis', '11499183');
+INSERT INTO nonadmin VALUES ('Gabriela Michaelis', '11499183', '1175 Brian Knolls Suite 436, East James, VT 88632','0');
+INSERT INTO caretakers VALUES ('Gabriela Michaelis', '11499183', '1175 Brian Knolls Suite 436, East James, VT 88632', '0');
+
+INSERT INTO users VALUES ('Debbie Chen', '43181610');
+INSERT INTO nonadmin VALUES ('Debbie Chen', '43181610', 'Unit 8866 Box 2677, DPO AE 91487','0');
+INSERT INTO caretakers VALUES ('Debbie Chen', '43181610', 'Unit 8866 Box 2677, DPO AE 91487', '0');
+
+INSERT INTO users VALUES ('Andrew Spencer', '95245788');
+INSERT INTO nonadmin VALUES ('Andrew Spencer', '95245788', '1204 Delgado Drive, Armstrongmouth, MN 53080','1');
+INSERT INTO caretakers VALUES ('Andrew Spencer', '95245788', '1204 Delgado Drive, Armstrongmouth, MN 53080', '1');
+
+INSERT INTO users VALUES ('Nathaniel Canon', '12895842');
+INSERT INTO nonadmin VALUES ('Nathaniel Canon', '12895842', '071 Holder Forge Suite 582, Diazburgh, DC 06960','2');
+INSERT INTO caretakers VALUES ('Nathaniel Canon', '12895842', '071 Holder Forge Suite 582, Diazburgh, DC 06960', '2');
+
+INSERT INTO users VALUES ('Justin Meek', '75134380');
+INSERT INTO nonadmin VALUES ('Justin Meek', '75134380', '07148 Cory Lights Suite 390, Dianafort, HI 80998','1');
+INSERT INTO caretakers VALUES ('Justin Meek', '75134380', '07148 Cory Lights Suite 390, Dianafort, HI 80998', '1');
+
+INSERT INTO users VALUES ('James Uziel', '35594352');
+INSERT INTO nonadmin VALUES ('James Uziel', '35594352', '4504 Barry Junction, Henryland, MT 55442','0');
+INSERT INTO caretakers VALUES ('James Uziel', '35594352', '4504 Barry Junction, Henryland, MT 55442', '0');
+
+INSERT INTO users VALUES ('John Lackey', '23557998');
+INSERT INTO nonadmin VALUES ('John Lackey', '23557998', 'USCGC Garcia, FPO AA 60937','2');
+INSERT INTO caretakers VALUES ('John Lackey', '23557998', 'USCGC Garcia, FPO AA 60937', '2');
+
+INSERT INTO users VALUES ('Gary Wildenthaler', '96983206');
+INSERT INTO nonadmin VALUES ('Gary Wildenthaler', '96983206', '1045 Elliott Plains, East Nancystad, NE 57827','1');
+INSERT INTO caretakers VALUES ('Gary Wildenthaler', '96983206', '1045 Elliott Plains, East Nancystad, NE 57827', '1');
+
+INSERT INTO users VALUES ('Jaqueline Perino', '36861541');
+INSERT INTO nonadmin VALUES ('Jaqueline Perino', '36861541', '61230 Roach Circle, West Marcton, PA 92867','1');
+INSERT INTO caretakers VALUES ('Jaqueline Perino', '36861541', '61230 Roach Circle, West Marcton, PA 92867', '1');
+
+INSERT INTO users VALUES ('Rebecca Owings', '34519365');
+INSERT INTO nonadmin VALUES ('Rebecca Owings', '34519365', '7480 Chris Track, Jamestown, ME 03286','2');
+INSERT INTO caretakers VALUES ('Rebecca Owings', '34519365', '7480 Chris Track, Jamestown, ME 03286', '2');
+
+INSERT INTO users VALUES ('Michael Davis', '71887164');
+INSERT INTO nonadmin VALUES ('Michael Davis', '71887164', '01455 Brianna Plain Suite 704, Lake Patrick, IL 78835','1');
+INSERT INTO caretakers VALUES ('Michael Davis', '71887164', '01455 Brianna Plain Suite 704, Lake Patrick, IL 78835', '1');
+
+INSERT INTO users VALUES ('Marceline Armand', '75845958');
+INSERT INTO nonadmin VALUES ('Marceline Armand', '75845958', '983 English Passage, Bellbury, MA 50948','1');
+INSERT INTO caretakers VALUES ('Marceline Armand', '75845958', '983 English Passage, Bellbury, MA 50948', '1');
+
+INSERT INTO users VALUES ('Ruby Boren', '69937743');
+INSERT INTO nonadmin VALUES ('Ruby Boren', '69937743', '049 Santos Harbor, South Ashleyville, MI 07251','1');
+INSERT INTO caretakers VALUES ('Ruby Boren', '69937743', '049 Santos Harbor, South Ashleyville, MI 07251', '1');
+
+INSERT INTO users VALUES ('Nathanial Moffatt', '21157478');
+INSERT INTO nonadmin VALUES ('Nathanial Moffatt', '21157478', '0052 Escobar Key, North Courtneyfurt, CT 80248','0');
+INSERT INTO caretakers VALUES ('Nathanial Moffatt', '21157478', '0052 Escobar Key, North Courtneyfurt, CT 80248', '0');
+
+INSERT INTO users VALUES ('Barbara Foster', '97700711');
+INSERT INTO nonadmin VALUES ('Barbara Foster', '97700711', '399 Mccall Heights, East Jessica, SC 19898','1');
+INSERT INTO caretakers VALUES ('Barbara Foster', '97700711', '399 Mccall Heights, East Jessica, SC 19898', '1');
+
+INSERT INTO users VALUES ('Logan Carson', '27791049');
+INSERT INTO nonadmin VALUES ('Logan Carson', '27791049', '859 Brandon Harbors Suite 898, Arnoldstad, AR 71749','0');
+INSERT INTO caretakers VALUES ('Logan Carson', '27791049', '859 Brandon Harbors Suite 898, Arnoldstad, AR 71749', '0');
+
+INSERT INTO users VALUES ('James Green', '80448176');
+INSERT INTO nonadmin VALUES ('James Green', '80448176', '40586 Carr Lodge, North Chris, CO 88769','1');
+INSERT INTO caretakers VALUES ('James Green', '80448176', '40586 Carr Lodge, North Chris, CO 88769', '1');
+
+INSERT INTO users VALUES ('Anna Goble', '57910309');
+INSERT INTO nonadmin VALUES ('Anna Goble', '57910309', '438 Martin Shore Apt. 936, North Sharonfurt, NC 22700','2');
+INSERT INTO caretakers VALUES ('Anna Goble', '57910309', '438 Martin Shore Apt. 936, North Sharonfurt, NC 22700', '2');
+
+INSERT INTO users VALUES ('John Narain', '88223656');
+INSERT INTO nonadmin VALUES ('John Narain', '88223656', 'USNS Larson, FPO AA 74371','2');
+INSERT INTO caretakers VALUES ('John Narain', '88223656', 'USNS Larson, FPO AA 74371', '2');
+
+INSERT INTO users VALUES ('Louis Elmore', '64580204');
+INSERT INTO nonadmin VALUES ('Louis Elmore', '64580204', '39416 Elizabeth Plaza, Port Mary, WI 72959','0');
+INSERT INTO caretakers VALUES ('Louis Elmore', '64580204', '39416 Elizabeth Plaza, Port Mary, WI 72959', '0');
+
+INSERT INTO users VALUES ('Pauline Jones', '24333277');
+INSERT INTO nonadmin VALUES ('Pauline Jones', '24333277', '4922 James Estate, Carrside, OK 60933','2');
+INSERT INTO caretakers VALUES ('Pauline Jones', '24333277', '4922 James Estate, Carrside, OK 60933', '2');
+
+INSERT INTO users VALUES ('George Mckinnon', '69607191');
+INSERT INTO nonadmin VALUES ('George Mckinnon', '69607191', '27247 Clark Oval Apt. 589, Kimfurt, NJ 78316','1');
+INSERT INTO caretakers VALUES ('George Mckinnon', '69607191', '27247 Clark Oval Apt. 589, Kimfurt, NJ 78316', '1');
+
+INSERT INTO users VALUES ('Barbara Horning', '23737827');
+INSERT INTO nonadmin VALUES ('Barbara Horning', '23737827', '368 Bobby Pines Suite 195, Johnsonville, AZ 52351','0');
+INSERT INTO caretakers VALUES ('Barbara Horning', '23737827', '368 Bobby Pines Suite 195, Johnsonville, AZ 52351', '0');
+
+INSERT INTO users VALUES ('Alvin Lester', '37535261');
+INSERT INTO nonadmin VALUES ('Alvin Lester', '37535261', '543 Benjamin Knoll, New Christianborough, AR 08054','1');
+INSERT INTO caretakers VALUES ('Alvin Lester', '37535261', '543 Benjamin Knoll, New Christianborough, AR 08054', '1');
+
+INSERT INTO users VALUES ('Ricky Dominguez', '58368142');
+INSERT INTO nonadmin VALUES ('Ricky Dominguez', '58368142', '0870 Brown Mount, New Travisside, MA 37920','1');
+INSERT INTO caretakers VALUES ('Ricky Dominguez', '58368142', '0870 Brown Mount, New Travisside, MA 37920', '1');
+
+INSERT INTO users VALUES ('Eugene Mcclain', '97792997');
+INSERT INTO nonadmin VALUES ('Eugene Mcclain', '97792997', '264 Caitlin Rest, Huertamouth, NH 09828','2');
+INSERT INTO caretakers VALUES ('Eugene Mcclain', '97792997', '264 Caitlin Rest, Huertamouth, NH 09828', '2');
+
+INSERT INTO users VALUES ('Angel Henkes', '68557251');
+INSERT INTO nonadmin VALUES ('Angel Henkes', '68557251', '993 Schmidt Lakes Apt. 506, South Michaelview, NC 21357','0');
+INSERT INTO caretakers VALUES ('Angel Henkes', '68557251', '993 Schmidt Lakes Apt. 506, South Michaelview, NC 21357', '0');
+
+INSERT INTO users VALUES ('Clarence Daughters', '87435234');
+INSERT INTO nonadmin VALUES ('Clarence Daughters', '87435234', '8514 Nicholas Estate Apt. 579, North Timothyberg, NV 74182','2');
+INSERT INTO caretakers VALUES ('Clarence Daughters', '87435234', '8514 Nicholas Estate Apt. 579, North Timothyberg, NV 74182', '2');
+
+INSERT INTO users VALUES ('Amanda Fletcher', '78548072');
+INSERT INTO nonadmin VALUES ('Amanda Fletcher', '78548072', '677 Denise Glen Suite 218, Richardsonfurt, NE 53188','1');
+INSERT INTO caretakers VALUES ('Amanda Fletcher', '78548072', '677 Denise Glen Suite 218, Richardsonfurt, NE 53188', '1');
+
+INSERT INTO users VALUES ('James Johnson', '81083476');
+INSERT INTO nonadmin VALUES ('James Johnson', '81083476', '064 Campbell Locks, Kristenfurt, IN 32198','1');
+INSERT INTO caretakers VALUES ('James Johnson', '81083476', '064 Campbell Locks, Kristenfurt, IN 32198', '1');
+
+INSERT INTO users VALUES ('Shawna Kelsheimer', '18983929');
+INSERT INTO nonadmin VALUES ('Shawna Kelsheimer', '18983929', '31597 Holly Forge, Elizabethport, OR 30421','1');
+INSERT INTO caretakers VALUES ('Shawna Kelsheimer', '18983929', '31597 Holly Forge, Elizabethport, OR 30421', '1');
+
+INSERT INTO users VALUES ('Gregory Holbrook', '40594141');
+INSERT INTO nonadmin VALUES ('Gregory Holbrook', '40594141', '61475 Li Parks, Isaachaven, WY 17356','0');
+INSERT INTO caretakers VALUES ('Gregory Holbrook', '40594141', '61475 Li Parks, Isaachaven, WY 17356', '0');
+
+INSERT INTO users VALUES ('William Lee', '87879831');
+INSERT INTO nonadmin VALUES ('William Lee', '87879831', '9234 King Center, North Crystalmouth, MS 65984','1');
+INSERT INTO caretakers VALUES ('William Lee', '87879831', '9234 King Center, North Crystalmouth, MS 65984', '1');
+
+INSERT INTO users VALUES ('Mike Barker', '10949878');
+INSERT INTO nonadmin VALUES ('Mike Barker', '10949878', '25269 Thompson Cape Apt. 561, Changside, WI 09295','2');
+INSERT INTO caretakers VALUES ('Mike Barker', '10949878', '25269 Thompson Cape Apt. 561, Changside, WI 09295', '2');
+
+INSERT INTO users VALUES ('Cassandra Back', '16194014');
+INSERT INTO nonadmin VALUES ('Cassandra Back', '16194014', '27472 Mcclure Flat, Vasquezmouth, NE 74279','1');
+INSERT INTO caretakers VALUES ('Cassandra Back', '16194014', '27472 Mcclure Flat, Vasquezmouth, NE 74279', '1');
+
+INSERT INTO users VALUES ('Adriana Bovee', '12938839');
+INSERT INTO nonadmin VALUES ('Adriana Bovee', '12938839', '243 James Grove Apt. 650, West Alicia, MO 51642','1');
+INSERT INTO caretakers VALUES ('Adriana Bovee', '12938839', '243 James Grove Apt. 650, West Alicia, MO 51642', '1');
+
+INSERT INTO users VALUES ('Wanda Hollingsworth', '15005967');
+INSERT INTO nonadmin VALUES ('Wanda Hollingsworth', '15005967', 'PSC 0818, Box 6653, APO AP 44600','2');
+INSERT INTO caretakers VALUES ('Wanda Hollingsworth', '15005967', 'PSC 0818, Box 6653, APO AP 44600', '2');
+
+INSERT INTO users VALUES ('William Colon', '76802260');
+INSERT INTO nonadmin VALUES ('William Colon', '76802260', '582 Smith Drives, West Erinbury, VA 24491','0');
+INSERT INTO caretakers VALUES ('William Colon', '76802260', '582 Smith Drives, West Erinbury, VA 24491', '0');
+
+INSERT INTO users VALUES ('Diana Webb', '41301173');
+INSERT INTO nonadmin VALUES ('Diana Webb', '41301173', '3877 Kimberly View, Suzannehaven, NJ 60728','1');
+INSERT INTO caretakers VALUES ('Diana Webb', '41301173', '3877 Kimberly View, Suzannehaven, NJ 60728', '1');
+
+INSERT INTO users VALUES ('Carl Markham', '93643647');
+INSERT INTO nonadmin VALUES ('Carl Markham', '93643647', '5554 Ashley Underpass Apt. 065, Perkinsshire, TX 42877','0');
+INSERT INTO caretakers VALUES ('Carl Markham', '93643647', '5554 Ashley Underpass Apt. 065, Perkinsshire, TX 42877', '0');
+
+INSERT INTO users VALUES ('Bruce Moorer', '60043500');
+INSERT INTO nonadmin VALUES ('Bruce Moorer', '60043500', '427 Gary Cape Apt. 127, North Judy, NV 92798','2');
+INSERT INTO caretakers VALUES ('Bruce Moorer', '60043500', '427 Gary Cape Apt. 127, North Judy, NV 92798', '2');
+
+INSERT INTO users VALUES ('Daria Chambers', '15113725');
+INSERT INTO nonadmin VALUES ('Daria Chambers', '15113725', '479 Robert Stream Apt. 938, West Michael, RI 18173','1');
+INSERT INTO caretakers VALUES ('Daria Chambers', '15113725', '479 Robert Stream Apt. 938, West Michael, RI 18173', '1');
+
+INSERT INTO users VALUES ('Ricky Clayton', '79684866');
+INSERT INTO nonadmin VALUES ('Ricky Clayton', '79684866', '93841 Myers Circles Apt. 167, Wilkinsonburgh, DC 26250','0');
+INSERT INTO caretakers VALUES ('Ricky Clayton', '79684866', '93841 Myers Circles Apt. 167, Wilkinsonburgh, DC 26250', '0');
+
+INSERT INTO users VALUES ('Stewart Ruppert', '91651835');
+INSERT INTO nonadmin VALUES ('Stewart Ruppert', '91651835', '96068 Delacruz Well, Collinsview, IN 80234','1');
+INSERT INTO caretakers VALUES ('Stewart Ruppert', '91651835', '96068 Delacruz Well, Collinsview, IN 80234', '1');
+
+INSERT INTO users VALUES ('Linda Thomas', '74861303');
+INSERT INTO nonadmin VALUES ('Linda Thomas', '74861303', '775 Katrina Springs Suite 331, Charlenechester, TX 68918','1');
+INSERT INTO caretakers VALUES ('Linda Thomas', '74861303', '775 Katrina Springs Suite 331, Charlenechester, TX 68918', '1');
+
+INSERT INTO users VALUES ('Robyn Fife', '39396016');
+INSERT INTO nonadmin VALUES ('Robyn Fife', '39396016', '58397 Bolton Lodge, Holmesberg, TX 61306','1');
+INSERT INTO caretakers VALUES ('Robyn Fife', '39396016', '58397 Bolton Lodge, Holmesberg, TX 61306', '1');
+
+INSERT INTO users VALUES ('Floyd Albano', '94371657');
+INSERT INTO nonadmin VALUES ('Floyd Albano', '94371657', '629 Theresa Spur, Barkerland, ID 48817','2');
+INSERT INTO caretakers VALUES ('Floyd Albano', '94371657', '629 Theresa Spur, Barkerland, ID 48817', '2');
+
+INSERT INTO users VALUES ('James Windus', '16591414');
+INSERT INTO nonadmin VALUES ('James Windus', '16591414', 'USCGC Cruz, FPO AE 58450','1');
+INSERT INTO caretakers VALUES ('James Windus', '16591414', 'USCGC Cruz, FPO AE 58450', '1');
+
+INSERT INTO users VALUES ('William Harrier', '26543973');
+INSERT INTO nonadmin VALUES ('William Harrier', '26543973', '14001 Fox Land, Gonzalezport, CT 44094','0');
+INSERT INTO caretakers VALUES ('William Harrier', '26543973', '14001 Fox Land, Gonzalezport, CT 44094', '0');
+
+INSERT INTO users VALUES ('Mark Chavez', '31645933');
+INSERT INTO nonadmin VALUES ('Mark Chavez', '31645933', '83397 Davila Grove, South Barbarabury, SD 06548','1');
+INSERT INTO caretakers VALUES ('Mark Chavez', '31645933', '83397 Davila Grove, South Barbarabury, SD 06548', '1');
+
+INSERT INTO users VALUES ('Daniel Fry', '13554995');
+INSERT INTO nonadmin VALUES ('Daniel Fry', '13554995', 'PSC 0189, Box 0006, APO AE 01944','1');
+INSERT INTO caretakers VALUES ('Daniel Fry', '13554995', 'PSC 0189, Box 0006, APO AE 01944', '1');
+
+INSERT INTO users VALUES ('John Hochmuth', '91067616');
+INSERT INTO nonadmin VALUES ('John Hochmuth', '91067616', '8460 Christian Streets Apt. 421, South Brandon, NM 34943','0');
+INSERT INTO caretakers VALUES ('John Hochmuth', '91067616', '8460 Christian Streets Apt. 421, South Brandon, NM 34943', '0');
+
+INSERT INTO users VALUES ('Rufus Rendon', '97619092');
+INSERT INTO nonadmin VALUES ('Rufus Rendon', '97619092', '91319 Guzman Mills Suite 712, Gordonport, LA 28497','1');
+INSERT INTO caretakers VALUES ('Rufus Rendon', '97619092', '91319 Guzman Mills Suite 712, Gordonport, LA 28497', '1');
+
+INSERT INTO users VALUES ('Graciela Bruley', '17529556');
+INSERT INTO nonadmin VALUES ('Graciela Bruley', '17529556', '631 Simpson Valleys, Murphyfurt, NM 64669','1');
+INSERT INTO caretakers VALUES ('Graciela Bruley', '17529556', '631 Simpson Valleys, Murphyfurt, NM 64669', '1');
+
+INSERT INTO users VALUES ('Jose Alley', '43574915');
+INSERT INTO nonadmin VALUES ('Jose Alley', '43574915', '786 Thompson Cliffs Apt. 165, West Tina, AL 06504','0');
+INSERT INTO caretakers VALUES ('Jose Alley', '43574915', '786 Thompson Cliffs Apt. 165, West Tina, AL 06504', '0');
+
+INSERT INTO users VALUES ('Clifford Wilson', '30290804');
+INSERT INTO nonadmin VALUES ('Clifford Wilson', '30290804', '62770 Tyler Mountain, East Paul, VT 22779','2');
+INSERT INTO caretakers VALUES ('Clifford Wilson', '30290804', '62770 Tyler Mountain, East Paul, VT 22779', '2');
+
+INSERT INTO users VALUES ('Raina Bender', '98887942');
+INSERT INTO nonadmin VALUES ('Raina Bender', '98887942', '737 Collins Fields, South Amandahaven, FL 34991','1');
+INSERT INTO caretakers VALUES ('Raina Bender', '98887942', '737 Collins Fields, South Amandahaven, FL 34991', '1');
+
+INSERT INTO users VALUES ('Muriel Spicer', '72795810');
+INSERT INTO nonadmin VALUES ('Muriel Spicer', '72795810', '853 Williams Bypass Suite 538, West Jameschester, RI 72277','1');
+INSERT INTO caretakers VALUES ('Muriel Spicer', '72795810', '853 Williams Bypass Suite 538, West Jameschester, RI 72277', '1');
+
+INSERT INTO users VALUES ('Kimberly Smith', '38044073');
+INSERT INTO nonadmin VALUES ('Kimberly Smith', '38044073', '0977 Brown Tunnel Suite 512, Melodymouth, LA 12271','0');
+INSERT INTO caretakers VALUES ('Kimberly Smith', '38044073', '0977 Brown Tunnel Suite 512, Melodymouth, LA 12271', '0');
+
+INSERT INTO users VALUES ('Larry Boone', '37762182');
+INSERT INTO nonadmin VALUES ('Larry Boone', '37762182', '7765 Henry Union Apt. 437, Eatonmouth, DE 35899','1');
+INSERT INTO caretakers VALUES ('Larry Boone', '37762182', '7765 Henry Union Apt. 437, Eatonmouth, DE 35899', '1');
+
+INSERT INTO users VALUES ('Jesse Toler', '98296277');
+INSERT INTO nonadmin VALUES ('Jesse Toler', '98296277', '422 Mcclure Green, Elizabethmouth, GA 42108','1');
+INSERT INTO caretakers VALUES ('Jesse Toler', '98296277', '422 Mcclure Green, Elizabethmouth, GA 42108', '1');
+
+INSERT INTO users VALUES ('Sarah Orf', '89720652');
+INSERT INTO nonadmin VALUES ('Sarah Orf', '89720652', '2056 Taylor Shoal, Timothymouth, IA 62558','2');
+INSERT INTO caretakers VALUES ('Sarah Orf', '89720652', '2056 Taylor Shoal, Timothymouth, IA 62558', '2');
+
+INSERT INTO users VALUES ('Larry Guerrero', '47765929');
+INSERT INTO nonadmin VALUES ('Larry Guerrero', '47765929', '4235 Harrington Roads, Monicatown, AR 20950','2');
+INSERT INTO caretakers VALUES ('Larry Guerrero', '47765929', '4235 Harrington Roads, Monicatown, AR 20950', '2');
+
+INSERT INTO users VALUES ('Larry Jones', '15906201');
+INSERT INTO nonadmin VALUES ('Larry Jones', '15906201', 'PSC 2334, Box 3123, APO AA 90007','1');
+INSERT INTO caretakers VALUES ('Larry Jones', '15906201', 'PSC 2334, Box 3123, APO AA 90007', '1');
+
+INSERT INTO users VALUES ('Kimberly Fonte', '72325272');
+INSERT INTO nonadmin VALUES ('Kimberly Fonte', '72325272', '95528 Cobb Path Suite 175, South Jennifermouth, VT 58884','1');
+INSERT INTO caretakers VALUES ('Kimberly Fonte', '72325272', '95528 Cobb Path Suite 175, South Jennifermouth, VT 58884', '1');
+
+INSERT INTO users VALUES ('Michelle Mcclure', '34374087');
+INSERT INTO nonadmin VALUES ('Michelle Mcclure', '34374087', '946 Wilson Fords, Ericmouth, VT 52431','2');
+INSERT INTO caretakers VALUES ('Michelle Mcclure', '34374087', '946 Wilson Fords, Ericmouth, VT 52431', '2');
+
+INSERT INTO users VALUES ('Benjamin Osborne', '35096404');
+INSERT INTO nonadmin VALUES ('Benjamin Osborne', '35096404', '8688 Lopez Mountains Suite 989, South Terri, ND 70934','1');
+INSERT INTO caretakers VALUES ('Benjamin Osborne', '35096404', '8688 Lopez Mountains Suite 989, South Terri, ND 70934', '1');
+
+INSERT INTO users VALUES ('Margo Murphy', '41540140');
+INSERT INTO nonadmin VALUES ('Margo Murphy', '41540140', '411 Wallace Walks, Jeffreyland, NY 44363','0');
+INSERT INTO caretakers VALUES ('Margo Murphy', '41540140', '411 Wallace Walks, Jeffreyland, NY 44363', '0');
+
+INSERT INTO users VALUES ('Jackie Coleman', '42559041');
+INSERT INTO nonadmin VALUES ('Jackie Coleman', '42559041', '051 Shaffer Field Apt. 007, Michaelbury, NM 25545','2');
+INSERT INTO caretakers VALUES ('Jackie Coleman', '42559041', '051 Shaffer Field Apt. 007, Michaelbury, NM 25545', '2');
+
+INSERT INTO users VALUES ('Paula Madrigal', '93899210');
+INSERT INTO nonadmin VALUES ('Paula Madrigal', '93899210', '2762 Vanessa Lakes, East Patricia, OH 11236','1');
+INSERT INTO caretakers VALUES ('Paula Madrigal', '93899210', '2762 Vanessa Lakes, East Patricia, OH 11236', '1');
+
+INSERT INTO users VALUES ('Violet Blanchette', '35425648');
+INSERT INTO nonadmin VALUES ('Violet Blanchette', '35425648', '9970 Taylor Overpass Suite 438, Port Traceyberg, OK 36042','0');
+INSERT INTO caretakers VALUES ('Violet Blanchette', '35425648', '9970 Taylor Overpass Suite 438, Port Traceyberg, OK 36042', '0');
+
+INSERT INTO users VALUES ('Juan Smith', '37806552');
+INSERT INTO nonadmin VALUES ('Juan Smith', '37806552', 'PSC 2658, Box 8536, APO AA 52771','1');
+INSERT INTO caretakers VALUES ('Juan Smith', '37806552', 'PSC 2658, Box 8536, APO AA 52771', '1');
+
+INSERT INTO users VALUES ('Williams Ley', '47645475');
+INSERT INTO nonadmin VALUES ('Williams Ley', '47645475', 'USNS Wright, FPO AP 36374','2');
+INSERT INTO caretakers VALUES ('Williams Ley', '47645475', 'USNS Wright, FPO AP 36374', '2');
+
+INSERT INTO users VALUES ('Kirsten Rivera', '25293393');
+INSERT INTO nonadmin VALUES ('Kirsten Rivera', '25293393', '13102 Gina Drive, Wilcoxhaven, NM 28635','1');
+INSERT INTO caretakers VALUES ('Kirsten Rivera', '25293393', '13102 Gina Drive, Wilcoxhaven, NM 28635', '1');
+
+INSERT INTO users VALUES ('Marjorie Souza', '26753756');
+INSERT INTO nonadmin VALUES ('Marjorie Souza', '26753756', '8101 Flores Shores, New Denise, CO 02653','2');
+INSERT INTO caretakers VALUES ('Marjorie Souza', '26753756', '8101 Flores Shores, New Denise, CO 02653', '2');
+
+INSERT INTO users VALUES ('Paul Merz', '43264431');
+INSERT INTO nonadmin VALUES ('Paul Merz', '43264431', '1041 Heidi Prairie Suite 836, Kristinburgh, IN 26241','0');
+INSERT INTO caretakers VALUES ('Paul Merz', '43264431', '1041 Heidi Prairie Suite 836, Kristinburgh, IN 26241', '0');
+
+INSERT INTO users VALUES ('James Albano', '43781111');
+INSERT INTO nonadmin VALUES ('James Albano', '43781111', 'USNS Wallace, FPO AP 59757','1');
+INSERT INTO caretakers VALUES ('James Albano', '43781111', 'USNS Wallace, FPO AP 59757', '1');
+
+INSERT INTO users VALUES ('Paul Hise', '32025917');
+INSERT INTO nonadmin VALUES ('Paul Hise', '32025917', '5609 Duke Passage Apt. 932, South Zacharymouth, AL 91871','1');
+INSERT INTO caretakers VALUES ('Paul Hise', '32025917', '5609 Duke Passage Apt. 932, South Zacharymouth, AL 91871', '1');
+
+INSERT INTO users VALUES ('Patrick Sizemore', '34029792');
+INSERT INTO nonadmin VALUES ('Patrick Sizemore', '34029792', '4751 Sara Fords, North Brianberg, MD 30548','2');
+INSERT INTO caretakers VALUES ('Patrick Sizemore', '34029792', '4751 Sara Fords, North Brianberg, MD 30548', '2');
+
+INSERT INTO users VALUES ('Allen Sistrunk', '17491443');
+INSERT INTO nonadmin VALUES ('Allen Sistrunk', '17491443', '0931 Brown Forges, East Michaelville, MS 25680','2');
+INSERT INTO caretakers VALUES ('Allen Sistrunk', '17491443', '0931 Brown Forges, East Michaelville, MS 25680', '2');
+
+INSERT INTO users VALUES ('Shakia Christman', '40745651');
+INSERT INTO nonadmin VALUES ('Shakia Christman', '40745651', '1907 Miles Square, Cunninghamside, OR 64906','0');
+INSERT INTO caretakers VALUES ('Shakia Christman', '40745651', '1907 Miles Square, Cunninghamside, OR 64906', '0');
+
+INSERT INTO users VALUES ('Vincent Grindle', '44198813');
+INSERT INTO nonadmin VALUES ('Vincent Grindle', '44198813', '002 Martinez Court Apt. 247, South Ann, SD 68937','1');
+INSERT INTO caretakers VALUES ('Vincent Grindle', '44198813', '002 Martinez Court Apt. 247, South Ann, SD 68937', '1');
+
+INSERT INTO users VALUES ('Kimberly Gilstrap', '45322918');
+INSERT INTO nonadmin VALUES ('Kimberly Gilstrap', '45322918', '2522 Curtis River Suite 489, West Ianville, IA 87215','1');
+INSERT INTO caretakers VALUES ('Kimberly Gilstrap', '45322918', '2522 Curtis River Suite 489, West Ianville, IA 87215', '1');
+
+INSERT INTO users VALUES ('Marge Smith', '85578276');
+INSERT INTO nonadmin VALUES ('Marge Smith', '85578276', '73080 Cooper Trail Suite 972, Benjaminhaven, MI 57145','2');
+INSERT INTO caretakers VALUES ('Marge Smith', '85578276', '73080 Cooper Trail Suite 972, Benjaminhaven, MI 57145', '2');
+
+INSERT INTO users VALUES ('James Franqui', '63146277');
+INSERT INTO nonadmin VALUES ('James Franqui', '63146277', '9316 Jones Isle, Lake Tabitha, PA 31743','2');
+INSERT INTO caretakers VALUES ('James Franqui', '63146277', '9316 Jones Isle, Lake Tabitha, PA 31743', '2');
+
+INSERT INTO users VALUES ('Nicholas Thompson', '55782015');
+INSERT INTO nonadmin VALUES ('Nicholas Thompson', '55782015', '296 Reed Garden, Josephfurt, WY 53673','0');
+INSERT INTO caretakers VALUES ('Nicholas Thompson', '55782015', '296 Reed Garden, Josephfurt, WY 53673', '0');
+
+INSERT INTO users VALUES ('Mildred Saliba', '36929294');
+INSERT INTO nonadmin VALUES ('Mildred Saliba', '36929294', '1473 Jose Overpass Apt. 951, Lake Andreaberg, NJ 07588','1');
+INSERT INTO caretakers VALUES ('Mildred Saliba', '36929294', '1473 Jose Overpass Apt. 951, Lake Andreaberg, NJ 07588', '1');
+
+INSERT INTO users VALUES ('Dorothy Grant', '77485278');
+INSERT INTO nonadmin VALUES ('Dorothy Grant', '77485278', 'USS Walker, FPO AE 92922','0');
+INSERT INTO caretakers VALUES ('Dorothy Grant', '77485278', 'USS Walker, FPO AE 92922', '0');
+
+INSERT INTO users VALUES ('William Allred', '32821447');
+INSERT INTO nonadmin VALUES ('William Allred', '32821447', '97208 Carol Springs, East Roberttown, OH 45050','0');
+INSERT INTO caretakers VALUES ('William Allred', '32821447', '97208 Carol Springs, East Roberttown, OH 45050', '0');
+
+INSERT INTO users VALUES ('Amy Choe', '23141221');
+INSERT INTO nonadmin VALUES ('Amy Choe', '23141221', '53360 Cross Plaza Suite 315, Kristenhaven, NJ 47708','2');
+INSERT INTO caretakers VALUES ('Amy Choe', '23141221', '53360 Cross Plaza Suite 315, Kristenhaven, NJ 47708', '2');
+
+INSERT INTO users VALUES ('Sara Cervantes', '76492069');
+INSERT INTO nonadmin VALUES ('Sara Cervantes', '76492069', '61683 Hall Pines, Brendamouth, MD 07496','0');
+INSERT INTO caretakers VALUES ('Sara Cervantes', '76492069', '61683 Hall Pines, Brendamouth, MD 07496', '0');
+
+INSERT INTO users VALUES ('James Williams', '37531929');
+INSERT INTO nonadmin VALUES ('James Williams', '37531929', '7759 Chelsea Cape Apt. 292, West Timothystad, RI 35363','0');
+INSERT INTO caretakers VALUES ('James Williams', '37531929', '7759 Chelsea Cape Apt. 292, West Timothystad, RI 35363', '0');
+
+INSERT INTO users VALUES ('John Mccullough', '64807898');
+INSERT INTO nonadmin VALUES ('John Mccullough', '64807898', '8544 Blanchard Brooks Apt. 731, South Robert, SD 84364','1');
+INSERT INTO caretakers VALUES ('John Mccullough', '64807898', '8544 Blanchard Brooks Apt. 731, South Robert, SD 84364', '1');
+
+INSERT INTO users VALUES ('Leslie Hyde', '27956532');
+INSERT INTO nonadmin VALUES ('Leslie Hyde', '27956532', '999 Chambers Trail Suite 707, Frenchbury, WA 59621','2');
+INSERT INTO caretakers VALUES ('Leslie Hyde', '27956532', '999 Chambers Trail Suite 707, Frenchbury, WA 59621', '2');
+
+INSERT INTO users VALUES ('Cynthia Wright', '83627705');
+INSERT INTO nonadmin VALUES ('Cynthia Wright', '83627705', 'Unit 0059 Box 3003, DPO AE 29455','0');
+INSERT INTO caretakers VALUES ('Cynthia Wright', '83627705', 'Unit 0059 Box 3003, DPO AE 29455', '0');
+
+INSERT INTO users VALUES ('Barbara Hocker', '71145664');
+INSERT INTO nonadmin VALUES ('Barbara Hocker', '71145664', '7568 Gutierrez Mission Suite 742, Mendezmouth, CA 22667','0');
+INSERT INTO caretakers VALUES ('Barbara Hocker', '71145664', '7568 Gutierrez Mission Suite 742, Mendezmouth, CA 22667', '0');
+
+INSERT INTO users VALUES ('Pat Troyer', '53724078');
+INSERT INTO nonadmin VALUES ('Pat Troyer', '53724078', '5693 Jonathan Rapid, Hendricksstad, MO 95622','2');
+INSERT INTO caretakers VALUES ('Pat Troyer', '53724078', '5693 Jonathan Rapid, Hendricksstad, MO 95622', '2');
+
+INSERT INTO users VALUES ('Margarita King', '15338179');
+INSERT INTO nonadmin VALUES ('Margarita King', '15338179', '51813 Flores Lock, New Krystalview, NH 82703','0');
+INSERT INTO caretakers VALUES ('Margarita King', '15338179', '51813 Flores Lock, New Krystalview, NH 82703', '0');
+
+INSERT INTO users VALUES ('Georgia Valadez', '77331267');
+INSERT INTO nonadmin VALUES ('Georgia Valadez', '77331267', '6207 Williams Square, Evansville, AK 69302','2');
+INSERT INTO caretakers VALUES ('Georgia Valadez', '77331267', '6207 Williams Square, Evansville, AK 69302', '2');
+
+INSERT INTO users VALUES ('Carlene Vescio', '27430578');
+INSERT INTO nonadmin VALUES ('Carlene Vescio', '27430578', 'Unit 1660 Box 4877, DPO AA 81808','1');
+INSERT INTO caretakers VALUES ('Carlene Vescio', '27430578', 'Unit 1660 Box 4877, DPO AA 81808', '1');
+
+INSERT INTO users VALUES ('Christopher Stevenson', '37721049');
+INSERT INTO nonadmin VALUES ('Christopher Stevenson', '37721049', 'USNV Collins, FPO AA 42591','2');
+INSERT INTO caretakers VALUES ('Christopher Stevenson', '37721049', 'USNV Collins, FPO AA 42591', '2');
+
+INSERT INTO users VALUES ('Gregorio Farr', '57854865');
+INSERT INTO nonadmin VALUES ('Gregorio Farr', '57854865', '5860 Melanie Camp Apt. 242, East Kenneth, MN 80012','1');
+INSERT INTO caretakers VALUES ('Gregorio Farr', '57854865', '5860 Melanie Camp Apt. 242, East Kenneth, MN 80012', '1');
+
+INSERT INTO users VALUES ('Brandy Breaux', '64257344');
+INSERT INTO nonadmin VALUES ('Brandy Breaux', '64257344', '506 Hartman Points Suite 500, West Christine, KS 54177','2');
+INSERT INTO caretakers VALUES ('Brandy Breaux', '64257344', '506 Hartman Points Suite 500, West Christine, KS 54177', '2');
+
+INSERT INTO users VALUES ('Sheri Lynch', '24114456');
+INSERT INTO nonadmin VALUES ('Sheri Lynch', '24114456', '5127 Ricky Motorway Suite 087, Lake Elaineville, TX 23770','0');
+INSERT INTO caretakers VALUES ('Sheri Lynch', '24114456', '5127 Ricky Motorway Suite 087, Lake Elaineville, TX 23770', '0');
+
+INSERT INTO users VALUES ('David Martz', '91319837');
+INSERT INTO nonadmin VALUES ('David Martz', '91319837', '44706 Lee Park Apt. 175, Zacharymouth, NC 51500','1');
+INSERT INTO caretakers VALUES ('David Martz', '91319837', '44706 Lee Park Apt. 175, Zacharymouth, NC 51500', '1');
+
+INSERT INTO users VALUES ('Brian Greene', '85001808');
+INSERT INTO nonadmin VALUES ('Brian Greene', '85001808', '0131 Anthony Knoll Apt. 204, Sabrinaside, NC 64194','0');
+INSERT INTO caretakers VALUES ('Brian Greene', '85001808', '0131 Anthony Knoll Apt. 204, Sabrinaside, NC 64194', '0');
+
+INSERT INTO users VALUES ('Mai Freund', '50007288');
+INSERT INTO nonadmin VALUES ('Mai Freund', '50007288', 'PSC 4189, Box 9712, APO AE 37794','1');
+INSERT INTO caretakers VALUES ('Mai Freund', '50007288', 'PSC 4189, Box 9712, APO AE 37794', '1');
+
+INSERT INTO users VALUES ('Olivia Amsterdam', '12912442');
+INSERT INTO nonadmin VALUES ('Olivia Amsterdam', '12912442', '377 Odonnell Unions Suite 692, Port Robertborough, NY 01021','1');
+INSERT INTO caretakers VALUES ('Olivia Amsterdam', '12912442', '377 Odonnell Unions Suite 692, Port Robertborough, NY 01021', '1');
+
+INSERT INTO users VALUES ('Catherine Anderson', '33226780');
+INSERT INTO nonadmin VALUES ('Catherine Anderson', '33226780', '20690 Tony Spring Apt. 958, Markmouth, ME 29296','0');
+INSERT INTO caretakers VALUES ('Catherine Anderson', '33226780', '20690 Tony Spring Apt. 958, Markmouth, ME 29296', '0');
+
+INSERT INTO users VALUES ('Shawn Beehler', '42551088');
+INSERT INTO nonadmin VALUES ('Shawn Beehler', '42551088', 'Unit 2054 Box 4102, DPO AE 66034','0');
+INSERT INTO caretakers VALUES ('Shawn Beehler', '42551088', 'Unit 2054 Box 4102, DPO AE 66034', '0');
+
+INSERT INTO users VALUES ('Brandon Bigham', '18396460');
+INSERT INTO nonadmin VALUES ('Brandon Bigham', '18396460', 'USS Pruitt, FPO AE 09459','1');
+INSERT INTO caretakers VALUES ('Brandon Bigham', '18396460', 'USS Pruitt, FPO AE 09459', '1');
+
+INSERT INTO users VALUES ('James Sabatini', '16908544');
+INSERT INTO nonadmin VALUES ('James Sabatini', '16908544', '794 Angela Plain Apt. 726, Ashleyport, VT 52806','0');
+INSERT INTO caretakers VALUES ('James Sabatini', '16908544', '794 Angela Plain Apt. 726, Ashleyport, VT 52806', '0');
+
+INSERT INTO users VALUES ('Joseph Webb', '30844755');
+INSERT INTO nonadmin VALUES ('Joseph Webb', '30844755', '203 Mills Brook Apt. 837, East David, MN 34481','0');
+INSERT INTO caretakers VALUES ('Joseph Webb', '30844755', '203 Mills Brook Apt. 837, East David, MN 34481', '0');
+
+INSERT INTO users VALUES ('Freeman Lu', '73336169');
+INSERT INTO nonadmin VALUES ('Freeman Lu', '73336169', '6010 Decker Mall Suite 939, Rebeccaborough, MI 54502','1');
+INSERT INTO caretakers VALUES ('Freeman Lu', '73336169', '6010 Decker Mall Suite 939, Rebeccaborough, MI 54502', '1');
+
+INSERT INTO users VALUES ('Ruth Vail', '27570284');
+INSERT INTO nonadmin VALUES ('Ruth Vail', '27570284', '9769 Williams Square, Adrianachester, HI 38173','1');
+INSERT INTO caretakers VALUES ('Ruth Vail', '27570284', '9769 Williams Square, Adrianachester, HI 38173', '1');
+
+INSERT INTO users VALUES ('Stephanie Koziel', '25340783');
+INSERT INTO nonadmin VALUES ('Stephanie Koziel', '25340783', '782 Castaneda Brook Suite 598, South Devin, LA 19910','1');
+INSERT INTO caretakers VALUES ('Stephanie Koziel', '25340783', '782 Castaneda Brook Suite 598, South Devin, LA 19910', '1');
+
+INSERT INTO users VALUES ('Raul Mickell', '92291394');
+INSERT INTO nonadmin VALUES ('Raul Mickell', '92291394', '1208 Elizabeth Courts, Charlesmouth, MS 49489','1');
+INSERT INTO caretakers VALUES ('Raul Mickell', '92291394', '1208 Elizabeth Courts, Charlesmouth, MS 49489', '1');
+
+INSERT INTO users VALUES ('Terry Smith', '78724991');
+INSERT INTO nonadmin VALUES ('Terry Smith', '78724991', '707 Jeffrey Garden, Lake Russell, FL 23390','1');
+INSERT INTO caretakers VALUES ('Terry Smith', '78724991', '707 Jeffrey Garden, Lake Russell, FL 23390', '1');
+
+INSERT INTO users VALUES ('John Babcock', '92060003');
+INSERT INTO nonadmin VALUES ('John Babcock', '92060003', '835 Kelly Cove, Paigeburgh, RI 29275','1');
+INSERT INTO caretakers VALUES ('John Babcock', '92060003', '835 Kelly Cove, Paigeburgh, RI 29275', '1');
+
+INSERT INTO users VALUES ('Pamela Kirby', '62690010');
+INSERT INTO nonadmin VALUES ('Pamela Kirby', '62690010', '86570 Singh Extension Apt. 397, West Jennifer, KS 31823','0');
+INSERT INTO caretakers VALUES ('Pamela Kirby', '62690010', '86570 Singh Extension Apt. 397, West Jennifer, KS 31823', '0');
+
+INSERT INTO users VALUES ('Timothy Franks', '99364973');
+INSERT INTO nonadmin VALUES ('Timothy Franks', '99364973', '666 Victoria Brooks, Wilsonville, NE 27038','2');
+INSERT INTO caretakers VALUES ('Timothy Franks', '99364973', '666 Victoria Brooks, Wilsonville, NE 27038', '2');
+
+INSERT INTO users VALUES ('Gisela Seitz', '42318446');
+INSERT INTO nonadmin VALUES ('Gisela Seitz', '42318446', '516 Henry Manor, Thompsonville, OK 12098','0');
+INSERT INTO caretakers VALUES ('Gisela Seitz', '42318446', '516 Henry Manor, Thompsonville, OK 12098', '0');
+
+INSERT INTO users VALUES ('Betty Cooper', '89622635');
+INSERT INTO nonadmin VALUES ('Betty Cooper', '89622635', '87197 Olson Spur, Andreastad, UT 43821','1');
+INSERT INTO caretakers VALUES ('Betty Cooper', '89622635', '87197 Olson Spur, Andreastad, UT 43821', '1');
+
+INSERT INTO users VALUES ('Tracy Ferraro', '18746934');
+INSERT INTO nonadmin VALUES ('Tracy Ferraro', '18746934', '912 Paul Extensions, East Jonathon, LA 07999','0');
+INSERT INTO caretakers VALUES ('Tracy Ferraro', '18746934', '912 Paul Extensions, East Jonathon, LA 07999', '0');
+
+INSERT INTO users VALUES ('Cheryl Morris', '40725226');
+INSERT INTO nonadmin VALUES ('Cheryl Morris', '40725226', '86732 Jimmy Freeway, Evansside, KY 72169','0');
+INSERT INTO caretakers VALUES ('Cheryl Morris', '40725226', '86732 Jimmy Freeway, Evansside, KY 72169', '0');
+
+INSERT INTO users VALUES ('Jeremy Walton', '94708279');
+INSERT INTO nonadmin VALUES ('Jeremy Walton', '94708279', '2193 Bray Crossroad Apt. 128, East Joseph, IA 03471','1');
+INSERT INTO caretakers VALUES ('Jeremy Walton', '94708279', '2193 Bray Crossroad Apt. 128, East Joseph, IA 03471', '1');
+
+INSERT INTO users VALUES ('Justin Black', '80093268');
+INSERT INTO nonadmin VALUES ('Justin Black', '80093268', '486 James Terrace Suite 280, Lake Lisa, NV 37839','0');
+INSERT INTO caretakers VALUES ('Justin Black', '80093268', '486 James Terrace Suite 280, Lake Lisa, NV 37839', '0');
+
+INSERT INTO users VALUES ('Scot Medina', '81567501');
+INSERT INTO nonadmin VALUES ('Scot Medina', '81567501', '029 Brown Port Apt. 195, Vaughnville, NE 80882','0');
+INSERT INTO caretakers VALUES ('Scot Medina', '81567501', '029 Brown Port Apt. 195, Vaughnville, NE 80882', '0');
+
+INSERT INTO users VALUES ('Karla Chavis', '71766563');
+INSERT INTO nonadmin VALUES ('Karla Chavis', '71766563', '906 Susan Stream Suite 868, Lake Shawn, AZ 43869','0');
+INSERT INTO caretakers VALUES ('Karla Chavis', '71766563', '906 Susan Stream Suite 868, Lake Shawn, AZ 43869', '0');
+
+INSERT INTO users VALUES ('Serena Reyna', '59486701');
+INSERT INTO nonadmin VALUES ('Serena Reyna', '59486701', '667 Sandra Field Apt. 175, East Austintown, IA 71192','1');
+INSERT INTO caretakers VALUES ('Serena Reyna', '59486701', '667 Sandra Field Apt. 175, East Austintown, IA 71192', '1');
+
+INSERT INTO users VALUES ('Annamarie Roberge', '86446852');
+INSERT INTO nonadmin VALUES ('Annamarie Roberge', '86446852', '707 Amy Gardens Apt. 939, East Edwardborough, LA 54923','2');
+INSERT INTO caretakers VALUES ('Annamarie Roberge', '86446852', '707 Amy Gardens Apt. 939, East Edwardborough, LA 54923', '2');
+
+INSERT INTO users VALUES ('Tom Morrison', '60344909');
+INSERT INTO nonadmin VALUES ('Tom Morrison', '60344909', '063 Nelson Forges, Wellstown, TN 00631','1');
+INSERT INTO caretakers VALUES ('Tom Morrison', '60344909', '063 Nelson Forges, Wellstown, TN 00631', '1');
+
+INSERT INTO users VALUES ('Sally Schrock', '76738048');
+INSERT INTO nonadmin VALUES ('Sally Schrock', '76738048', '206 Craig Mountains Suite 481, South Mark, NC 37274','1');
+INSERT INTO caretakers VALUES ('Sally Schrock', '76738048', '206 Craig Mountains Suite 481, South Mark, NC 37274', '1');
+
+INSERT INTO users VALUES ('Richard Wood', '54984598');
+INSERT INTO nonadmin VALUES ('Richard Wood', '54984598', '89657 William Stream Apt. 746, Cruzshire, KY 07902','0');
+INSERT INTO caretakers VALUES ('Richard Wood', '54984598', '89657 William Stream Apt. 746, Cruzshire, KY 07902', '0');
+
+INSERT INTO users VALUES ('Robert Tate', '19987040');
+INSERT INTO nonadmin VALUES ('Robert Tate', '19987040', '90619 Vincent Locks, South Erik, AZ 75380','0');
+INSERT INTO caretakers VALUES ('Robert Tate', '19987040', '90619 Vincent Locks, South Erik, AZ 75380', '0');
+
+INSERT INTO users VALUES ('Anna Mccardle', '28888912');
+INSERT INTO nonadmin VALUES ('Anna Mccardle', '28888912', 'PSC 3515, Box 8988, APO AE 68835','1');
+INSERT INTO caretakers VALUES ('Anna Mccardle', '28888912', 'PSC 3515, Box 8988, APO AE 68835', '1');
+
+INSERT INTO users VALUES ('Shaun Dickerson', '69947514');
+INSERT INTO nonadmin VALUES ('Shaun Dickerson', '69947514', '543 Adams Freeway, South Jessicamouth, WY 87376','0');
+INSERT INTO caretakers VALUES ('Shaun Dickerson', '69947514', '543 Adams Freeway, South Jessicamouth, WY 87376', '0');
+
+INSERT INTO users VALUES ('John Grantham', '75774383');
+INSERT INTO nonadmin VALUES ('John Grantham', '75774383', '35381 Brian Junctions Suite 037, East Omar, NY 49420','1');
+INSERT INTO caretakers VALUES ('John Grantham', '75774383', '35381 Brian Junctions Suite 037, East Omar, NY 49420', '1');
+
+INSERT INTO users VALUES ('Monserrate Ransom', '95645108');
+INSERT INTO nonadmin VALUES ('Monserrate Ransom', '95645108', '91223 Justin Terrace, Port Katherineland, NY 15291','0');
+INSERT INTO caretakers VALUES ('Monserrate Ransom', '95645108', '91223 Justin Terrace, Port Katherineland, NY 15291', '0');
+
+INSERT INTO users VALUES ('Felix Nelson', '98185984');
+INSERT INTO nonadmin VALUES ('Felix Nelson', '98185984', '2448 Rodriguez Run Suite 422, Benitezview, ME 49657','0');
+INSERT INTO caretakers VALUES ('Felix Nelson', '98185984', '2448 Rodriguez Run Suite 422, Benitezview, ME 49657', '0');
+
+INSERT INTO users VALUES ('Mildred Yoshida', '46486326');
+INSERT INTO nonadmin VALUES ('Mildred Yoshida', '46486326', '71197 Cain Via Suite 215, Teresaborough, GA 41017','1');
+INSERT INTO caretakers VALUES ('Mildred Yoshida', '46486326', '71197 Cain Via Suite 215, Teresaborough, GA 41017', '1');
+
+INSERT INTO users VALUES ('Danny Washington', '15628174');
+INSERT INTO nonadmin VALUES ('Danny Washington', '15628174', '476 Sean Course, Jenniferburgh, NH 74945','2');
+INSERT INTO caretakers VALUES ('Danny Washington', '15628174', '476 Sean Course, Jenniferburgh, NH 74945', '2');
+
+INSERT INTO users VALUES ('Michael Cave', '36117344');
+INSERT INTO nonadmin VALUES ('Michael Cave', '36117344', '52439 Eric Skyway Apt. 615, North James, MO 31652','0');
+INSERT INTO caretakers VALUES ('Michael Cave', '36117344', '52439 Eric Skyway Apt. 615, North James, MO 31652', '0');
+
+INSERT INTO users VALUES ('Florence Oconnor', '66182887');
+INSERT INTO nonadmin VALUES ('Florence Oconnor', '66182887', '5798 Dawn Squares, Port Collinshire, VT 06554','1');
+INSERT INTO caretakers VALUES ('Florence Oconnor', '66182887', '5798 Dawn Squares, Port Collinshire, VT 06554', '1');
+
+INSERT INTO users VALUES ('Dorothy Humiston', '55766165');
+INSERT INTO nonadmin VALUES ('Dorothy Humiston', '55766165', '9828 Leslie Garden Apt. 408, Coxmouth, FL 40579','0');
+INSERT INTO caretakers VALUES ('Dorothy Humiston', '55766165', '9828 Leslie Garden Apt. 408, Coxmouth, FL 40579', '0');
+
+INSERT INTO users VALUES ('Clara Ray', '24659442');
+INSERT INTO nonadmin VALUES ('Clara Ray', '24659442', 'PSC 9343, Box 6047, APO AA 88342','0');
+INSERT INTO caretakers VALUES ('Clara Ray', '24659442', 'PSC 9343, Box 6047, APO AA 88342', '0');
+
+INSERT INTO users VALUES ('Carmen Maisonave', '76239579');
+INSERT INTO nonadmin VALUES ('Carmen Maisonave', '76239579', '367 Perez Springs, North Zacharyview, HI 40409','2');
+INSERT INTO caretakers VALUES ('Carmen Maisonave', '76239579', '367 Perez Springs, North Zacharyview, HI 40409', '2');
+
+INSERT INTO users VALUES ('James Reels', '37004200');
+INSERT INTO nonadmin VALUES ('James Reels', '37004200', '7334 Tucker Well, Anthonystad, MA 72970','0');
+INSERT INTO caretakers VALUES ('James Reels', '37004200', '7334 Tucker Well, Anthonystad, MA 72970', '0');
+
