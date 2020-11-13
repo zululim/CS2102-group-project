@@ -179,11 +179,12 @@ CREATE TABLE taken_care_of (						-- so each row will represent one pet the care
 	caretaker VARCHAR, 
 	cphone INTEGER, 
 	petowner VARCHAR,
+	pphone INTEGER,
 	pet_name VARCHAR, 
 	date DATE,
 	FOREIGN KEY (caretaker, petowner, date, pet_name) REFERENCES bids_for(caretaker, petowner, date, pet_name), 
 	FOREIGN KEY (caretaker, cphone) REFERENCES caretakers(name, phone),
-	PRIMARY KEY (counter)
+	PRIMARY KEY (cphone, pphone, pet_name, date)
 );
 
 ---------------------------------------------------------- UPDATE TABLES --------------------------------------------------------------------------
