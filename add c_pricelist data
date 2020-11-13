@@ -1,0 +1,77 @@
+-- add price list for 20 caretakers. Price range from 20-40
+
+INSERT INTO c_pricelist VALUES ('Apolonia Bowers', '44346707', 'cat', '23');
+INSERT INTO c_pricelist VALUES ('Apolonia Bowers', '44346707', 'dog', '38');
+INSERT INTO c_pricelist VALUES ('Apolonia Bowers', '44346707', 'fish', '23');
+INSERT INTO c_pricelist VALUES ('Apolonia Bowers', '44346707', 'parrot', '24');
+
+INSERT INTO c_pricelist VALUES ('Timothy Abbott', '84893921', 'parrot', '33');
+INSERT INTO c_pricelist VALUES ('Timothy Abbott', '84893921', 'rabbit', '39');
+INSERT INTO c_pricelist VALUES ('Timothy Abbott', '84893921', 'fish', '28');
+
+INSERT INTO c_pricelist VALUES ('Phyllis Carr', '57715049', 'fish', '38');
+INSERT INTO c_pricelist VALUES ('Phyllis Carr', '57715049', 'parrot', '22');
+
+INSERT INTO c_pricelist VALUES ('Paul Swelgart', '49290068', 'fish', '38');
+INSERT INTO c_pricelist VALUES ('Paul Swelgart', '49290068', 'turtle', '36');
+INSERT INTO c_pricelist VALUES ('Paul Swelgart', '49290068', 'dog', '28');
+
+INSERT INTO c_pricelist VALUES ('Jonathan Hollingsworth', '64964373', 'dog', '24');
+INSERT INTO c_pricelist VALUES ('Jonathan Hollingsworth', '64964373', 'turtle', '38');
+INSERT INTO c_pricelist VALUES ('Jonathan Hollingsworth', '64964373', 'fish', '30');
+
+INSERT INTO c_pricelist VALUES ('Sandra Saade', '30961440', 'fish', '24');
+
+INSERT INTO c_pricelist VALUES ('Kristopher Robledo', '84204450', 'cat', '21');
+INSERT INTO c_pricelist VALUES ('Kristopher Robledo', '84204450', 'dog', '29');
+INSERT INTO c_pricelist VALUES ('Kristopher Robledo', '84204450', 'hamster', '20');
+
+INSERT INTO c_pricelist VALUES ('Annette Jenkins', '16377280', 'dog', '31');
+INSERT INTO c_pricelist VALUES ('Annette Jenkins', '16377280', 'turtle', '23');
+INSERT INTO c_pricelist VALUES ('Annette Jenkins', '16377280', 'fish', '35');
+INSERT INTO c_pricelist VALUES ('Annette Jenkins', '16377280', 'rabbit', '33');
+INSERT INTO c_pricelist VALUES ('Annette Jenkins', '16377280', 'cat', '26');
+
+INSERT INTO c_pricelist VALUES ('Esther Johnson', '52840789', 'parrot', '20');
+
+INSERT INTO c_pricelist VALUES ('Sherell Sotelo', '61165239', 'cat', '32');
+INSERT INTO c_pricelist VALUES ('Sherell Sotelo', '61165239', 'fish', '22');
+INSERT INTO c_pricelist VALUES ('Sherell Sotelo', '61165239', 'fish', '29');
+
+INSERT INTO c_pricelist VALUES ('Chad Trinidad', '89899248', 'turtle', '34');
+INSERT INTO c_pricelist VALUES ('Chad Trinidad', '89899248', 'parrot', '40');
+INSERT INTO c_pricelist VALUES ('Chad Trinidad', '89899248', 'fish', '31');
+INSERT INTO c_pricelist VALUES ('Chad Trinidad', '89899248', 'dog', '26');
+INSERT INTO c_pricelist VALUES ('Chad Trinidad', '89899248', 'fish', '38');
+
+INSERT INTO c_pricelist VALUES ('Karen Rabello', '89455273', 'fish', '20');
+
+INSERT INTO c_pricelist VALUES ('Willie Maddox', '23705379', 'turtle', '24');
+INSERT INTO c_pricelist VALUES ('Willie Maddox', '23705379', 'rabbit', '24');
+INSERT INTO c_pricelist VALUES ('Willie Maddox', '23705379', 'cat', '37');
+INSERT INTO c_pricelist VALUES ('Willie Maddox', '23705379', 'dog', '32');
+
+INSERT INTO c_pricelist VALUES ('Steven Mccray', '71283075', 'rabbit', '20');
+
+INSERT INTO c_pricelist VALUES ('Romana Arthur', '27463512', 'rabbit', '36');
+INSERT INTO c_pricelist VALUES ('Romana Arthur', '27463512', 'dog', '26');
+
+INSERT INTO c_pricelist VALUES ('Samuel Hachting', '37616026', 'cat', '38');
+INSERT INTO c_pricelist VALUES ('Samuel Hachting', '37616026', 'cat', '28');
+INSERT INTO c_pricelist VALUES ('Samuel Hachting', '37616026', 'cat', '24');
+INSERT INTO c_pricelist VALUES ('Samuel Hachting', '37616026', 'dog', '37');
+INSERT INTO c_pricelist VALUES ('Samuel Hachting', '37616026', 'parrot', '39');
+
+INSERT INTO c_pricelist VALUES ('Teresa Henderson', '53637883', 'hamster', '35');
+INSERT INTO c_pricelist VALUES ('Teresa Henderson', '53637883', 'turtle', '35');
+
+INSERT INTO c_pricelist VALUES ('Marco Carrales', '59947012', 'cat', '21');
+INSERT INTO c_pricelist VALUES ('Marco Carrales', '59947012', 'rabbit', '38');
+INSERT INTO c_pricelist VALUES ('Marco Carrales', '59947012', 'dog', '38');
+INSERT INTO c_pricelist VALUES ('Marco Carrales', '59947012', 'turtle', '32');
+INSERT INTO c_pricelist VALUES ('Marco Carrales', '59947012', 'fish', '29');
+
+INSERT INTO c_pricelist VALUES ('Peggy Brown', '33625149', 'fish', '32');
+
+INSERT INTO c_pricelist VALUES ('Eric Denmon', '35702357', 'parrot', '30');
+INSERT INTO c_pricelist VALUES ('Eric Denmon', '35702357', 'rabbit', '38');
