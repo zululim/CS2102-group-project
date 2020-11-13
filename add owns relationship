@@ -1,0 +1,137 @@
+-- Using the first 20 pet owners from pet owner table. Each owner might have 1 to 5 pets
+-- In total 67 pets here
+
+INSERT INTO owns VALUES ('Robert Hawks', '10760371', 'Bernie', 'fish');
+
+INSERT INTO owns VALUES ('Robert Hawks', '10760371', 'Anthony', 'dog');
+
+INSERT INTO owns VALUES ('Robert Hawks', '10760371', 'Stephen', 'hamster');
+
+INSERT INTO owns VALUES ('Robert Hawks', '10760371', 'Margaret', 'dog');
+
+INSERT INTO owns VALUES ('Robert Hawks', '10760371', 'Eugene', 'parrot');
+
+INSERT INTO owns VALUES ('Janet Skelton', '88387566', 'Carolyn', 'cat');
+
+INSERT INTO owns VALUES ('Maria Lee', '30163547', 'Daniel', 'rabbit');
+
+INSERT INTO owns VALUES ('Maria Lee', '30163547', 'Pearl', 'cat');
+
+INSERT INTO owns VALUES ('Maria Lee', '30163547', 'Eddie', 'rabbit');
+
+INSERT INTO owns VALUES ('Maria Lee', '30163547', 'Nina', 'cat');
+
+INSERT INTO owns VALUES ('May Payne', '36033539', 'Cecilia', 'rabbit');
+
+INSERT INTO owns VALUES ('May Payne', '36033539', 'Kenneth', 'rabbit');
+
+INSERT INTO owns VALUES ('May Payne', '36033539', 'Shannon', 'rabbit');
+
+INSERT INTO owns VALUES ('Olga Peek', '41423420', 'Deborah', 'dog');
+
+INSERT INTO owns VALUES ('Olga Peek', '41423420', 'John', 'hamster');
+
+INSERT INTO owns VALUES ('Olga Peek', '41423420', 'Vasiliki', 'parrot');
+
+INSERT INTO owns VALUES ('Olga Peek', '41423420', 'Stephen', 'fish');
+
+INSERT INTO owns VALUES ('Olga Peek', '41423420', 'Calvin', 'dog');
+
+INSERT INTO owns VALUES ('Tawanna Bowling', '87212051', 'Rodolfo', 'dog');
+
+INSERT INTO owns VALUES ('Tawanna Bowling', '87212051', 'Billy', 'turtle');
+
+INSERT INTO owns VALUES ('Tawanna Bowling', '87212051', 'Judith', 'cat');
+
+INSERT INTO owns VALUES ('Tawanna Bowling', '87212051', 'Henry', 'cat');
+
+INSERT INTO owns VALUES ('Edwin Negron', '35804636', 'Jamie', 'fish');
+
+INSERT INTO owns VALUES ('Edwin Negron', '35804636', 'Gene', 'cat');
+
+INSERT INTO owns VALUES ('Edwin Negron', '35804636', 'Richard', 'turtle');
+
+INSERT INTO owns VALUES ('Edwin Negron', '35804636', 'Monica', 'cat');
+
+INSERT INTO owns VALUES ('Edwin Negron', '35804636', 'Daisy', 'turtle');
+
+INSERT INTO owns VALUES ('Thomas Featherstone', '77088321', 'Jeri', 'dog');
+
+INSERT INTO owns VALUES ('Raymond Maynard', '58187017', 'Joseph', 'cat');
+
+INSERT INTO owns VALUES ('Raymond Maynard', '58187017', 'Aaron', 'cat');
+
+INSERT INTO owns VALUES ('Raymond Maynard', '58187017', 'Aldo', 'fish');
+
+INSERT INTO owns VALUES ('Raymond Maynard', '58187017', 'Tiffany', 'turtle');
+
+INSERT INTO owns VALUES ('Brenda Stamper', '76492518', 'Patricia', 'fish');
+
+INSERT INTO owns VALUES ('Cheryl Wood', '83582116', 'Albert', 'hamster');
+
+INSERT INTO owns VALUES ('Vera Conover', '18782433', 'Kristina', 'rabbit');
+
+INSERT INTO owns VALUES ('Bill Webb', '28955252', 'Rene', 'rabbit');
+
+INSERT INTO owns VALUES ('Bill Webb', '28955252', 'Velma', 'parrot');
+
+INSERT INTO owns VALUES ('Bill Webb', '28955252', 'Ruth', 'parrot');
+
+INSERT INTO owns VALUES ('Walter Griffin', '84001345', 'Eric', 'turtle');
+
+INSERT INTO owns VALUES ('Walter Griffin', '84001345', 'Melvin', 'cat');
+
+INSERT INTO owns VALUES ('Walter Griffin', '84001345', 'Diane', 'fish');
+
+INSERT INTO owns VALUES ('Walter Griffin', '84001345', 'Randy', 'hamster');
+
+INSERT INTO owns VALUES ('Walter Griffin', '84001345', 'Fred', 'fish');
+
+INSERT INTO owns VALUES ('Mayra Moore', '10840858', 'Kevin', 'rabbit');
+
+INSERT INTO owns VALUES ('Mayra Moore', '10840858', 'Helen', 'parrot');
+
+INSERT INTO owns VALUES ('Mayra Moore', '10840858', 'Judith', 'cat');
+
+INSERT INTO owns VALUES ('Mayra Moore', '10840858', 'Patricia', 'rabbit');
+
+INSERT INTO owns VALUES ('Mayra Moore', '10840858', 'Theron', 'parrot');
+
+INSERT INTO owns VALUES ('Petra Linney', '12541713', 'Sallie', 'parrot');
+
+INSERT INTO owns VALUES ('Petra Linney', '12541713', 'Constance', 'fish');
+
+INSERT INTO owns VALUES ('Nick Butler', '50877283', 'Clara', 'dog');
+
+INSERT INTO owns VALUES ('Nick Butler', '50877283', 'Arthur', 'parrot');
+
+INSERT INTO owns VALUES ('Nick Butler', '50877283', 'Edgar', 'dog');
+
+INSERT INTO owns VALUES ('Nick Butler', '50877283', 'Kathryn', 'dog');
+
+INSERT INTO owns VALUES ('Nick Butler', '50877283', 'Phillip', 'hamster');
+
+INSERT INTO owns VALUES ('Antonio Tinsley', '75844431', 'Elsie', 'dog');
+
+INSERT INTO owns VALUES ('Antonio Tinsley', '75844431', 'Deborah', 'parrot');
+
+INSERT INTO owns VALUES ('Antonio Tinsley', '75844431', 'John', 'rabbit');
+
+INSERT INTO owns VALUES ('Antonio Tinsley', '75844431', 'Karen', 'fish');
+
+INSERT INTO owns VALUES ('Shawna Thomas', '59676815', 'Robert', 'dog');
+
+INSERT INTO owns VALUES ('Shawna Thomas', '59676815', 'Laurie', 'parrot');
+
+INSERT INTO owns VALUES ('Shawna Thomas', '59676815', 'Audrey', 'rabbit');
+
+INSERT INTO owns VALUES ('Shawna Thomas', '59676815', 'Kevin', 'dog');
+
+INSERT INTO owns VALUES ('Thomas Gibson', '57846478', 'Nicholas', 'dog');
+
+INSERT INTO owns VALUES ('Thomas Gibson', '57846478', 'Joyce', 'hamster');
+
+INSERT INTO owns VALUES ('Thomas Gibson', '57846478', 'Robert', 'rabbit');
+
+INSERT INTO owns VALUES ('Thomas Gibson', '57846478', 'Suzanne', 'rabbit');
+
