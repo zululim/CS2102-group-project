@@ -1,0 +1,321 @@
+-- 20 caretakers
+-- we uses the duration from Nov 1st to Nov 14th.
+
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '01-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '02-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '03-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '04-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '05-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '06-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '07-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '08-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '09-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '10-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '11-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '12-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '13-11-2020');
+INSERT INTO has_availability VALUES ('Apolonia Bowers', '44346707', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '01-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '02-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '03-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '04-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '05-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '06-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '07-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '08-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '09-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '10-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '11-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '12-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '13-11-2020');
+INSERT INTO has_availability VALUES ('Timothy Abbott', '84893921', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '01-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '02-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '03-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '04-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '05-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '06-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '07-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '08-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '09-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '10-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '11-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '12-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '13-11-2020');
+INSERT INTO has_availability VALUES ('Phyllis Carr', '57715049', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '01-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '02-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '03-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '04-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '05-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '06-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '07-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '08-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '09-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '10-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '11-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '12-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '13-11-2020');
+INSERT INTO has_availability VALUES ('Paul Swelgart', '49290068', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '01-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '02-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '03-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '04-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '05-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '06-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '07-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '08-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '09-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '10-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '11-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '12-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '13-11-2020');
+INSERT INTO has_availability VALUES ('Jonathan Hollingsworth', '64964373', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '01-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '02-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '03-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '04-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '05-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '06-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '07-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '08-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '09-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '10-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '11-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '12-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '13-11-2020');
+INSERT INTO has_availability VALUES ('Sandra Saade', '30961440', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '01-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '02-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '03-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '04-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '05-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '06-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '07-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '08-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '09-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '10-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '11-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '12-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '13-11-2020');
+INSERT INTO has_availability VALUES ('Kristopher Robledo', '84204450', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '01-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '02-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '03-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '04-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '05-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '06-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '07-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '08-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '09-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '10-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '11-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '12-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '13-11-2020');
+INSERT INTO has_availability VALUES ('Annette Jenkins', '16377280', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '01-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '02-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '03-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '04-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '05-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '06-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '07-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '08-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '09-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '10-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '11-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '12-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '13-11-2020');
+INSERT INTO has_availability VALUES ('Esther Johnson', '52840789', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '01-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '02-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '03-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '04-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '05-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '06-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '07-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '08-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '09-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '10-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '11-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '12-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '13-11-2020');
+INSERT INTO has_availability VALUES ('Sherell Sotelo', '61165239', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '01-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '02-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '03-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '04-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '05-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '06-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '07-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '08-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '09-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '10-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '11-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '12-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '13-11-2020');
+INSERT INTO has_availability VALUES ('Chad Trinidad', '89899248', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '01-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '02-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '03-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '04-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '05-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '06-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '07-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '08-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '09-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '10-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '11-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '12-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '13-11-2020');
+INSERT INTO has_availability VALUES ('Karen Rabello', '89455273', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '01-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '02-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '03-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '04-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '05-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '06-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '07-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '08-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '09-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '10-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '11-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '12-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '13-11-2020');
+INSERT INTO has_availability VALUES ('Willie Maddox', '23705379', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '01-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '02-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '03-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '04-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '05-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '06-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '07-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '08-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '09-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '10-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '11-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '12-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '13-11-2020');
+INSERT INTO has_availability VALUES ('Steven Mccray', '71283075', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '01-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '02-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '03-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '04-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '05-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '06-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '07-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '08-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '09-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '10-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '11-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '12-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '13-11-2020');
+INSERT INTO has_availability VALUES ('Romana Arthur', '27463512', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '01-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '02-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '03-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '04-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '05-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '06-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '07-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '08-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '09-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '10-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '11-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '12-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '13-11-2020');
+INSERT INTO has_availability VALUES ('Samuel Hachting', '37616026', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '01-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '02-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '03-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '04-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '05-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '06-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '07-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '08-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '09-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '10-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '11-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '12-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '13-11-2020');
+INSERT INTO has_availability VALUES ('Teresa Henderson', '53637883', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '01-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '02-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '03-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '04-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '05-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '06-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '07-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '08-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '09-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '10-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '11-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '12-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '13-11-2020');
+INSERT INTO has_availability VALUES ('Marco Carrales', '59947012', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '01-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '02-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '03-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '04-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '05-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '06-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '07-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '08-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '09-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '10-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '11-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '12-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '13-11-2020');
+INSERT INTO has_availability VALUES ('Peggy Brown', '33625149', '14-11-2020');
+
+
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '01-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '02-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '03-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '04-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '05-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '06-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '07-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '08-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '09-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '10-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '11-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '12-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '13-11-2020');
+INSERT INTO has_availability VALUES ('Eric Denmon', '35702357', '14-11-2020');
