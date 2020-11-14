@@ -175,7 +175,6 @@ CREATE TABLE salary(							-- salary of the caretaker in the month
 
 
 CREATE TABLE taken_care_of (						-- so each row will represent one pet the caretaker has taken care of
-	counter SERIAL,
 	caretaker VARCHAR, 
 	cphone INTEGER, 
 	petowner VARCHAR,
