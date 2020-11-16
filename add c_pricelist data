@@ -36,13 +36,11 @@ INSERT INTO c_pricelist VALUES ('Esther Johnson', '52840789', 'parrot', '20');
 
 INSERT INTO c_pricelist VALUES ('Sherell Sotelo', '61165239', 'cat', '32');
 INSERT INTO c_pricelist VALUES ('Sherell Sotelo', '61165239', 'fish', '22');
-INSERT INTO c_pricelist VALUES ('Sherell Sotelo', '61165239', 'fish', '29');
 
 INSERT INTO c_pricelist VALUES ('Chad Trinidad', '89899248', 'turtle', '34');
 INSERT INTO c_pricelist VALUES ('Chad Trinidad', '89899248', 'parrot', '40');
 INSERT INTO c_pricelist VALUES ('Chad Trinidad', '89899248', 'fish', '31');
 INSERT INTO c_pricelist VALUES ('Chad Trinidad', '89899248', 'dog', '26');
-INSERT INTO c_pricelist VALUES ('Chad Trinidad', '89899248', 'fish', '38');
 
 INSERT INTO c_pricelist VALUES ('Karen Rabello', '89455273', 'fish', '20');
 
@@ -56,8 +54,6 @@ INSERT INTO c_pricelist VALUES ('Steven Mccray', '71283075', 'rabbit', '20');
 INSERT INTO c_pricelist VALUES ('Romana Arthur', '27463512', 'rabbit', '36');
 INSERT INTO c_pricelist VALUES ('Romana Arthur', '27463512', 'dog', '26');
 
-INSERT INTO c_pricelist VALUES ('Samuel Hachting', '37616026', 'cat', '38');
-INSERT INTO c_pricelist VALUES ('Samuel Hachting', '37616026', 'cat', '28');
 INSERT INTO c_pricelist VALUES ('Samuel Hachting', '37616026', 'cat', '24');
 INSERT INTO c_pricelist VALUES ('Samuel Hachting', '37616026', 'dog', '37');
 INSERT INTO c_pricelist VALUES ('Samuel Hachting', '37616026', 'parrot', '39');
