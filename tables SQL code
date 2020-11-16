@@ -168,8 +168,8 @@ CREATE TABLE salary(							-- salary of the caretaker in the month
 	month 		INTEGER DEFAULT 0,	
 	total_cost 	INTEGER DEFAULT 0,
 	final_salary INTEGER DEFAULT 0,
-	FOREIGN KEY (caretaker, petowner, date, pet_name) REFERENCES bids_for(caretaker, petowner, date, pet_name), 
-	FOREIGN KEY (pet_type, price, caretaker, cphone) REFERENCES c_pricelist(pet_type, price, cname, cphone), 
+	FOREIGN KEY (cphone, pphone, date, pet_name) REFERENCES bids_for(cphone, pphone, date, pet_name), 
+	FOREIGN KEY (pet_type, cphone) REFERENCES c_pricelist(pet_type, cphone), 
 	PRIMARY KEY (cphone, pet_name, date)
 );
 
