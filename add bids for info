@@ -1,0 +1,41 @@
+-- In total 20 pieces of bids for information
+
+INSERT INTO bids_for VALUES('Apolonia Bowers', '44346707', 'Robert Hawks', '10760371', '03-11-2020', 'Anthony', 'dog', null, '0', '0', '6162459334985387', '0' ,'2020', '11', '40');
+
+INSERT INTO bids_for VALUES('Apolonia Bowers', '44346707', 'Robert Hawks', '10760371', '04-11-2020', 'Bernie', 'fish', null, '0', '0', '6162459334985387', '0' ,'2020', '11', '25');
+
+INSERT INTO bids_for VALUES('Apolonia Bowers', '44346707', 'Janet Skelton', '88387566', '10-11-2020','Carolyn', 'cat', null ,'0','2', '4441217247224429', '0', '2020' ,'11', '30');
+
+INSERT INTO bids_for VALUES('Timothy Abbott', '84893921', 'Maria Lee', '30163547', '03-11-2020' , 'Daniel', 'rabbit', null ,'0','1', '1427807644230695', '0', '2020' ,'11', '45');
+
+INSERT INTO bids_for VALUES('Timothy Abbott', '84893921', 'Robert Hawks', '10760371', '05-11-2020' , 'Eugene', 'parrot', null ,'0', '0', '6162459334985387', '0', '2020' ,'11', '33');
+
+INSERT INTO bids_for VALUES('Phyllis Carr', '57715049','May Payne', '36033539','01-11-2020','Cecilia', 'rabbit', null ,'0', '0', '7444451042832585', '0', '2020' ,'11', '39');
+
+INSERT INTO bids_for VALUES('Phyllis Carr', '57715049','Olga Peek', '41423420','02-11-2020','Stephen', 'fish', null ,'0', '2', '3427859253444686', '0', '2020' ,'11', '42');
+
+INSERT INTO bids_for VALUES('Paul Swelgart', '49290068', 'Tawanna Bowling', '87212051','01-11-2020', 'Billy', 'turtle', null ,'0', '2', '8079571995879595', '0', '2020' ,'11', '37');
+
+INSERT INTO bids_for VALUES('Paul Swelgart', '49290068', 'Tawanna Bowling', '87212051','12-11-2020', 'Rodolfo', 'dog', null ,'0', '2', '8079571995879595', '0', '2020' ,'11', '29');
+
+INSERT INTO bids_for VALUES('Paul Swelgart', '49290068', 'Tawanna Bowling', '87212051','13-11-2020', 'Rodolfo', 'dog', null ,'0', '2', '8079571995879595', '0', '2020' ,'11', '29');
+
+INSERT INTO bids_for VALUES('Jonathan Hollingsworth', '64964373', 'Edwin Negron', '35804636', '10-11-2020', 'Jamie', 'fish', null ,'0', '2', '2735650383044552', '0', '2020' ,'11', '31');
+
+INSERT INTO bids_for VALUES('Sandra Saade', '30961440', 'Edwin Negron', '35804636', '11-11-2020', 'Jamie', 'fish', null , '0', '2', '2735650383044552', '0', '2020' ,'11', '25');
+
+INSERT INTO bids_for VALUES('Kristopher Robledo', '84204450', 'Edwin Negron', '35804636', '11-11-2020', 'Monica', 'cat', null , '0', '2', '2735650383044552', '0', '2020' ,'11', '24');
+
+INSERT INTO bids_for VALUES('Kristopher Robledo', '84204450', 'Cheryl Wood', '83582116', '14-11-2020', 'Albert', 'hamster', null , '0', '2', '6141058374685738', '0', '2020' ,'11', '21');
+
+INSERT INTO bids_for VALUES('Annette Jenkins', '16377280','Raymond Maynard', '58187017', '07-11-2020', 'Aaron', 'cat', null ,'0', '1', '9056662101573114', '0', '2020' ,'11', '28');
+
+INSERT INTO bids_for VALUES('Annette Jenkins', '16377280','Raymond Maynard', '58187017', '11-11-2020', 'Tiffany', 'turtle', null ,'0', '1', '9056662101573114', '0', '2020' ,'11', '23');
+
+INSERT INTO bids_for VALUES('Esther Johnson', '52840789','Bill Webb', '28955252', '01-11-2020', 'Velma', 'parrot', null ,'0', '1', '9280226897849912', '0', '2020' ,'11', '21');
+
+INSERT INTO bids_for VALUES('Sherell Sotelo', '61165239','Brenda Stamper', '76492518', '11-11-2020', 'Patricia', 'fish', null ,'0', '2', '2097311239607804', '0', '2020' ,'11', '23');
+
+INSERT INTO bids_for VALUES('Chad Trinidad', '89899248','Walter Griffin', '84001345', '06-11-2020', 'Eric', 'turtle', null ,'0', '2', '1109796463064983', '0', '2020' ,'11', '35');
+
+INSERT INTO bids_for VALUES('Chad Trinidad', '89899248','Walter Griffin', '84001345', '07-11-2020', 'Diane', 'fish', null ,'0', '2', '1109796463064983', '0', '2020' ,'11', '32');
