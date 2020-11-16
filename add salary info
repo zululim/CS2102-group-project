@@ -1,0 +1,41 @@
+-- add salary data info
+
+INSERT INTO salary VALUES ('Apolonia Bowers', '44346707', '1', 'Robert Hawks', '10760371', 'Anthony', 'dog', '40', '03-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Apolonia Bowers', '44346707', '1', 'Robert Hawks', '10760371', 'Bernie', 'fish', '25', '04-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Apolonia Bowers', '44346707', '1', 'Janet Skelton', '88387566', 'Carolyn', 'cat', '30', '10-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Timothy Abbott', '84893921', '1', 'Maria Lee', '30163547', 'Daniel', 'rabbit', '45', '03-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Timothy Abbott', '84893921', '1', 'Robert Hawks', '10760371', 'Eugene', 'parrot', '33', '05-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Phyllis Carr', '57715049', '1', 'May Payne', '36033539', 'Cecilia', 'rabbit', '39', '01-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Phyllis Carr', '57715049', '1', 'Olga Peek', '41423420', 'Stephen', 'fish', '42', '02-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Paul Swelgart', '49290068', '1', 'Tawanna Bowling', '87212051', 'Billy', 'turtle', '37', '01-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Paul Swelgart', '49290068', '1', 'Tawanna Bowling', '87212051', 'Rodolfo', 'dog', '29', '12-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Paul Swelgart', '49290068', '1', 'Tawanna Bowling', '87212051', 'Rodolfo', 'dog', '29', '13-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Jonathan Hollingsworth', '64964373', '1', 'Edwin Negron', '35804636', 'Jamie', 'fish', '31', '10-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Sandra Saade', '30961440', '1', 'Edwin Negron', '35804636', 'Jamie', 'fish', '25', '11-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Kristopher Robledo', '84204450', '1', 'Edwin Negron', '35804636', 'Monica', 'cat', '24', '11-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Kristopher Robledo', '84204450', '1', 'Cheryl Wood', '83582116', 'Albert', 'hamster', '21', '14-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Annette Jenkins', '16377280', '1', 'Raymond Maynard', '58187017', 'Aaron', 'cat', '28', '07-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Annette Jenkins', '16377280', '1', 'Raymond Maynard', '58187017', 'Tiffany', 'turtle', '23', '11-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Esther Johnson', '52840789', '1', 'Bill Webb', '28955252', 'Velma', 'parrot', '21', '01-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Sherell Sotelo', '61165239', '1', 'Brenda Stamper', '76492518', 'Patricia', 'fish', '23', '11-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Chad Trinidad', '89899248', '1', 'Walter Griffin', '84001345', 'Eric', 'turtle', '35', '06-11-2020', '11', '2020');
+
+INSERT INTO salary VALUES ('Chad Trinidad', '89899248', '1', 'Walter Griffin', '84001345', 'Diane', 'fish', '32', '07-11-2020', '11', '2020');
