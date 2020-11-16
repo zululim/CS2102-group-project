@@ -9,6 +9,7 @@ INSERT INTO c_pricelist VALUES ('Timothy Abbott', '84893921', 'parrot', '33');
 INSERT INTO c_pricelist VALUES ('Timothy Abbott', '84893921', 'rabbit', '39');
 INSERT INTO c_pricelist VALUES ('Timothy Abbott', '84893921', 'fish', '28');
 
+INSERT INTO c_pricelist VALUES ('Phyllis Carr', '57715049', 'rabbit', '20');
 INSERT INTO c_pricelist VALUES ('Phyllis Carr', '57715049', 'fish', '38');
 INSERT INTO c_pricelist VALUES ('Phyllis Carr', '57715049', 'parrot', '22');
 
