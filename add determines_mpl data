@@ -1,0 +1,13 @@
+INSERT INTO determines_mpl VALUES ('Christine Bonner', '75385972', 'cat','20');
+
+INSERT INTO determines_mpl VALUES ('Christine Bonner', '75385972', 'dog','23');
+
+INSERT INTO determines_mpl VALUES ('Christine Bonner', '75385972', 'fish','15');
+
+INSERT INTO determines_mpl VALUES ('Christine Bonner', '75385972', 'rabbit','15');
+
+INSERT INTO determines_mpl VALUES ('Christine Bonner', '75385972', 'parrot','18');
+
+INSERT INTO determines_mpl VALUES ('Christine Bonner', '75385972', 'turtle','22');
+
+INSERT INTO determines_mpl VALUES ('Christine Bonner', '75385972', 'hamster','12');
