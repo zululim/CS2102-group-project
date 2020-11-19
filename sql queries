@@ -25,7 +25,7 @@ FROM pet_days
 WHERE pet_days=(SELECT MAX(count) FROM (SELECT SUM(pet_days) AS count FROM pet_days GROUP BY month, year) AS temp);
 
 
-SELECT * FROM (pet_days p JOIN c_ratings ON p.caretaker=c.cname)				-- q4d declare underperforming to be caretakers who have less than 25 pet days and ratings below 2
+SELECT * FROM (pet_days p JOIN c_ratings c ON p.caretaker=c.cname)				-- q4d declare underperforming to be caretakers who have less than 25 pet days and ratings below 2
 WHERE p.pet_days <25 AND c.overall_rating<2 AND c.employed='1';
 
 
