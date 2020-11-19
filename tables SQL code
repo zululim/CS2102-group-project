@@ -29,7 +29,7 @@ CREATE TABLE users(
 CREATE TABLE pcsadmin (
 	name 		VARCHAR(100),
 	phone 		INTEGER,
-	FOREIGN KEY(name, phone) REFERENCES users(name, phone) ON DELETE cascade ON UPDATE cascade,
+	FOREIGN KEY(phone) REFERENCES users(phone) ON DELETE cascade ON UPDATE cascade,
 	PRIMARY KEY(phone)
 );
 
@@ -39,7 +39,7 @@ CREATE TABLE nonadmin(					-- ISA table for this has to be overlap so this is on
 	phone 		INTEGER,
 	address 	VARCHAR (100) NOT NULL,
 	transfer 	transfer NOT NULL,
-	FOREIGN KEY(name, phone) REFERENCES users(name, phone) ON DELETE cascade ON UPDATE cascade,
+	FOREIGN KEY(phone) REFERENCES users(phone) ON DELETE cascade ON UPDATE cascade,
 	PRIMARY KEY(phone)
 );
 
@@ -50,7 +50,7 @@ CREATE TABLE petowner (
 	transfer 			transfer NOT NULL,
 	c_card_info 			VARCHAR(30) NOT NULL,
 	require_date 			DATE DEFAULT NULL,
-	FOREIGN KEY(name, phone) REFERENCES nonadmin(name, phone) ON DELETE cascade ON UPDATE cascade,
+	FOREIGN KEY(phone) REFERENCES nonadmin(phone) ON DELETE cascade ON UPDATE cascade,
 	PRIMARY KEY(phone)
 );
 
@@ -59,7 +59,7 @@ CREATE TABLE caretakers (
 	phone 		INTEGER,
 	address 	VARCHAR (100) NOT NULL,
 	transfer 	transfer NOT NULL, 
-	FOREIGN KEY(name, phone) REFERENCES nonadmin(name, phone),
+	FOREIGN KEY(phone) REFERENCES nonadmin(phone),
 	PRIMARY KEY(phone)
 );
 
@@ -72,7 +72,7 @@ CREATE TABLE c_ratings (					-- keeps track of the ratings of the caretaker
 	total_sum_ratings 			INTEGER DEFAULT 0,
 	overall_rating 				NUMERIC(2, 1) DEFAULT 0 CHECK (overall_rating <= 5),
 	max_load 				INTEGER DEFAULT 0 CHECK ((max_load <= 5 AND employed='1') OR (max_load<=2 AND employed='0') OR (max_load<=5 AND employed='0' AND overall_rating>=4)),
-	FOREIGN KEY (cname, cphone) REFERENCES caretakers (name, phone),
+	FOREIGN KEY (cphone) REFERENCES caretakers (phone),
 	PRIMARY KEY (cphone)
 );
 
@@ -81,7 +81,7 @@ CREATE TABLE has_availability (
 	phone 		INTEGER, 
 	date 		DATE,
 	cur_load 	INTEGER DEFAULT 0,
-	FOREIGN KEY (caretaker, phone) REFERENCES caretakers(name, phone) ON DELETE cascade ON UPDATE cascade,
+	FOREIGN KEY (phone) REFERENCES caretakers(phone) ON DELETE cascade ON UPDATE cascade,
 	PRIMARY KEY (phone, date)
 );
 
@@ -90,7 +90,7 @@ CREATE TABLE c_pricelist (			-- price of each caretaker might change due to rati
 	cphone 		INTEGER, 
 	pet_type 	VARCHAR,
 	price 		INTEGER, 
-	FOREIGN KEY (cname, cphone) REFERENCES caretakers(name, phone) ON DELETE cascade ON UPDATE cascade,
+	FOREIGN KEY (cphone) REFERENCES caretakers(phone) ON DELETE cascade ON UPDATE cascade,
 	PRIMARY KEY (cphone, pet_type)
 );
 
@@ -99,7 +99,7 @@ CREATE TABLE determines_mpl (
 	phone 		INTEGER,
 	pet_type 	VARCHAR, 
 	price 		INTEGER NOT NULL,
-	FOREIGN KEY (pcsadmin, phone) REFERENCES pcsadmin(name, phone) ON DELETE cascade ON UPDATE cascade, 
+	FOREIGN KEY (phone) REFERENCES pcsadmin(phone) ON DELETE cascade ON UPDATE cascade, 
 	PRIMARY KEY (phone, pet_type)
 );
 
@@ -109,7 +109,7 @@ CREATE TABLE owns (
 	pet_name 		VARCHAR(100),
 	pet_type 		VARCHAR(100),
 	special_reqs 	VARCHAR(500),
-	FOREIGN KEY (owner, phone)  REFERENCES petowner(name, phone) ON DELETE CASCADE ON UPDATE cascade,
+	FOREIGN KEY (phone)  REFERENCES petowner(phone) ON DELETE CASCADE ON UPDATE cascade,
 	PRIMARY KEY (phone, pet_name)
 );
 
@@ -130,7 +130,7 @@ CREATE TABLE bids_for (
 	month 		INTEGER DEFAULT 0,
 	cost 		INTEGER DEFAULT 0,
 	FOREIGN KEY (petowner, pet_name, pet_type) REFERENCES owns(owner, pet_name, pet_type) ON DELETE CASCADE ON UPDATE cascade,
-	FOREIGN KEY (caretaker, cphone, date) REFERENCES has_availability(caretaker, phone, date) ON DELETE CASCADE ON UPDATE cascade,
+	FOREIGN KEY (cphone, date) REFERENCES has_availability(phone, date) ON DELETE CASCADE ON UPDATE cascade,
 	PRIMARY KEY (cphone, pphone, date, pet_name)
 );
 
@@ -141,7 +141,7 @@ CREATE TABLE pet_days(							-- keeps track of the number of pet days each care 
 	year 		INTEGER DEFAULT 0,
 	month 		INTEGER DEFAULT 0, 
 	pet_days 	INTEGER DEFAULT 0,				-- pet_days is the total number of pets taken care of in a month
-	FOREIGN KEY (caretaker, cphone) REFERENCES caretakers (name, phone) ON DELETE cascade ON UPDATE cascade,
+	FOREIGN KEY (cphone) REFERENCES caretakers (phone) ON DELETE cascade ON UPDATE cascade,
 	PRIMARY KEY (cphone, date)
 );
 
@@ -150,7 +150,7 @@ CREATE TABLE leave_applied (			-- should be empty until the caretaker wants to a
 	phone 		INTEGER, 
 	leave_applied 	DATE, 
 	successful 	BOOLEAN DEFAULT FALSE,
-	FOREIGN KEY (caretaker, phone) REFERENCES caretakers(name, phone) ON DELETE cascade ON UPDATE cascade, 
+	FOREIGN KEY (phone) REFERENCES caretakers(phone) ON DELETE cascade ON UPDATE cascade, 
 	PRIMARY KEY (phone, leave_applied)
 );
 
@@ -181,8 +181,8 @@ CREATE TABLE taken_care_of (						-- so each row will represent one pet the care
 	pphone INTEGER,
 	pet_name VARCHAR, 
 	date DATE,
-	FOREIGN KEY (caretaker, petowner, date, pet_name) REFERENCES bids_for(caretaker, petowner, date, pet_name), 
-	FOREIGN KEY (caretaker, cphone) REFERENCES caretakers(name, phone),
+	FOREIGN KEY (cphone, pphone, date, pet_name) REFERENCES bids_for(cphone, pphone, date, pet_name), 
+	FOREIGN KEY (cphone) REFERENCES caretakers(phone),
 	PRIMARY KEY (cphone, pphone, pet_name, date)
 );
 
