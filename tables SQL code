@@ -129,7 +129,7 @@ CREATE TABLE bids_for (
 	year 		INTEGER DEFAULT 0,
 	month 		INTEGER DEFAULT 0,
 	cost 		INTEGER DEFAULT 0,
-	FOREIGN KEY (petowner, pet_name, pet_type) REFERENCES owns(owner, pet_name, pet_type) ON DELETE CASCADE ON UPDATE cascade,
+	FOREIGN KEY (pphone, pet_name, pet_type) REFERENCES owns(phone, pet_name, pet_type) ON DELETE CASCADE ON UPDATE cascade,
 	FOREIGN KEY (cphone, date) REFERENCES has_availability(phone, date) ON DELETE CASCADE ON UPDATE cascade,
 	PRIMARY KEY (cphone, pphone, date, pet_name)
 );
