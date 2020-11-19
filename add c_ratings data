@@ -1,0 +1,39 @@
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Apolonia Bowers', '44346707', '1', '4');
+ 
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Timothy Abbott', '84893921', '1', '3');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Phyllis Carr', '57715049', '1', '3');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Paul Swelgart', '49290068', '1', '3');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Jonathan Hollingsworth', '64964373', '1', '4');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Sandra Saade', '30961440', '1', '4');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Kristopher Robledo', '84204450', '1', '4');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Annette Jenkins', '16377280', '1', '5');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Esther Johnson', '52840789', '1', '3');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Sherell Sotelo', '61165239', '1', '2');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Chad Trinidad', '89899248', '1', '4');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Karen Rabello', '89455273', '0', '1');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Willie Maddox', '23705379', '1', '4');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Steven Mccray', '71283075', '0', '1');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Romana Arthur', '27463512', '0', '2');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Samuel Hachting', '37616026', '1', '3');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Teresa Henderson', '53637883', '0', '2');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Marco Carrales', '59947012', '1', '5');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Peggy Brown', '33625149', '0', '1');
+
+INSERT INTO c_ratings (cname, cphone, employed, max_load) VALUES ('Eric Denmon', '35702357', '0', '2');
