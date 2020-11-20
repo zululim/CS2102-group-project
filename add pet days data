@@ -1,0 +1,39 @@
+INSERT INTO pet_days VALUES ('Apolonia Bowers', '44346707', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Timothy Abbott', '84893921', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Phyllis Carr', '57715049', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Paul Swelgart', '49290068', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Jonathan Hollingsworth', '64964373', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Sandra Saade', '30961440', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Kristopher Robledo', '84204450', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Annette Jenkins', '16377280', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Esther Johnson', '52840789', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Sherell Sotelo', '61165239', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Chad Trinidad', '89899248', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Karen Rabello', '89455273', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Willie Maddox', '23705379', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Steven Mccray', '71283075', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Romana Arthur', '27463512', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Samuel Hachting', '37616026', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Teresa Henderson', '53637883', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Marco Carrales', '59947012', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Peggy Brown', '33625149', '01-11-2020','2020','11','0');
+
+INSERT INTO pet_days VALUES ('Eric Denmon', '35702357', '01-11-2020','2020','11','0');
