@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<!-- Page Title -->
+    <title>Caretaker Profile</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+		<!-- CSS for Styling -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+		<!-- JavaScript for Interactivity -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <!-- ADDED JavaScript -->
+  		<script src="javascripts/caretakerScript.js"></script>
+
+  </head>
+  <body>
+    <h1><%= title%></h1>
+    <p>If this is your first time logging in, please enter the following information.</p>
+    <form id="html_form" action="login" role="form" method="post">
+        <div class="form-group">
+      		<label for="address">Address</label>
+       		<input type="text" class="form-control" id="address" name="address" placeholder="Enter your address">
+        </div>
+    	<div class="form-group">
+    		<label for="transfer">Transfer Method</label>
+    		<input type="text" class="form-control" id="transfer" name="transfer" aria-describedby="transferHelp" placeholder="Enter your preferred method of transfer">
+    	</div>
+    	<div class="form-group">
+           	<label for="employed">Employment Status</label>
+           	<input type="text" class="form-control" id="employed" name="employed" aria-describedby="employedHelp" placeholder="Enter your employment status (Part time, Full time)">
+        </div>
+    </form>
+
+    <a href = '/caretaker' method = 'post'>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </a>
+
+    <p> </p>
+
+    <a href = '/caretaker_history' method = 'post'>
+        <button type="submit" class="btn btn-primary">View history</button>
+    </a>
+
+    <p> </p>
+
+    <a href = '/caretaker_salary' method = 'post'>
+        <button type="submit" class="btn btn-primary">View salary</button>
+    </a>
+
+    <p> </p>
+
+    <a href = '/login' method = 'post'>
+        <button type="submit" class="btn btn-primary">Logout</button>
+    </a>
+
+    <p> </p>
+
+    <table class="table">
+       	<thead>
+       		<tr>
+       			<th scope="col">Number of Pets Cared For</th>
+       			<th scope="col">Average Rating</th>
+       			<th scope="col">Maximum Load</th>
+       		</tr>
+       	</thead>
+       	<tbody>
+       		<% for(var i=0; i<data.length; i++) { %>
+       		    <% if (data[i].cname === 'Apolonia Bowers') {%>
+       		    <tr>
+       			    <td><%= data[i].total_pets_taken_care_of%></td>
+       			    <td><%= data[i].overall_rating%></td>
+       			    <td><%= data[i].max_load%></td>
+       		    </tr>
+       		    <% } %>
+       		<% } %>
+       	</tbody>
+    </table>
+
+    <script>
+    	(function() {
+    		window.addEventListener('load', function() {
+    			var forms = [document.getElementById('html_form')];
+    			var validation = Array.prototype.filter.call(forms, function(form) {
+    				form.addEventListener('submit', check, false);
+    			});
+    		}, false);
+    	})();
+    </script>
+  </body>
+</html>
